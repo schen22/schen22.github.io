@@ -4,7 +4,7 @@ title:  "It's alive!"
 date: 2016-12-17 21:30:26 +0800
 categories: Goals
 ---
-Wahoo! My website's live and functioning. MWAHAHA.
+Wahoo! My website\'s live and functioning. MWAHAHA.
 
 I wanted to build a website to keep track of, and hold myself accountable to the projects I want to build. I also wanted to test out how to use Jekyll and host pages on Github. For now, I can keep talking to myself on here instead of out loud! Win-win-win.
 
@@ -13,4 +13,4 @@ The first projects I wanted to tackle:
 - Build this website and host it on github
 - Follow _Ray Tracing in One Weekend_ and implement in Go.
 
-Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I'll move forward from there.
+Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I\'ll move forward from there.
