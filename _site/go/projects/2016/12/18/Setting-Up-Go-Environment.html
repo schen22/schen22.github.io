@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Setting Up Go Environment</title>
-  <meta name="description" content="Slightly confused on how to set up my environment so I’m going to write it out here.I've downloaded the go1.7.4darwin-amd64.pkg from golang. Upon installing ...">
+  <meta name="description" content="Writing out how I set up my environment so I can remember later:I've downloaded the go1.7.4darwin-amd64.pkg from golang. Upon installing the package, the usr...">
 
   <!-- evil icon -->
 
@@ -66,7 +66,7 @@
   </header>
 
   <div class="article-content" itemprop="articleBody">
-    <p>Slightly confused on how to set up my environment so I’m going to write it out here.</p>
+    <p>Writing out how I set up my environment so I can remember later:</p>
 
 <p>I've downloaded the <code class="highlighter-rouge">go1.7.4darwin-amd64.pkg</code> from <a href="https://golang.org/dl/">golang</a>. Upon installing the package, the <code class="highlighter-rouge">usr/local/go/bin</code> directory was put in my <code class="highlighter-rouge">PATH</code> environment variable.</p>
 
@@ -74,9 +74,7 @@
 
 <p>Translation: it specifies where to look for Go code. Does that mean for every Go project, the <code class="highlighter-rouge">GOPATH</code> will be different?</p>
 
-<p>Hm, according to the wiki:</p>
-
-<h3 id="use-a-single-gopath">Use a single GOPATH</h3>
+<p>Well according to the wiki, we use a single GOPATH:</p>
 
 <blockquote>
   <p>Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.</p>
@@ -102,13 +100,13 @@
 </code></pre>
 </div>
 
-<p>But ey, all is well! To test it all, I followed this  <a href="https://www.golang-book.com/guides/machine_setup#osx-finished">link</a> and celebrated by playing some Tetris.</p>
+<p>But ey, all is well! Fixed it by just resetting my PATH environment variables. To test it all, I followed this  <a href="https://www.golang-book.com/guides/machine_setup#osx-finished">link</a> and celebrated by playing some Tetris.</p>
 
 <p>Running a hello, world program:</p>
 
 <p><img src="/assets/img/hello-world-golang.jpg" alt="" /></p>
 
-<p>Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO.</p>
+<p>Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO. Time to read the <a href="https://golang.org/doc/code.html">docs</a>.</p>
 
   </div>
 
