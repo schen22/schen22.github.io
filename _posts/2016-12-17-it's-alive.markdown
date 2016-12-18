@@ -2,7 +2,7 @@
 layout: post
 title:  "It's alive!"
 date: 2016-12-17 21:30:26 +0800
-categories: jekyll
+categories: Goals
 ---
 Wahoo! My website's live and functioning. MWAHAHA.
 

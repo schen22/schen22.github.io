@@ -2,7 +2,7 @@
 layout: post
 title:  "Reflections as a Software Engineer"
 date: 2016-12-16 14:30:26 +0800
-categories: jekyll
+categories: Reflections
 ---
 
 It's been about six months since I joined IBM as a software engineer. About the amount of time people say it takes for someone to become fully accustomed to the job and its expectations. To be honest, I feel like I've changed a lot in the past six months in terms of mindset, character, and the actions I take.
