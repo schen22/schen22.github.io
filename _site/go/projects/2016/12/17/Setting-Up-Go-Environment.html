@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="">
+  <title>Setting Up Go Environment</title>
+  <meta name="description" content="Slightly confused on how to set up my environment so I’m going to write it out here.I've downloaded the go1.7.4darwin-amd64.pkg from golang. Upon installing ...">
 
   <!-- evil icon -->
 
@@ -16,7 +16,7 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/archive.html">
+  <link rel="canonical" href="http://localhost:4000/go/projects/2016/12/17/Setting-Up-Go-Environment.html">
   <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -58,73 +58,78 @@
 
         <div class="nine columns" style="z-index:100;">
           <div class="wrapper">
-            <div>
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h2>Archive</h2>
+  <header class="artilce_header">
+    <h1 class="artilce_title" itemprop="name headline">Setting Up Go Environment</h1>
+    <p class="artilce_meta"><time datetime="2016-12-17T17:50:26-06:00" itemprop="datePublished">Dec 17, 2016</time></p>
+  </header>
 
-  <section class="archive_list">
-    
+  <div class="article-content" itemprop="articleBody">
+    <p>Slightly confused on how to set up my environment so I’m going to write it out here.</p>
 
-    <div class="category-name">
-      <h2>Reflections</h2>
-    </div>
-    
+<p>I've downloaded the <code class="highlighter-rouge">go1.7.4darwin-amd64.pkg</code> from <a href="https://golang.org/dl/">golang</a>. Upon installing the package, the <code class="highlighter-rouge">usr/local/go/bin</code> directory was put in my <code class="highlighter-rouge">PATH</code> environment variable.</p>
 
-    <div class="post_title">
-      <a href="/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html">Reflections as a Software Engineer</a>
-      <span class="date">16 Dec, 2016</span>
-    </div>
+<p>Now I need to figure out where to set my <code class="highlighter-rouge">GOPATH</code> to. According to the documentation, the <code class="highlighter-rouge">GOPATH</code> environment variable “specifies directories containing Go projects and their binaries outside the <code class="highlighter-rouge">root</code> folder for Go”.</p>
 
-    
+<p>Translation: it specifies where to look for Go code. Does that mean for every Go project, the <code class="highlighter-rouge">GOPATH</code> will be different?</p>
 
-    
+<p>Hm, according to the wiki:</p>
 
-    <div class="category-name">
-      <h2>Goals</h2>
-    </div>
-    
+<h3 id="use-a-single-gopath">Use a single GOPATH</h3>
 
-    <div class="post_title">
-      <a href="/goals/2016/12/17/it's-alive.html">It's alive!</a>
-      <span class="date">17 Dec, 2016</span>
-    </div>
+<blockquote>
+  <p>Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.</p>
+</blockquote>
 
-    
+<p>I guess I'll just create a directory that will contain all my Go code and add the following lines to my <code class="highlighter-rouge">~/.bash_profile</code> so that I won’t have to set it every time I open my terminal.</p>
 
-    
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span><span class="s2">"/Users/sarahchen/Documents/Personal/go"</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">GOPATH</span><span class="p">//</span>://bin:<span class="k">}</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre>
+</div>
 
-    <div class="category-name">
-      <h2>Go</h2>
-    </div>
-    
+<p>Type <code class="highlighter-rouge">source ~/.bash_profile</code> to reload the file and apply to your current terminal session.</p>
 
-    <div class="post_title">
-      <a href="/go/projects/2016/12/17/Setting-Up-Go-Environment.html">Setting Up Go Environment</a>
-      <span class="date">17 Dec, 2016</span>
-    </div>
+<p>Run <code class="highlighter-rouge">go env</code> to check all the environment variables for Go.</p>
 
-    
+<p>Word of advice - that last bit for setting the path environment variable, <code class="highlighter-rouge">:$PATH</code>, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.</p>
 
-    
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span>
+-bash: tail: <span class="nb">command </span>not found
+-bash: cut: <span class="nb">command </span>not found
+-bash: sed: <span class="nb">command </span>not found
+</code></pre>
+</div>
 
-    <div class="category-name">
-      <h2>Projects</h2>
-    </div>
-    
+<p>But ey, all is well! To test it all, I followed this  <a href="https://www.golang-book.com/guides/machine_setup#osx-finished">link</a> and celebrated by playing some Tetris.</p>
 
-    <div class="post_title">
-      <a href="/go/projects/2016/12/17/Setting-Up-Go-Environment.html">Setting Up Go Environment</a>
-      <span class="date">17 Dec, 2016</span>
-    </div>
+<p>Running a hello, world program:</p>
 
-    
+<p><img src="/assets/img/hello-world-golang.jpg" alt="" /></p>
 
-    
+<p>Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO.</p>
 
-  </section>
+  </div>
 
-  <footer class="article-footer" mar>
-    <section class="author">
+  <footer class="article-footer">
+
+  <section class="share">
+  <a class="share-link" href="https://twitter.com/srchen22" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    Twitter
+  </a>
+  <a class="share-link" href="https://www.facebook.com/LudicoloLoco" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    Facebook
+  </a>
+  <a class="share-link" href="https://plus.google.com/u/0/101510652534710624529" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
+    Google+
+  </a>
+</section>
+
+
+  <hr/>
+
+  <section class="author">
   <div class="authorimage box" style="background: url(/assets/img/Sarah.jpg)"></div>
   <div class="authorinfo box">
     <p>Author | Sarah Chen</p>
@@ -134,10 +139,13 @@
   </div>
 </section>
 
+
   </footer>
-</div>
+
+  
 
 
+</article>
 
           </div>
         </div>
