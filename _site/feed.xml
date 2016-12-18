@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Dec 2016 09:26:35 -0600</pubDate>
-    <lastBuildDate>Sun, 18 Dec 2016 09:26:35 -0600</lastBuildDate>
+    <pubDate>Sun, 18 Dec 2016 09:37:48 -0600</pubDate>
+    <lastBuildDate>Sun, 18 Dec 2016 09:37:48 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -55,9 +55,9 @@
 
 &lt;p&gt;Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 17 Dec 2016 17:50:26 -0600</pubDate>
-        <link>http://localhost:4000/go/projects/2016/12/17/Setting-Up-Go-Environment.html</link>
-        <guid isPermaLink="true">http://localhost:4000/go/projects/2016/12/17/Setting-Up-Go-Environment.html</guid>
+        <pubDate>Sun, 18 Dec 2016 07:50:26 -0600</pubDate>
+        <link>http://localhost:4000/go/projects/2016/12/18/Setting-Up-Go-Environment.html</link>
+        <guid isPermaLink="true">http://localhost:4000/go/projects/2016/12/18/Setting-Up-Go-Environment.html</guid>
         
         
         <category>Go</category>
@@ -81,7 +81,7 @@
 
 &lt;p&gt;Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I'll move forward from there.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 17 Dec 2016 07:30:26 -0600</pubDate>
+        <pubDate>Sat, 17 Dec 2016 21:30:26 -0600</pubDate>
         <link>http://localhost:4000/goals/2016/12/17/it's-alive.html</link>
         <guid isPermaLink="true">http://localhost:4000/goals/2016/12/17/it's-alive.html</guid>
         
@@ -110,7 +110,7 @@
 
 &lt;p&gt;At the end of the day, regardless of how I feel and what I've accomplished - I'm an engineer at IBM. I'm not saying what I do defines what it means to be an engineer. 'Engineer' is just a title I have, and I'm just doing my best to learn as much as I can. I'm super excited and thankful for all that I can learn, and have learned here.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Dec 2016 00:30:26 -0600</pubDate>
+        <pubDate>Fri, 16 Dec 2016 14:30:26 -0600</pubDate>
         <link>http://localhost:4000/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</link>
         <guid isPermaLink="true">http://localhost:4000/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</guid>
         

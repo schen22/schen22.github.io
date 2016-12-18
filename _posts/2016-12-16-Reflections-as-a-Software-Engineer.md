@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reflections as a Software Engineer"
-date: 2016-12-16 14:30:26 +0800
+date: 2016-12-16 14:30:26 -0600
 categories: Reflections
 ---
 
