@@ -77,6 +77,67 @@
 
     <article class="post_card post">
       <header class="post_header">
+        <h2 class="post_title"><a href="/go/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html">Chapter Three: Rays, a simple camera and background</a></h2>
+        <time class="post_date">27 December 2016, Tuesday</time>
+      </header>
+      <div class="post_excerpt">
+        <p>
+          
+          <p>For the longest time I was stuck on this bug where the gradient was off. I couldn’t figure it out.</p>
+
+<p><img src="/assets/img/out2-bug.jpg" alt="" /></p>
+
+<p>I went over my code in <code class="highlighter-rouge">main.go</code> in the way I understood it:</p>
+
+<ul>
+  <li>Begin the gradient background in the lower left corner: (-2, -1, -1). Define the width and height of the background to 4 and 2 units; respectively. Represent with the vectors: <code class="highlighter-rouge"><span class="p">{</span><span class="err">4,</span><span class="w"> </span><span class="err">0,</span><span class="w"> </span><span class="err">0</span><span class="p">}</span></code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">0,</span><span class="w"> </span><span class="err">2,</span><span class="w"> </span><span class="err">0</span><span class="p">}</span></code>.</li>
+  <li>For each pixel between the coordinates, scale the ray of light with the horizontal and vertical vectors that are scaled incrementally with the magnitudes u, v.</li>
+  <li>Form the ray with the direction of the added horizontal, vertical scalars.</li>
+  <li>Find the color of the ray by finding its unit vector and scale the magnitude by the y-coordinate that’s bounded by [0, 1].</li>
+  <li>Form a linear interpolation between blue (0.5, 0.7, 1.0) to white (1.0, 1.0, 1.0) and compute the resulting vector from the direction.</li>
+  <li>Convert the color vector into RGB values and print out.</li>
+</ul>
+
+<p>I finally realized I had a problem of variable shadowing where I was overriding the values of my horizontal and vertical vectors within my for loops. After fixing the error, I received the expected output:</p>
+
+<p><img src="/assets/img/out2.jpg" alt="" /></p>
+
+<p>Onwards to Chapter 4 now! Adding a sphere. Maybe I’ll add more to this post later.</p>
+
+           
+          <a class="read-more" href="/go/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html"> »  </a>
+        </p> 
+      </div>
+      <footer class="post_meta">
+
+
+        
+        <!--
+        
+        <a href="/category/Go">
+          <data data-icon="ei-archive"></data>
+          Go</a>
+        
+        <a href="/category/Projects">
+          <data data-icon="ei-archive"></data>
+          Projects</a>
+        
+        -->
+
+        <!--
+        
+        -->
+
+        <!--p class="readmore">
+          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
+        </p-->
+      </footer>
+      <hr/>
+    </article>
+    
+
+    <article class="post_card post">
+      <header class="post_header">
         <h2 class="post_title"><a href="/go/projects/2016/12/22/Chapter-One-Output-an-Image.html">Chapter One: Output an Image</a></h2>
         <time class="post_date">22 December 2016, Thursday</time>
       </header>
