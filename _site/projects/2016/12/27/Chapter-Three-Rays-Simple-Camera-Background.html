@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Setting Up Go Environment</title>
-  <meta name="description" content="Writing out how I set up my environment so I can remember later:I've downloaded the go1.7.4darwin-amd64.pkg from golang. Upon installing the package, the usr...">
+  <title>Chapter Three: Rays, a simple camera and background</title>
+  <meta name="description" content="For the longest time I was stuck on this bug where the gradient was off. I couldn’t figure it out.I went over my code in main.go in the way I understood it: ...">
 
   <!-- evil icon -->
 
@@ -16,7 +16,7 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/go/projects/2016/12/18/Setting-Up-Go-Environment.html">
+  <link rel="canonical" href="http://localhost:4000/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html">
   <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 
   <!-- Google analytics -->
@@ -73,52 +73,33 @@
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="artilce_header">
-    <h1 class="artilce_title" itemprop="name headline">Setting Up Go Environment</h1>
-    <p class="artilce_meta"><time datetime="2016-12-18T07:50:26-06:00" itemprop="datePublished">Dec 18, 2016</time></p>
+    <h1 class="artilce_title" itemprop="name headline">Chapter Three: Rays, a simple camera and background</h1>
+    <p class="artilce_meta"><time datetime="2016-12-27T21:18:26-06:00" itemprop="datePublished">Dec 27, 2016</time></p>
   </header>
 
   <div class="article-content" itemprop="articleBody">
-    <p>Writing out how I set up my environment so I can remember later:</p>
+    <p>For the longest time I was stuck on this bug where the gradient was off. I couldn’t figure it out.</p>
 
-<p>I've downloaded the <code class="highlighter-rouge">go1.7.4darwin-amd64.pkg</code> from <a href="https://golang.org/dl/">golang</a>. Upon installing the package, the <code class="highlighter-rouge">usr/local/go/bin</code> directory was put in my <code class="highlighter-rouge">PATH</code> environment variable.</p>
+<p><img src="/assets/img/out2-bug.jpg" alt="" /></p>
 
-<p>Now I need to figure out where to set my <code class="highlighter-rouge">GOPATH</code> to. According to the documentation, the <code class="highlighter-rouge">GOPATH</code> environment variable “specifies directories containing Go projects and their binaries outside the <code class="highlighter-rouge">root</code> folder for Go”.</p>
+<p>I went over my code in <code class="highlighter-rouge">main.go</code> in the way I understood it:</p>
 
-<p>Translation: it specifies where to look for Go code. Does that mean for every Go project, the <code class="highlighter-rouge">GOPATH</code> will be different?</p>
+<ul>
+  <li>Begin the gradient background in the lower left corner: (-2, -1, -1). Define the width and height of the background to 4 and 2 units; respectively. Represent with the vectors: <code class="highlighter-rouge"><span class="p">{</span><span class="err">4,</span><span class="w"> </span><span class="err">0,</span><span class="w"> </span><span class="err">0</span><span class="p">}</span></code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">0,</span><span class="w"> </span><span class="err">2,</span><span class="w"> </span><span class="err">0</span><span class="p">}</span></code>.</li>
+  <li>For each pixel between the coordinates, scale the ray of light with the horizontal and vertical vectors that are scaled incrementally with the magnitudes u, v.</li>
+  <li>Form the ray with the direction of the added horizontal, vertical scalars.</li>
+  <li>Find the color of the ray by finding its unit vector and scale the magnitude by the y-coordinate that’s bounded by [0, 1].</li>
+  <li>Form a linear interpolation between blue (0.5, 0.7, 1.0) to white (1.0, 1.0, 1.0) and compute the resulting vector from the direction.</li>
+  <li>Convert the color vector into RGB values and print out.</li>
+</ul>
 
-<p>Well according to the wiki, we use a single GOPATH:</p>
+<p>I finally realized I had a problem of variable shadowing where I was overriding the values of my horizontal and vertical vectors within my for loops.</p>
 
-<blockquote>
-  <p>Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.</p>
-</blockquote>
+<p>After fixing the error, I received the expected output:</p>
 
-<p>I guess I'll just create a directory that will contain all my Go code and add the following lines to my <code class="highlighter-rouge">~/.bash_profile</code> so that I won’t have to set it every time I open my terminal.</p>
+<p><img src="/assets/img/out2.jpg" alt="" /></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span><span class="s2">"/Users/sarahchen/Documents/Personal/go"</span>
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">GOPATH</span><span class="p">//</span>://bin:<span class="k">}</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
-</code></pre>
-</div>
-
-<p>Type <code class="highlighter-rouge">source ~/.bash_profile</code> to reload the file and apply to your current terminal session.</p>
-
-<p>Run <code class="highlighter-rouge">go env</code> to check all the environment variables for Go.</p>
-
-<p>Word of advice - that last bit for setting the path environment variable, <code class="highlighter-rouge">:$PATH</code>, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span>
--bash: tail: <span class="nb">command </span>not found
--bash: cut: <span class="nb">command </span>not found
--bash: sed: <span class="nb">command </span>not found
-</code></pre>
-</div>
-
-<p>But ey, all is well! Fixed it by just resetting my PATH environment variables. To test it all, I followed this  <a href="https://www.golang-book.com/guides/machine_setup#osx-finished">link</a> and celebrated by playing some Tetris.</p>
-
-<p>Running a hello, world program:</p>
-
-<p><img src="/assets/img/hello-world-golang.jpg" alt="" /></p>
-
-<p>Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO. Time to read the <a href="https://golang.org/doc/code.html">docs</a>.</p>
+<p>Onwards to Chapter 4 now! Adding a sphere. Maybe I’ll add more to this post later.</p>
 
   </div>
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Chapter One: Output an Image"
 date: 2016-12-22 20:56:26 -0600
-categories: Go Projects
+categories: Projects
 ---
 Why did I choose to implement the project in Go?
 

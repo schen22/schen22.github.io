@@ -2,7 +2,7 @@
 layout: post
 title:  "Chapter Three: Rays, a simple camera and background"
 date: 2016-12-27 21:18:26 -0600
-categories: Go Projects
+categories: Projects
 ---
 For the longest time I was stuck on this bug where the gradient was off. I couldn't figure it out.
 
@@ -17,8 +17,10 @@ I went over my code in `main.go` in the way I understood it:
 * Form a linear interpolation between blue (0.5, 0.7, 1.0) to white (1.0, 1.0, 1.0) and compute the resulting vector from the direction.
 * Convert the color vector into RGB values and print out.
 
-I finally realized I had a problem of variable shadowing where I was overriding the values of my horizontal and vertical vectors within my for loops. After fixing the error, I received the expected output:
+I finally realized I had a problem of variable shadowing where I was overriding the values of my horizontal and vertical vectors within my for loops.
+
+After fixing the error, I received the expected output:
 
 ![]({{site.baseurl}}/assets/img/out2.jpg)
 
-Onwards to Chapter 4 now! Adding a sphere. Maybe I'll add more to this post later. 
+Onwards to Chapter 4 now! Adding a sphere. Maybe I'll add more to this post later.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting Up Go Environment"
 date: 2016-12-18 7:50:26 -0600
-categories: Go Projects
+categories: Projects
 ---
 Writing out how I set up my environment so I can remember later:
 
