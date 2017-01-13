@@ -2,7 +2,7 @@
 layout: post
 title:  "Refactoring and jotting notes about go"
 date: 2017-01-05 09:56:26 -0600
-categories: Go
+categories: Go Projects
 ---
 
 I hit somewhat of a rut after refactoring. I ran into this error message after implementing a `hitable`, `hitableList`, and `sphere` objects for the ray tracer:
@@ -34,8 +34,6 @@ Color and brightness is depicted through how light interacts with an object's ma
 
 White light contains red, blue and green photons. The color red appears when green and blue photons are absorbed. The red photons reflect the object and allows our eyes to see the object. Each point on an object reflects light rays in different direction. Our eyes' photoreceptors then converts light into neural signals for our brains to interpret.   
 
-I'll add more to this tomorrow. For now I need some sleep to get to work tomorrow.
-
 ## Learning Go
 
 Struct is a type that contains named field.
@@ -52,3 +50,17 @@ func (c *Circle) area() float64 {
 }
 ```
 Go automatically passes a pointer into this method without the `&` operator
+
+# Pointers.
+
+If there's one thing I learned about Go and C, it's that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last [push](https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719), you can see how I had to call the `Hit` function by reference in order for the `HitRecord` struct to modify the values of its properties without creating a new object.
+
+```go
+func (s Sphere) Hit(r models.Ray, t_min float64, t_max float64, rec *HitRecord) bool {
+	...
+}
+```
+
+Similarly, in the `HitableList` and `Hitable` interface, I needed to pass in a reference to the `HitRecord` rather than create new objects that don't store or allow the object to act as a record to whether the object is hittable.
+
+Talking about it now makes it seem like a noobish mistake, but lesson learned! Pointers are friends :)
