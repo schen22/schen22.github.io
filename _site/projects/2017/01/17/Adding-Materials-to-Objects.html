@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="">
+  <title>Adding Materials to Objects</title>
+  <meta name="description" content="In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done ...">
 
   <!-- evil icon -->
 
@@ -16,7 +16,7 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/archive.html">
+  <link rel="canonical" href="http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html">
   <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 
   <!-- Google analytics -->
@@ -70,108 +70,70 @@
 
         <div class="nine columns" style="z-index:100;">
           <div class="wrapper">
-            <div>
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h2>Archive</h2>
+  <header class="artilce_header">
+    <h1 class="artilce_title" itemprop="name headline">Adding Materials to Objects</h1>
+    <p class="artilce_meta"><time datetime="2017-01-17T12:34:26-06:00" itemprop="datePublished">Jan 17, 2017</time></p>
+  </header>
 
-  <section class="archive_list">
-    
+  <div class="article-content" itemprop="articleBody">
+    <p>In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.</p>
 
-    <div class="category-name">
-      <h2>Reflections</h2>
-    </div>
-    
+<p>This difference allows the blending of edge pixels (pixels in between the background and the foreground) as seen in the comparison between the picture from last chapter and the picture after averaging the pixel colors.</p>
 
-    <div class="post_title">
-      <a href="/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html">Reflections as a Software Engineer</a>
-      <span class="date">16 Dec, 2016</span>
-    </div>
+<p><img src="/assets/img/out5out6_comparison.jpg" alt="" /></p>
 
-    
+<p>As I moved onto creating more things within the images, I learned to create objects and materials. The fun ensued. More progress and cooler pictures were formed!</p>
 
-    
+<p>The following pictures are examples of diffuse objects that take on the color of their surroundings, adjusted for their own intrinsic color. As Peter Shirley explains in his book, “Light that reflects off a diffuse surface has its direction randomized.” At the same time, the darker the surface is, the more likely absorption is.</p>
 
-    <div class="category-name">
-      <h2>Goals</h2>
-    </div>
-    
+<p>The algorithm to create this is as follows (somewhat summarized):</p>
 
-    <div class="post_title">
-      <a href="/goals/2016/12/17/it's-alive.html">It's alive!</a>
-      <span class="date">17 Dec, 2016</span>
-    </div>
+<blockquote>
+  <p>Pick a random point <em>s</em> on a unit radius sphere tangent to the hitpoint. Send a ray from the hitpoint <em>p</em> to the random point <em>s</em>. The sphere then has center (p+N), where <em>N</em> is the length of the ray.</p>
+</blockquote>
 
-    
+<p>Next Peter Shirley notes:</p>
 
-    
+<blockquote>
+  <p>Pick a random point in a unit radius sphere <em>centered at the origin</em> (rather than tangent to the hitpoint) by using a <em>rejection method</em>. Pick a random point in the unit cube where <em>x, y</em> and <em>z</em> range from -1 to +1, rejecting all points that do not fall within the sphere.</p>
+</blockquote>
 
-    <div class="category-name">
-      <h2>Projects</h2>
-    </div>
-    
+<p>Rejection method is a technique used to generate observations from a distribution.</p>
 
-    <div class="post_title">
-      <a href="/projects/2017/01/17/Adding-Materials-to-Objects.html">Adding Materials to Objects</a>
-      <span class="date">17 Jan, 2017</span>
-    </div>
+<p>The described method gives us the following image:</p>
 
-    
+<p><img src="/assets/img/out7.jpg" alt="" /></p>
 
-    <div class="post_title">
-      <a href="/projects/2017/01/13/Debugging-and-Chapter-5.html">Debugging and Chapter 5</a>
-      <span class="date">13 Jan, 2017</span>
-    </div>
+<p>After we adjust for the image to be ‘gamma corrected’, we see a light gray color in the image:</p>
 
-    
+<p><img src="/assets/img/out8.jpg" alt="" /></p>
 
-    <div class="post_title">
-      <a href="/go/projects/2017/01/05/Jotting-notes-about-go.html">Refactoring and jotting notes about go</a>
-      <span class="date">5 Jan, 2017</span>
-    </div>
+<p>Apparently the above picture hosts a “shadow acne problem.” In other word pimply splotches due to rays reflecting off of not at exactly t = 0, but instead at t being very close to zero. In order to remove the “shadow acne problem” we have to better specify to ignore hits very near zero, resulting in the following picture:</p>
 
-    
+<p><img src="/assets/img/out8-without-pimples.jpg" alt="" /></p>
 
-    <div class="post_title">
-      <a href="/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html">Chapter Three: Rays, a simple camera and background</a>
-      <span class="date">27 Dec, 2016</span>
-    </div>
+  </div>
 
-    
+  <footer class="article-footer">
 
-    <div class="post_title">
-      <a href="/projects/2016/12/22/Chapter-One-Output-an-Image.html">Chapter One: Output an Image</a>
-      <span class="date">22 Dec, 2016</span>
-    </div>
+  <section class="share">
+  <a class="share-link" href="https://twitter.com/srchen22" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    Twitter
+  </a>
+  <a class="share-link" href="https://www.facebook.com/LudicoloLoco" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    Facebook
+  </a>
+  <a class="share-link" href="https://plus.google.com/u/0/101510652534710624529" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
+    Google+
+  </a>
+</section>
 
-    
 
-    <div class="post_title">
-      <a href="/projects/2016/12/18/Setting-Up-Go-Environment.html">Setting Up Go Environment</a>
-      <span class="date">18 Dec, 2016</span>
-    </div>
+  <hr/>
 
-    
-
-    
-
-    <div class="category-name">
-      <h2>Go</h2>
-    </div>
-    
-
-    <div class="post_title">
-      <a href="/go/projects/2017/01/05/Jotting-notes-about-go.html">Refactoring and jotting notes about go</a>
-      <span class="date">5 Jan, 2017</span>
-    </div>
-
-    
-
-    
-
-  </section>
-
-  <footer class="article-footer" mar>
-    <section class="author">
+  <section class="author">
   <div class="authorimage box" style="background: url(/assets/img/Sarah.jpg)"></div>
   <div class="authorinfo box">
     <p>Author | Sarah Chen</p>
@@ -181,10 +143,13 @@
   </div>
 </section>
 
+
   </footer>
-</div>
+
+  
 
 
+</article>
 
           </div>
         </div>

@@ -5,9 +5,56 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Jan 2017 12:36:30 -0600</pubDate>
-    <lastBuildDate>Fri, 13 Jan 2017 12:36:30 -0600</lastBuildDate>
+    <pubDate>Sun, 22 Jan 2017 17:07:53 -0600</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 17:07:53 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Adding Materials to Objects</title>
+        <description>&lt;p&gt;In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.&lt;/p&gt;
+
+&lt;p&gt;This difference allows the blending of edge pixels (pixels in between the background and the foreground) as seen in the comparison between the picture from last chapter and the picture after averaging the pixel colors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/out5out6_comparison.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As I moved onto creating more things within the images, I learned to create objects and materials. The fun ensued. More progress and cooler pictures were formed!&lt;/p&gt;
+
+&lt;p&gt;The following pictures are examples of diffuse objects that take on the color of their surroundings, adjusted for their own intrinsic color. As Peter Shirley explains in his book, “Light that reflects off a diffuse surface has its direction randomized.” At the same time, the darker the surface is, the more likely absorption is.&lt;/p&gt;
+
+&lt;p&gt;The algorithm to create this is as follows (somewhat summarized):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pick a random point &lt;em&gt;s&lt;/em&gt; on a unit radius sphere tangent to the hitpoint. Send a ray from the hitpoint &lt;em&gt;p&lt;/em&gt; to the random point &lt;em&gt;s&lt;/em&gt;. The sphere then has center (p+N), where &lt;em&gt;N&lt;/em&gt; is the length of the ray.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Next Peter Shirley notes:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pick a random point in a unit radius sphere &lt;em&gt;centered at the origin&lt;/em&gt; (rather than tangent to the hitpoint) by using a &lt;em&gt;rejection method&lt;/em&gt;. Pick a random point in the unit cube where &lt;em&gt;x, y&lt;/em&gt; and &lt;em&gt;z&lt;/em&gt; range from -1 to +1, rejecting all points that do not fall within the sphere.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Rejection method is a technique used to generate observations from a distribution.&lt;/p&gt;
+
+&lt;p&gt;The described method gives us the following image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/out7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After we adjust for the image to be ‘gamma corrected’, we see a light gray color in the image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/out8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Apparently the above picture hosts a “shadow acne problem.” In other word pimply splotches due to rays reflecting off of not at exactly t = 0, but instead at t being very close to zero. In order to remove the “shadow acne problem” we have to better specify to ignore hits very near zero, resulting in the following picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/out8-without-pimples.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Jan 2017 12:34:26 -0600</pubDate>
+        <link>http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</link>
+        <guid isPermaLink="true">http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</guid>
+        
+        
+        <category>Projects</category>
+        
+      </item>
     
       <item>
         <title>Debugging and Chapter 5</title>

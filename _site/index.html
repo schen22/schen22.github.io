@@ -77,6 +77,78 @@
 
     <article class="post_card post">
       <header class="post_header">
+        <h2 class="post_title"><a href="/projects/2017/01/17/Adding-Materials-to-Objects.html">Adding Materials to Objects</a></h2>
+        <time class="post_date">17 January 2017, Tuesday</time>
+      </header>
+      <div class="post_excerpt">
+        <p>
+          
+          <p>In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.</p>
+
+<p>This difference allows the blending of edge pixels (pixels in between the background and the foreground) as seen in the comparison between the picture from last chapter and the picture after averaging the pixel colors.</p>
+
+<p><img src="/assets/img/out5out6_comparison.jpg" alt="" /></p>
+
+<p>As I moved onto creating more things within the images, I learned to create objects and materials. The fun ensued. More progress and cooler pictures were formed!</p>
+
+<p>The following pictures are examples of diffuse objects that take on the color of their surroundings, adjusted for their own intrinsic color. As Peter Shirley explains in his book, “Light that reflects off a diffuse surface has its direction randomized.” At the same time, the darker the surface is, the more likely absorption is.</p>
+
+<p>The algorithm to create this is as follows (somewhat summarized):</p>
+
+<blockquote>
+  <p>Pick a random point <em>s</em> on a unit radius sphere tangent to the hitpoint. Send a ray from the hitpoint <em>p</em> to the random point <em>s</em>. The sphere then has center (p+N), where <em>N</em> is the length of the ray.</p>
+</blockquote>
+
+<p>Next Peter Shirley notes:</p>
+
+<blockquote>
+  <p>Pick a random point in a unit radius sphere <em>centered at the origin</em> (rather than tangent to the hitpoint) by using a <em>rejection method</em>. Pick a random point in the unit cube where <em>x, y</em> and <em>z</em> range from -1 to +1, rejecting all points that do not fall within the sphere.</p>
+</blockquote>
+
+<p>Rejection method is a technique used to generate observations from a distribution.</p>
+
+<p>The described method gives us the following image:</p>
+
+<p><img src="/assets/img/out7.jpg" alt="" /></p>
+
+<p>After we adjust for the image to be ‘gamma corrected’, we see a light gray color in the image:</p>
+
+<p><img src="/assets/img/out8.jpg" alt="" /></p>
+
+<p>Apparently the above picture hosts a “shadow acne problem.” In other word pimply splotches due to rays reflecting off of not at exactly t = 0, but instead at t being very close to zero. In order to remove the “shadow acne problem” we have to better specify to ignore hits very near zero, resulting in the following picture:</p>
+
+<p><img src="/assets/img/out8-without-pimples.jpg" alt="" /></p>
+
+           
+          <a class="read-more" href="/projects/2017/01/17/Adding-Materials-to-Objects.html"> »  </a>
+        </p> 
+      </div>
+      <footer class="post_meta">
+
+
+        
+        <!--
+        
+        <a href="/category/Projects">
+          <data data-icon="ei-archive"></data>
+          Projects</a>
+        
+        -->
+
+        <!--
+        
+        -->
+
+        <!--p class="readmore">
+          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
+        </p-->
+      </footer>
+      <hr/>
+    </article>
+    
+
+    <article class="post_card post">
+      <header class="post_header">
         <h2 class="post_title"><a href="/projects/2017/01/13/Debugging-and-Chapter-5.html">Debugging and Chapter 5</a></h2>
         <time class="post_date">13 January 2017, Friday</time>
       </header>
@@ -349,84 +421,6 @@ main.main<span class="o">()</span>
 
            
           <a class="read-more" href="/projects/2016/12/22/Chapter-One-Output-an-Image.html"> »  </a>
-        </p> 
-      </div>
-      <footer class="post_meta">
-
-
-        
-        <!--
-        
-        <a href="/category/Projects">
-          <data data-icon="ei-archive"></data>
-          Projects</a>
-        
-        -->
-
-        <!--
-        
-        -->
-
-        <!--p class="readmore">
-          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
-        </p-->
-      </footer>
-      <hr/>
-    </article>
-    
-
-    <article class="post_card post">
-      <header class="post_header">
-        <h2 class="post_title"><a href="/projects/2016/12/18/Setting-Up-Go-Environment.html">Setting Up Go Environment</a></h2>
-        <time class="post_date">18 December 2016, Sunday</time>
-      </header>
-      <div class="post_excerpt">
-        <p>
-          
-          <p>Writing out how I set up my environment so I can remember later:</p>
-
-<p>I've downloaded the <code class="highlighter-rouge">go1.7.4darwin-amd64.pkg</code> from <a href="https://golang.org/dl/">golang</a>. Upon installing the package, the <code class="highlighter-rouge">usr/local/go/bin</code> directory was put in my <code class="highlighter-rouge">PATH</code> environment variable.</p>
-
-<p>Now I need to figure out where to set my <code class="highlighter-rouge">GOPATH</code> to. According to the documentation, the <code class="highlighter-rouge">GOPATH</code> environment variable “specifies directories containing Go projects and their binaries outside the <code class="highlighter-rouge">root</code> folder for Go”.</p>
-
-<p>Translation: it specifies where to look for Go code. Does that mean for every Go project, the <code class="highlighter-rouge">GOPATH</code> will be different?</p>
-
-<p>Well according to the wiki, we use a single GOPATH:</p>
-
-<blockquote>
-  <p>Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.</p>
-</blockquote>
-
-<p>I guess I'll just create a directory that will contain all my Go code and add the following lines to my <code class="highlighter-rouge">~/.bash_profile</code> so that I won’t have to set it every time I open my terminal.</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span><span class="s2">"/Users/sarahchen/Documents/Personal/go"</span>
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">GOPATH</span><span class="p">//</span>://bin:<span class="k">}</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
-</code></pre>
-</div>
-
-<p>Type <code class="highlighter-rouge">source ~/.bash_profile</code> to reload the file and apply to your current terminal session.</p>
-
-<p>Run <code class="highlighter-rouge">go env</code> to check all the environment variables for Go.</p>
-
-<p>Word of advice - that last bit for setting the path environment variable, <code class="highlighter-rouge">:$PATH</code>, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span>
--bash: tail: <span class="nb">command </span>not found
--bash: cut: <span class="nb">command </span>not found
--bash: sed: <span class="nb">command </span>not found
-</code></pre>
-</div>
-
-<p>But ey, all is well! Fixed it by just resetting my PATH environment variables. To test it all, I followed this  <a href="https://www.golang-book.com/guides/machine_setup#osx-finished">link</a> and celebrated by playing some Tetris.</p>
-
-<p>Running a hello, world program:</p>
-
-<p><img src="/assets/img/hello-world-golang.jpg" alt="" /></p>
-
-<p>Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO. Time to read the <a href="https://golang.org/doc/code.html">docs</a>.</p>
-
-           
-          <a class="read-more" href="/projects/2016/12/18/Setting-Up-Go-Environment.html"> »  </a>
         </p> 
       </div>
       <footer class="post_meta">
