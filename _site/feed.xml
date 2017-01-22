@@ -8,7 +8,7 @@
     <pubDate>Sun, 22 Jan 2017 17:07:53 -0600</pubDate>
     <lastBuildDate>Sun, 22 Jan 2017 17:07:53 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
+
       <item>
         <title>Adding Materials to Objects</title>
         <description>&lt;p&gt;In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.&lt;/p&gt;
@@ -50,12 +50,12 @@
         <pubDate>Tue, 17 Jan 2017 12:34:26 -0600</pubDate>
         <link>http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</guid>
-        
-        
+
+
         <category>Projects</category>
-        
+
       </item>
-    
+
       <item>
         <title>Debugging and Chapter 5</title>
         <description>&lt;p&gt;So it turned out my bug was including the name of the interface within my struct. So for example, I had:&lt;/p&gt;
@@ -79,12 +79,12 @@
         <pubDate>Fri, 13 Jan 2017 12:34:26 -0600</pubDate>
         <link>http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</guid>
-        
-        
+
+
         <category>Projects</category>
-        
+
       </item>
-    
+
       <item>
         <title>Refactoring and jotting notes about go</title>
         <description>&lt;p&gt;I hit somewhat of a rut after refactoring. I ran into this error message after implementing a &lt;code class=&quot;highlighter-rouge&quot;&gt;hitable&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;hitableList&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;sphere&lt;/code&gt; objects for the ray tracer:&lt;/p&gt;
@@ -150,14 +150,14 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Thu, 05 Jan 2017 09:56:26 -0600</pubDate>
         <link>http://localhost:4000/go/projects/2017/01/05/Jotting-notes-about-go.html</link>
         <guid isPermaLink="true">http://localhost:4000/go/projects/2017/01/05/Jotting-notes-about-go.html</guid>
-        
-        
+
+
         <category>Go</category>
-        
+
         <category>Projects</category>
-        
+
       </item>
-    
+
       <item>
         <title>Chapter Three: Rays, a simple camera and background</title>
         <description>&lt;p&gt;For the longest time I was stuck on this bug where the gradient was off. I couldn’t figure it out.&lt;/p&gt;
@@ -186,12 +186,12 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Tue, 27 Dec 2016 21:18:26 -0600</pubDate>
         <link>http://localhost:4000/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html</guid>
-        
-        
+
+
         <category>Projects</category>
-        
+
       </item>
-    
+
       <item>
         <title>Chapter One: Output an Image</title>
         <description>&lt;p&gt;Why did I choose to implement the project in Go?&lt;/p&gt;
@@ -248,12 +248,12 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Thu, 22 Dec 2016 20:56:26 -0600</pubDate>
         <link>http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html</guid>
-        
-        
+
+
         <category>Projects</category>
-        
+
       </item>
-    
+
       <item>
         <title>Setting Up Go Environment</title>
         <description>&lt;p&gt;Writing out how I set up my environment so I can remember later:&lt;/p&gt;
@@ -301,12 +301,12 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Sun, 18 Dec 2016 07:50:26 -0600</pubDate>
         <link>http://localhost:4000/projects/2016/12/18/Setting-Up-Go-Environment.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2016/12/18/Setting-Up-Go-Environment.html</guid>
-        
-        
+
+
         <category>Projects</category>
-        
+
       </item>
-    
+
       <item>
         <title>It's alive!</title>
         <description>&lt;p&gt;Wahoo! My website's live and functioning. MWAHAHA.&lt;/p&gt;
@@ -325,12 +325,12 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Sat, 17 Dec 2016 21:30:26 -0600</pubDate>
         <link>http://localhost:4000/goals/2016/12/17/it's-alive.html</link>
         <guid isPermaLink="true">http://localhost:4000/goals/2016/12/17/it's-alive.html</guid>
-        
-        
+
+
         <category>Goals</category>
-        
+
       </item>
-    
+
       <item>
         <title>Reflections as a Software Engineer</title>
         <description>&lt;p&gt;It's been about six months since I joined IBM as a software engineer. About the amount of time people say it takes for someone to become fully accustomed to the job and its expectations. To be honest, I feel like I've changed a lot in the past six months in terms of mindset, character, and the actions I take.&lt;/p&gt;
@@ -354,11 +354,11 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Fri, 16 Dec 2016 14:30:26 -0600</pubDate>
         <link>http://localhost:4000/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</link>
         <guid isPermaLink="true">http://localhost:4000/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</guid>
-        
-        
+
+
         <category>Reflections</category>
-        
+
       </item>
-    
+
   </channel>
 </rss>
