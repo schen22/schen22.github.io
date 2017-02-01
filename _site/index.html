@@ -77,6 +77,63 @@
 
     <article class="post_card post">
       <header class="post_header">
+        <h2 class="post_title"><a href="/projects/2017/01/24/Abstract-different-materials.html">Abstract Different Materials</a></h2>
+        <time class="post_date">24 January 2017, Tuesday</time>
+      </header>
+      <div class="post_excerpt">
+        <p>
+          
+          <p>Getting to the real meat/exciting part of the project. By creating Metal and Lambertian materials, I learned how each material interacts with rays.</p>
+
+<p>Taking into account the point a ray hits a sphere, let’s say <em>N</em> is the Normal of the point. A reflected ray’s unit vector <em>v</em> will have the direction <em>(v + 2B)</em>, where <em>B</em> is the dot product of the vector <em>v</em> and the hit point’s normal <em>N</em>. The results in the projection of the normal vector onto the ray, as seen with the following code:</p>
+
+<div class="language-go highlighter-rouge"><pre class="highlight"><code><span class="k">func</span><span class="x"> </span><span class="n">Reflect</span><span class="p">(</span><span class="n">v</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="p">,</span><span class="x"> </span><span class="n">n</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="p">)</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="k">return</span><span class="x"> </span><span class="n">v</span><span class="o">.</span><span class="n">SubtractVector</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">MultiplyNum</span><span class="p">(</span><span class="m">2.0</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">v</span><span class="o">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre>
+</div>
+
+<p>On the other hand, lambertian materials diffuse rays. Light is reflected at many angles, so we depict this through randomizing how the ray is scattered:</p>
+
+<div class="language-go highlighter-rouge"><pre class="highlight"><code><span class="n">target</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">AddVector</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">Normal</span><span class="p">)</span><span class="o">.</span><span class="n">AddVector</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">RandomInUnitSphere</span><span class="p">())</span><span class="x">
+</span><span class="o">*</span><span class="n">scattered</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Ray</span><span class="p">{</span><span class="n">Origin</span><span class="o">:</span><span class="x"> </span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="p">,</span><span class="x"> </span><span class="n">Direction</span><span class="o">:</span><span class="x"> </span><span class="n">target</span><span class="o">.</span><span class="n">SubtractVector</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="p">)}</span><span class="x">
+</span></code></pre>
+</div>
+
+<p>Modifying <code class="highlighter-rouge">main.go</code> to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:</p>
+
+<p><img src="/assets/img/fuzz1.png" alt="" /></p>
+
+           
+          <a class="read-more" href="/projects/2017/01/24/Abstract-different-materials.html"> »  </a>
+        </p> 
+      </div>
+      <footer class="post_meta">
+
+
+        
+        <!--
+        
+        <a href="/category/Projects">
+          <data data-icon="ei-archive"></data>
+          Projects</a>
+        
+        -->
+
+        <!--
+        
+        -->
+
+        <!--p class="readmore">
+          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
+        </p-->
+      </footer>
+      <hr/>
+    </article>
+    
+
+    <article class="post_card post">
+      <header class="post_header">
         <h2 class="post_title"><a href="/projects/2017/01/17/Adding-Materials-to-Objects.html">Adding Materials to Objects</a></h2>
         <time class="post_date">17 January 2017, Tuesday</time>
       </header>
@@ -334,93 +391,6 @@ main.main<span class="o">()</span>
 
            
           <a class="read-more" href="/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html"> »  </a>
-        </p> 
-      </div>
-      <footer class="post_meta">
-
-
-        
-        <!--
-        
-        <a href="/category/Projects">
-          <data data-icon="ei-archive"></data>
-          Projects</a>
-        
-        -->
-
-        <!--
-        
-        -->
-
-        <!--p class="readmore">
-          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
-        </p-->
-      </footer>
-      <hr/>
-    </article>
-    
-
-    <article class="post_card post">
-      <header class="post_header">
-        <h2 class="post_title"><a href="/projects/2016/12/22/Chapter-One-Output-an-Image.html">Chapter One: Output an Image</a></h2>
-        <time class="post_date">22 December 2016, Thursday</time>
-      </header>
-      <div class="post_excerpt">
-        <p>
-          
-          <p>Why did I choose to implement the project in Go?</p>
-
-<p>I’ve been wanting to learn it to understand how it helps concurrency. Plus I was influenced by a friend to take this as an opportunity to learn the language.</p>
-
-<p>Lessons learned:</p>
-
-<ul>
-  <li>I need to review linear algebra.</li>
-  <li>Homogeneous coordinates can represent points at infinity and finite points. Somehow this matters for computer graphics and 3D computer vision?
-    <ul>
-      <li>Vectors for graphics programs are 4D
-        <ul>
-          <li>For geometry: 3D + homogeneous coordinate.</li>
-          <li>For colors: RGB plus an alpha transparency channel.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Pixels are written left to right, top to bottom.</li>
-  <li>Red goes to black from left to right.</li>
-  <li>Green goes from black to green from bottom to top.</li>
-</ul>
-
-<div class="language-go highlighter-rouge"><pre class="highlight"><code><span class="k">package</span><span class="x"> </span><span class="n">main</span><span class="x">
-
-</span><span class="k">import</span><span class="x"> </span><span class="s">"fmt"</span><span class="x">
-
-</span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
-  </span><span class="n">nx</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">200</span><span class="x">
-  </span><span class="n">ny</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">100</span><span class="x">
-
-  </span><span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">"P3</span><span class="se">\n</span><span class="s">%d %d</span><span class="se">\n</span><span class="s">255</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="x"> </span><span class="n">nx</span><span class="p">,</span><span class="x"> </span><span class="n">ny</span><span class="p">)</span><span class="x">
-  </span><span class="k">for</span><span class="x"> </span><span class="n">j</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">ny</span><span class="x"> </span><span class="o">-</span><span class="x"> </span><span class="m">1</span><span class="p">;</span><span class="x"> </span><span class="n">j</span><span class="x"> </span><span class="o">&gt;=</span><span class="x"> </span><span class="m">0</span><span class="p">;</span><span class="x"> </span><span class="n">j</span><span class="o">--</span><span class="x"> </span><span class="p">{</span><span class="x">
-    </span><span class="k">for</span><span class="x"> </span><span class="n">i</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">0</span><span class="p">;</span><span class="x"> </span><span class="n">i</span><span class="x"> </span><span class="o">&lt;</span><span class="x"> </span><span class="n">nx</span><span class="p">;</span><span class="x"> </span><span class="n">i</span><span class="o">++</span><span class="x"> </span><span class="p">{</span><span class="x">
-      </span><span class="n">r</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span><span class="x">
-      </span><span class="n">g</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span><span class="x">
-      </span><span class="n">b</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">0.2</span><span class="x">
-      </span><span class="n">ir</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">int</span><span class="p">(</span><span class="m">255.99</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">r</span><span class="p">)</span><span class="x">
-      </span><span class="n">ig</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">int</span><span class="p">(</span><span class="m">255.99</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">g</span><span class="p">)</span><span class="x">
-      </span><span class="n">ib</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">int</span><span class="p">(</span><span class="m">255.99</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">b</span><span class="p">)</span><span class="x">
-      </span><span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">"%d %d %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="x"> </span><span class="n">ir</span><span class="p">,</span><span class="x"> </span><span class="n">ig</span><span class="p">,</span><span class="x"> </span><span class="n">ib</span><span class="p">)</span><span class="x">
-    </span><span class="p">}</span><span class="x">
-  </span><span class="p">}</span><span class="x">
-</span><span class="p">}</span><span class="x">
-</span></code></pre>
-</div>
-
-<p><img src="/assets/img/out1.jpg" alt="" /></p>
-
-<p>After asking my friend a few questions, I understand a little more about what the code is doing. <code class="highlighter-rouge">nx</code> and <code class="highlighter-rouge">ny</code> represent the dimensions of the image created. So there are 200x100 pixels in the image created. Each pixel has a rgb value, where each color is represented in bytes: [0, 255]. Each pixel’s value is adjusted by a fraction, akin to how light changes an infinitesimal amount to create a rainbow. As the <code class="highlighter-rouge">b</code> value stays the same, the <code class="highlighter-rouge">r</code>, <code class="highlighter-rouge">g</code> values change by fractions to create the red-green spectrum we see in the output.</p>
-
-           
-          <a class="read-more" href="/projects/2016/12/22/Chapter-One-Output-an-Image.html"> »  </a>
         </p> 
       </div>
       <footer class="post_meta">

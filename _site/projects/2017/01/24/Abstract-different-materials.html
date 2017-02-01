@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Archive</title>
-  <meta name="description" content="">
+  <title>Abstract Different Materials</title>
+  <meta name="description" content="Getting to the real meat/exciting part of the project. By creating Metal and Lambertian materials, I learned how each material interacts with rays.Taking int...">
 
   <!-- evil icon -->
 
@@ -16,7 +16,7 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/archive.html">
+  <link rel="canonical" href="http://localhost:4000/projects/2017/01/24/Abstract-different-materials.html">
   <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 
   <!-- Google analytics -->
@@ -70,115 +70,55 @@
 
         <div class="nine columns" style="z-index:100;">
           <div class="wrapper">
-            <div>
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h2>Archive</h2>
+  <header class="artilce_header">
+    <h1 class="artilce_title" itemprop="name headline">Abstract Different Materials</h1>
+    <p class="artilce_meta"><time datetime="2017-01-24T12:34:26-06:00" itemprop="datePublished">Jan 24, 2017</time></p>
+  </header>
 
-  <section class="archive_list">
-    
+  <div class="article-content" itemprop="articleBody">
+    <p>Getting to the real meat/exciting part of the project. By creating Metal and Lambertian materials, I learned how each material interacts with rays.</p>
 
-    <div class="category-name">
-      <h2>Reflections</h2>
-    </div>
-    
+<p>Taking into account the point a ray hits a sphere, let’s say <em>N</em> is the Normal of the point. A reflected ray’s unit vector <em>v</em> will have the direction <em>(v + 2B)</em>, where <em>B</em> is the dot product of the vector <em>v</em> and the hit point’s normal <em>N</em>. The results in the projection of the normal vector onto the ray, as seen with the following code:</p>
 
-    <div class="post_title">
-      <a href="/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html">Reflections as a Software Engineer</a>
-      <span class="date">16 Dec, 2016</span>
-    </div>
+<div class="language-go highlighter-rouge"><pre class="highlight"><code><span class="k">func</span><span class="x"> </span><span class="n">Reflect</span><span class="p">(</span><span class="n">v</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="p">,</span><span class="x"> </span><span class="n">n</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="p">)</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="k">return</span><span class="x"> </span><span class="n">v</span><span class="o">.</span><span class="n">SubtractVector</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">MultiplyNum</span><span class="p">(</span><span class="m">2.0</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">v</span><span class="o">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre>
+</div>
 
-    
+<p>On the other hand, lambertian materials diffuse rays. Light is reflected at many angles, so we depict this through randomizing how the ray is scattered:</p>
 
-    
+<div class="language-go highlighter-rouge"><pre class="highlight"><code><span class="n">target</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">AddVector</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">Normal</span><span class="p">)</span><span class="o">.</span><span class="n">AddVector</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">RandomInUnitSphere</span><span class="p">())</span><span class="x">
+</span><span class="o">*</span><span class="n">scattered</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Ray</span><span class="p">{</span><span class="n">Origin</span><span class="o">:</span><span class="x"> </span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="p">,</span><span class="x"> </span><span class="n">Direction</span><span class="o">:</span><span class="x"> </span><span class="n">target</span><span class="o">.</span><span class="n">SubtractVector</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="p">)}</span><span class="x">
+</span></code></pre>
+</div>
 
-    <div class="category-name">
-      <h2>Goals</h2>
-    </div>
-    
+<p>Modifying <code class="highlighter-rouge">main.go</code> to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:</p>
 
-    <div class="post_title">
-      <a href="/goals/2016/12/17/it's-alive.html">It's alive!</a>
-      <span class="date">17 Dec, 2016</span>
-    </div>
+<p><img src="/assets/img/fuzz1.png" alt="" /></p>
 
-    
+  </div>
 
-    
+  <footer class="article-footer">
 
-    <div class="category-name">
-      <h2>Projects</h2>
-    </div>
-    
+  <section class="share">
+  <a class="share-link" href="https://twitter.com/srchen22" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    Twitter
+  </a>
+  <a class="share-link" href="https://www.facebook.com/LudicoloLoco" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    Facebook
+  </a>
+  <a class="share-link" href="https://plus.google.com/u/0/101510652534710624529" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
+    Google+
+  </a>
+</section>
 
-    <div class="post_title">
-      <a href="/projects/2017/01/24/Abstract-different-materials.html">Abstract Different Materials</a>
-      <span class="date">24 Jan, 2017</span>
-    </div>
 
-    
+  <hr/>
 
-    <div class="post_title">
-      <a href="/projects/2017/01/17/Adding-Materials-to-Objects.html">Adding Materials to Objects</a>
-      <span class="date">17 Jan, 2017</span>
-    </div>
-
-    
-
-    <div class="post_title">
-      <a href="/projects/2017/01/13/Debugging-and-Chapter-5.html">Debugging and Chapter 5</a>
-      <span class="date">13 Jan, 2017</span>
-    </div>
-
-    
-
-    <div class="post_title">
-      <a href="/go/projects/2017/01/05/Jotting-notes-about-go.html">Refactoring and jotting notes about go</a>
-      <span class="date">5 Jan, 2017</span>
-    </div>
-
-    
-
-    <div class="post_title">
-      <a href="/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html">Chapter Three: Rays, a simple camera and background</a>
-      <span class="date">27 Dec, 2016</span>
-    </div>
-
-    
-
-    <div class="post_title">
-      <a href="/projects/2016/12/22/Chapter-One-Output-an-Image.html">Chapter One: Output an Image</a>
-      <span class="date">22 Dec, 2016</span>
-    </div>
-
-    
-
-    <div class="post_title">
-      <a href="/projects/2016/12/18/Setting-Up-Go-Environment.html">Setting Up Go Environment</a>
-      <span class="date">18 Dec, 2016</span>
-    </div>
-
-    
-
-    
-
-    <div class="category-name">
-      <h2>Go</h2>
-    </div>
-    
-
-    <div class="post_title">
-      <a href="/go/projects/2017/01/05/Jotting-notes-about-go.html">Refactoring and jotting notes about go</a>
-      <span class="date">5 Jan, 2017</span>
-    </div>
-
-    
-
-    
-
-  </section>
-
-  <footer class="article-footer" mar>
-    <section class="author">
+  <section class="author">
   <div class="authorimage box" style="background: url(/assets/img/Sarah.jpg)"></div>
   <div class="authorinfo box">
     <p>Author | Sarah Chen</p>
@@ -188,10 +128,13 @@
   </div>
 </section>
 
+
   </footer>
-</div>
+
+  
 
 
+</article>
 
           </div>
         </div>
