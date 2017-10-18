@@ -5,6 +5,8 @@ date: 2016-12-16 14:30:26 -0600
 categories: Reflections
 ---
 
+[Disclosure: I left IBM around June 2017, and joined Facebook shortly after. I'm forever thankful for all the opportunities IBM offered me.]
+
 It\'s been about six months since I joined IBM as a software engineer. About the amount of time people say it takes for someone to become fully accustomed to the job and its expectations. To be honest, I feel like I\'ve changed a lot in the past six months in terms of mindset, character, and the actions I take.
 
 I used to be hesitant about asking for help, and doubted every decision I made. Now I realize how much time I waste when I\'m hesitant or doubtful. Instead, I just don\'t think about it. I ask questions when I need clarification or when I\'m confused. I advocate for myself and let people know I want to be more involved. I encourage myself to speak up by applauding myself silently whenever I speak to a group of people. I build confidence in the code I write by having more pairs of eyes read my code and provide feedback. My goal is to learn more, so I just keep going and I go out there to learn more.

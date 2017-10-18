@@ -16,8 +16,8 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html">
-  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="https://schen22.github.io/projects/2016/12/22/Chapter-One-Output-an-Image.html">
+  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="https://schen22.github.io/feed.xml">
 
   <!-- Google analytics -->
   <script>
@@ -74,60 +74,52 @@
 
   <header class="artilce_header">
     <h1 class="artilce_title" itemprop="name headline">Chapter One: Output an Image</h1>
-    <p class="artilce_meta"><time datetime="2016-12-22T20:56:26-06:00" itemprop="datePublished">Dec 22, 2016</time></p>
+    <p class="artilce_meta"><time datetime="2016-12-22T18:56:26-08:00" itemprop="datePublished">Dec 22, 2016</time></p>
   </header>
 
   <div class="article-content" itemprop="articleBody">
-    <p>Why did I choose to implement the project in Go?</p>
+    Why did I choose to implement the project in Go?
 
-<p>I’ve been wanting to learn it to understand how it helps concurrency. Plus I was influenced by a friend to take this as an opportunity to learn the language.</p>
+I've been wanting to learn it to understand how it helps concurrency. Plus I was influenced by a friend to take this as an opportunity to learn the language.
 
-<p>Lessons learned:</p>
+Lessons learned:
 
-<ul>
-  <li>I need to review linear algebra.</li>
-  <li>Homogeneous coordinates can represent points at infinity and finite points. Somehow this matters for computer graphics and 3D computer vision?
-    <ul>
-      <li>Vectors for graphics programs are 4D
-        <ul>
-          <li>For geometry: 3D + homogeneous coordinate.</li>
-          <li>For colors: RGB plus an alpha transparency channel.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Pixels are written left to right, top to bottom.</li>
-  <li>Red goes to black from left to right.</li>
-  <li>Green goes from black to green from bottom to top.</li>
-</ul>
+* I need to review linear algebra.
+* Homogeneous coordinates can represent points at infinity and finite points. Somehow this matters for computer graphics and 3D computer vision?
+  * Vectors for graphics programs are 4D
+    * For geometry: 3D + homogeneous coordinate.
+    * For colors: RGB plus an alpha transparency channel.
+* Pixels are written left to right, top to bottom.
+* Red goes to black from left to right.
+* Green goes from black to green from bottom to top.
 
-<div class="language-go highlighter-rouge"><pre class="highlight"><code><span class="k">package</span><span class="x"> </span><span class="n">main</span><span class="x">
+```go
+package main
 
-</span><span class="k">import</span><span class="x"> </span><span class="s">"fmt"</span><span class="x">
+import "fmt"
 
-</span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
-  </span><span class="n">nx</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">200</span><span class="x">
-  </span><span class="n">ny</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">100</span><span class="x">
+func main() {
+  nx := 200
+  ny := 100
 
-  </span><span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">"P3</span><span class="se">\n</span><span class="s">%d %d</span><span class="se">\n</span><span class="s">255</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="x"> </span><span class="n">nx</span><span class="p">,</span><span class="x"> </span><span class="n">ny</span><span class="p">)</span><span class="x">
-  </span><span class="k">for</span><span class="x"> </span><span class="n">j</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">ny</span><span class="x"> </span><span class="o">-</span><span class="x"> </span><span class="m">1</span><span class="p">;</span><span class="x"> </span><span class="n">j</span><span class="x"> </span><span class="o">&gt;=</span><span class="x"> </span><span class="m">0</span><span class="p">;</span><span class="x"> </span><span class="n">j</span><span class="o">--</span><span class="x"> </span><span class="p">{</span><span class="x">
-    </span><span class="k">for</span><span class="x"> </span><span class="n">i</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">0</span><span class="p">;</span><span class="x"> </span><span class="n">i</span><span class="x"> </span><span class="o">&lt;</span><span class="x"> </span><span class="n">nx</span><span class="p">;</span><span class="x"> </span><span class="n">i</span><span class="o">++</span><span class="x"> </span><span class="p">{</span><span class="x">
-      </span><span class="n">r</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span><span class="x">
-      </span><span class="n">g</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="kt">float64</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span><span class="x">
-      </span><span class="n">b</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">0.2</span><span class="x">
-      </span><span class="n">ir</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">int</span><span class="p">(</span><span class="m">255.99</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">r</span><span class="p">)</span><span class="x">
-      </span><span class="n">ig</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">int</span><span class="p">(</span><span class="m">255.99</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">g</span><span class="p">)</span><span class="x">
-      </span><span class="n">ib</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="kt">int</span><span class="p">(</span><span class="m">255.99</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">b</span><span class="p">)</span><span class="x">
-      </span><span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">"%d %d %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="x"> </span><span class="n">ir</span><span class="p">,</span><span class="x"> </span><span class="n">ig</span><span class="p">,</span><span class="x"> </span><span class="n">ib</span><span class="p">)</span><span class="x">
-    </span><span class="p">}</span><span class="x">
-  </span><span class="p">}</span><span class="x">
-</span><span class="p">}</span><span class="x">
-</span></code></pre>
-</div>
+  fmt.Printf("P3\n%d %d\n255\n", nx, ny)
+  for j := ny - 1; j >= 0; j-- {
+    for i := 0; i < nx; i++ {
+      r := float64(i) / float64(nx)
+      g := float64(j) / float64(ny)
+      b := 0.2
+      ir := int(255.99 * r)
+      ig := int(255.99 * g)
+      ib := int(255.99 * b)
+      fmt.Printf("%d %d %d\n", ir, ig, ib)
+    }
+  }
+}
+```
 
-<p><img src="/assets/img/out1.jpg" alt="" /></p>
+![]({{site.baseurl}}/assets/img/out1.jpg)
 
-<p>After asking my friend a few questions, I understand a little more about what the code is doing. <code class="highlighter-rouge">nx</code> and <code class="highlighter-rouge">ny</code> represent the dimensions of the image created. So there are 200x100 pixels in the image created. Each pixel has a rgb value, where each color is represented in bytes: [0, 255]. Each pixel’s value is adjusted by a fraction, akin to how light changes an infinitesimal amount to create a rainbow. As the <code class="highlighter-rouge">b</code> value stays the same, the <code class="highlighter-rouge">r</code>, <code class="highlighter-rouge">g</code> values change by fractions to create the red-green spectrum we see in the output.</p>
+After asking my friend a few questions, I understand a little more about what the code is doing. `nx` and `ny` represent the dimensions of the image created. So there are 200x100 pixels in the image created. Each pixel has a rgb value, where each color is represented in bytes: [0, 255]. Each pixel's value is adjusted by a fraction, akin to how light changes an infinitesimal amount to create a rainbow. As the `b` value stays the same, the `r`, `g` values change by fractions to create the red-green spectrum we see in the output.
 
   </div>
 

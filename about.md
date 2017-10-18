@@ -4,10 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Hi I\'m Sarah Chen, a software engineer at IBM in Austin, TX and recent spring 2016 graduate of UC Berkeley. My current interests are in mobile development and data analysis. Besides tech, I enjoy teaching, cooking, running, hiking, and wandering. Funnish fact - I tend to creep on and take pictures of any dogs I run into.
+Hey it's Sarah! I'm a software engineer working at Facebook. My current interests are in mobile development and random stuff like figuring out how to keep my apartment clean. I also enjoy teaching, cooking, running, hiking, and wandering. Funnish fact - I tend to creep on and take pictures of any dogs I run into.
 
-Here\'s a dog for you. Cause doggies and food. Why not?
+Feel free to explore this website for reflections on struggles, learnings, side projects; thoughts I have on life that I think are worth jotting and sharing.  
 
-![]({{site.baseurl}}/assets/img/pug.gif)
+I used to have a dog stealing a cookie on this page, but I'm feeling more adventurous these days. Naturally:
 
-Credits to giphy for the gif. :)
+![]({{site.baseurl}}/assets/img/nausicaa.jpg)
+
+Nausicaa. Because the movie best reflects my ideal world, and Nausicaa is my inspiration. Thank goodness for the wonderful, amazing Miyazaki.

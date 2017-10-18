@@ -16,8 +16,8 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html">
-  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="https://schen22.github.io/projects/2017/01/17/Adding-Materials-to-Objects.html">
+  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="https://schen22.github.io/feed.xml">
 
   <!-- Google analytics -->
   <script>
@@ -74,45 +74,41 @@
 
   <header class="artilce_header">
     <h1 class="artilce_title" itemprop="name headline">Adding Materials to Objects</h1>
-    <p class="artilce_meta"><time datetime="2017-01-17T12:34:26-06:00" itemprop="datePublished">Jan 17, 2017</time></p>
+    <p class="artilce_meta"><time datetime="2017-01-17T10:34:26-08:00" itemprop="datePublished">Jan 17, 2017</time></p>
   </header>
 
   <div class="article-content" itemprop="articleBody">
-    <p>In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.</p>
+    In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.
 
-<p>This difference allows the blending of edge pixels (pixels in between the background and the foreground) as seen in the comparison between the picture from last chapter and the picture after averaging the pixel colors.</p>
+This difference allows the blending of edge pixels (pixels in between the background and the foreground) as seen in the comparison between the picture from last chapter and the picture after averaging the pixel colors.
 
-<p><img src="/assets/img/out5out6_comparison.jpg" alt="" /></p>
+![]({{site.baseurl}}/assets/img/out5out6_comparison.jpg)
 
-<p>As I moved onto creating more things within the images, I learned to create objects and materials. The fun ensued. More progress and cooler pictures were formed!</p>
+As I moved onto creating more things within the images, I learned to create objects and materials. The fun ensued. More progress and cooler pictures were formed!
 
-<p>The following pictures are examples of diffuse objects that take on the color of their surroundings, adjusted for their own intrinsic color. As Peter Shirley explains in his book, “Light that reflects off a diffuse surface has its direction randomized.” At the same time, the darker the surface is, the more likely absorption is.</p>
+The following pictures are examples of diffuse objects that take on the color of their surroundings, adjusted for their own intrinsic color. As Peter Shirley explains in his book, "Light that reflects off a diffuse surface has its direction randomized." At the same time, the darker the surface is, the more likely absorption is.
 
-<p>The algorithm to create this is as follows (somewhat summarized):</p>
+The algorithm to create this is as follows (somewhat summarized):
 
-<blockquote>
-  <p>Pick a random point <em>s</em> on a unit radius sphere tangent to the hitpoint. Send a ray from the hitpoint <em>p</em> to the random point <em>s</em>. The sphere then has center (p+N), where <em>N</em> is the length of the ray.</p>
-</blockquote>
+> Pick a random point _s_ on a unit radius sphere tangent to the hitpoint. Send a ray from the hitpoint _p_ to the random point _s_. The sphere then has center (p+N), where _N_ is the length of the ray.
 
-<p>Next Peter Shirley notes:</p>
+Next Peter Shirley notes:
 
-<blockquote>
-  <p>Pick a random point in a unit radius sphere <em>centered at the origin</em> (rather than tangent to the hitpoint) by using a <em>rejection method</em>. Pick a random point in the unit cube where <em>x, y</em> and <em>z</em> range from -1 to +1, rejecting all points that do not fall within the sphere.</p>
-</blockquote>
+> Pick a random point in a unit radius sphere _centered at the origin_ (rather than tangent to the hitpoint) by using a *rejection method*. Pick a random point in the unit cube where _x, y_ and _z_ range from -1 to +1, rejecting all points that do not fall within the sphere.
 
-<p>Rejection method is a technique used to generate observations from a distribution.</p>
+Rejection method is a technique used to generate observations from a distribution.
 
-<p>The described method gives us the following image:</p>
+The described method gives us the following image:
 
-<p><img src="/assets/img/out7.jpg" alt="" /></p>
+![]({{site.baseurl}}/assets/img/out7.jpg)
 
-<p>After we adjust for the image to be ‘gamma corrected’, we see a light gray color in the image:</p>
+After we adjust for the image to be 'gamma corrected', we see a light gray color in the image:
 
-<p><img src="/assets/img/out8.jpg" alt="" /></p>
+![]({{site.baseurl}}/assets/img/out8.jpg)
 
-<p>Apparently the above picture hosts a “shadow acne problem.” In other word pimply splotches due to rays reflecting off of not at exactly t = 0, but instead at t being very close to zero. In order to remove the “shadow acne problem” we have to better specify to ignore hits very near zero, resulting in the following picture:</p>
+Apparently the above picture hosts a "shadow acne problem." In other word pimply splotches due to rays reflecting off of not at exactly t = 0, but instead at t being very close to zero. In order to remove the "shadow acne problem" we have to better specify to ignore hits very near zero, resulting in the following picture:
 
-<p><img src="/assets/img/out8-without-pimples.jpg" alt="" /></p>
+![]({{site.baseurl}}/assets/img/out8-without-pimples.jpg)
 
   </div>
 

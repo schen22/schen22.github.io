@@ -3,14 +3,14 @@
   <channel>
     <title>Sarah Chen</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Mar 2017 23:12:30 -0500</pubDate>
-    <lastBuildDate>Sun, 12 Mar 2017 23:12:30 -0500</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <link>https://schen22.github.io/</link>
+    <atom:link href="https://schen22.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 Oct 2017 23:30:24 -0700</pubDate>
+    <lastBuildDate>Tue, 17 Oct 2017 23:30:24 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.0</generator>
     
       <item>
-        <title>Gotta Catch 'em All</title>
+        <title>Gotta Catch &#39;em All</title>
         <description>&lt;p&gt;It’s been a while since I’ve posted and I feel I owe it to myself to explain what I’ve been up to in order to figure out if I can prevent such a long delay from occurring again. A lot has happened in the past few weeks since I last worked on my side project. Unfortunately I was in the middle of writing a post describing learning about dialectrics that work got much busier than expected. A good busy of course! My project proposal at work was approved and I had to juggle defining the vision of the new project, being team lead, teaching scrum master responsibilities to the next scrum master, and developing for both projects I was in charge of.&lt;/p&gt;
 
 &lt;p&gt;The really awesome part though, was that I was also able to continue an Pokemon augmented reality project I’d been working on with two others at work; first as an event for IBM’s “Take Your Kid’s to Work Day,” then at talks for local charter schools, and just this past Tuesday, at &lt;a href=&quot;http://sxswedu.com/expo&quot;&gt;SXSW’s Education Exposition&lt;/a&gt; by participating in &lt;a href=&quot;https://www.tealsk12.org/&quot;&gt;TEALS’ Science Fair&lt;/a&gt;. TEALS stands for Technology Education and Literacy in Schools and helps promote computer science education courses in high schools. A huge passion of mine is to encourage and drive STEM education for K-12 public schools because I believe access to STEM drives more opportunities. STEM is growing at a rapid pace, and we need our future leaders, engineers, scientists, teachers and young professionals to be on the forefront of that change, earlier on. So what way is better than inspiring students into STEM through Pokemon? Makes it fun for both me and the audience.&lt;/p&gt;
@@ -39,14 +39,14 @@
 
 &lt;p&gt;A 6-year old kid tried to peek behind the phone to see if Bulbasaur was hiding behind it. As he realized nothing was there, he looked back at the screen and yelped in delight again as he saw Bulbasaur again. He tried to hold out his hand to touch Bulbasaur, to locate where he was on the map; only to find his hand again with Bulbasaur in the background! He repeated the same actions again, and looked up in surprise. Right then and there, his look to me and the sparkle and hint at magic made all the hours I put into improving, debugging and testing the app, printing vinyl prints and coordinating volunteer efforts, worth it. Here’s to creating more magical moments for people to experience.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 12 Mar 2017 01:20:26 -0600</pubDate>
-        <link>http://localhost:4000/reflections/projects/2017/03/12/Gotta-Catch-Em-All.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/projects/2017/03/12/Gotta-Catch-Em-All.html</guid>
+        <pubDate>Sat, 11 Mar 2017 23:20:26 -0800</pubDate>
+        <link>https://schen22.github.io/reflections/projects/2017/03/11/Gotta-Catch-Em-All.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/reflections/projects/2017/03/11/Gotta-Catch-Em-All.html</guid>
         
         
-        <category>Reflections</category>
+        <category>reflections</category>
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
@@ -56,29 +56,27 @@
 
 &lt;p&gt;Taking into account the point a ray hits a sphere, let’s say &lt;em&gt;N&lt;/em&gt; is the Normal of the point. A reflected ray’s unit vector &lt;em&gt;v&lt;/em&gt; will have the direction &lt;em&gt;(v + 2B)&lt;/em&gt;, where &lt;em&gt;B&lt;/em&gt; is the dot product of the vector &lt;em&gt;v&lt;/em&gt; and the hit point’s normal &lt;em&gt;N&lt;/em&gt;. The results in the projection of the normal vector onto the ray, as seen with the following code:&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Reflect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec3&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SubtractVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MultiplyNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func Reflect(v models.Vec3, n models.Vec3) models.Vec3 {
+	return v.SubtractVector(n.MultiplyNum(2.0 * v.Dot(n)))
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;On the other hand, lambertian materials diffuse rays. Light is reflected at many angles, so we depict this through randomizing how the ray is scattered:&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RandomInUnitSphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scattered&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Origin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Direction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SubtractVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;target := rec.P.AddVector(rec.Normal).AddVector(models.RandomInUnitSphere())
+*scattered = models.Ray{Origin: rec.P, Direction: target.SubtractVector(rec.P)}
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Modifying &lt;code class=&quot;highlighter-rouge&quot;&gt;main.go&lt;/code&gt; to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:&lt;/p&gt;
+&lt;p&gt;Modifying &lt;code&gt;main.go&lt;/code&gt; to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/fuzz1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 24 Jan 2017 12:34:26 -0600</pubDate>
-        <link>http://localhost:4000/projects/2017/01/24/Abstract-different-materials.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2017/01/24/Abstract-different-materials.html</guid>
+        <pubDate>Tue, 24 Jan 2017 10:34:26 -0800</pubDate>
+        <link>https://schen22.github.io/projects/2017/01/24/Abstract-different-materials.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/projects/2017/01/24/Abstract-different-materials.html</guid>
         
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
@@ -120,12 +118,12 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/out8-without-pimples.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 17 Jan 2017 12:34:26 -0600</pubDate>
-        <link>http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</guid>
+        <pubDate>Tue, 17 Jan 2017 10:34:26 -0800</pubDate>
+        <link>https://schen22.github.io/projects/2017/01/17/Adding-Materials-to-Objects.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/projects/2017/01/17/Adding-Materials-to-Objects.html</guid>
         
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
@@ -133,53 +131,51 @@
         <title>Debugging and Chapter 5</title>
         <description>&lt;p&gt;So it turned out my bug was including the name of the interface within my struct. So for example, I had:&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HitableList&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hitable&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hitable&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListSize&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;type HitableList struct {
+	Hitable
+	List     []Hitable
+	ListSize int
+}
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;However, when I initialized the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList&lt;/code&gt; object, I would leave the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hitable&lt;/code&gt; property uninitialized with &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList(List: list, ListSize: size)&lt;/code&gt;. This would then create the value: &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;nil&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-100.5&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;that resulted in the nil pointer dereference error I had received. At the same time, I’m not really sure why the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hit&lt;/code&gt; function would have ever accessed these &lt;code class=&quot;highlighter-rouge&quot;&gt;nil&lt;/code&gt; values. In any case, once I removed all the extraneous &lt;code class=&quot;highlighter-rouge&quot;&gt;Hitable&lt;/code&gt; properties in all the objects I had, I was able to produce this (wrong) image.&lt;/p&gt;
+&lt;p&gt;However, when I initialized the &lt;code&gt;HitableList&lt;/code&gt; object, I would leave the &lt;code&gt;Hitable&lt;/code&gt; property uninitialized with &lt;code&gt;HitableList(List: list, ListSize: size)&lt;/code&gt;. This would then create the value: &lt;code&gt;{&amp;lt;nil&amp;gt; [{ {0 0 -1} 0.5} { {0 -100.5 -1} 100}] 2}&lt;/code&gt;that resulted in the nil pointer dereference error I had received. At the same time, I’m not really sure why the &lt;code&gt;Hit&lt;/code&gt; function would have ever accessed these &lt;code&gt;nil&lt;/code&gt; values. In any case, once I removed all the extraneous &lt;code&gt;Hitable&lt;/code&gt; properties in all the objects I had, I was able to produce this (wrong) image.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/out5bug.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As I added print statements into my &lt;code class=&quot;highlighter-rouge&quot;&gt;color&lt;/code&gt; function to better understand why the sphere wasn’t being created, I realized my &lt;code class=&quot;highlighter-rouge&quot;&gt;HitRecord&lt;/code&gt; object kept getting created. Thus I had to modify my functions and function calls to pass by reference to make sure the record of the surface normals on the object would be recorded and tracked, thereby producing the following final image:&lt;/p&gt;
+&lt;p&gt;As I added print statements into my &lt;code&gt;color&lt;/code&gt; function to better understand why the sphere wasn’t being created, I realized my &lt;code&gt;HitRecord&lt;/code&gt; object kept getting created. Thus I had to modify my functions and function calls to pass by reference to make sure the record of the surface normals on the object would be recorded and tracked, thereby producing the following final image:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/out5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 13 Jan 2017 12:34:26 -0600</pubDate>
-        <link>http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</guid>
+        <pubDate>Fri, 13 Jan 2017 10:34:26 -0800</pubDate>
+        <link>https://schen22.github.io/projects/2017/01/13/Debugging-and-Chapter-5.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/projects/2017/01/13/Debugging-and-Chapter-5.html</guid>
         
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
       <item>
         <title>Refactoring and jotting notes about go</title>
-        <description>&lt;p&gt;I hit somewhat of a rut after refactoring. I ran into this error message after implementing a &lt;code class=&quot;highlighter-rouge&quot;&gt;hitable&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;hitableList&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;sphere&lt;/code&gt; objects for the ray tracer:&lt;/p&gt;
+        <description>&lt;p&gt;I hit somewhat of a rut after refactoring. I ran into this error message after implementing a &lt;code&gt;hitable&lt;/code&gt;, &lt;code&gt;hitableList&lt;/code&gt;, and &lt;code&gt;sphere&lt;/code&gt; objects for the ray tracer:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;go run main.go &amp;gt; assets/out5.png
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ go run main.go &amp;gt; assets/out5.png
 panic: runtime error: invalid memory address or nil pointer dereference
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;signal SIGSEGV: segmentation violation &lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x1 &lt;span class=&quot;nv&quot;&gt;addr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x20 &lt;span class=&quot;nv&quot;&gt;pc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x5efd3]
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x20 pc=0x5efd3]
 
-goroutine 1 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;running]:
-panic&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x92420, 0xc42000a0c0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+goroutine 1 [running]:
+panic(0x92420, 0xc42000a0c0)
 	/usr/local/Cellar/go/1.7.4_1/libexec/src/runtime/panic.go:500 +0x1a1
-golang-ray-tracer/objects.&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;HitableList&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.Hit&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0xc420014180, 0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0x0, 0x7fefffffffffffff, 0x0, ...&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+golang-ray-tracer/objects.(*HitableList).Hit(0xc420014180, 0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0x0, 0x7fefffffffffffff, 0x0, ...)
 	&amp;lt;autogenerated&amp;gt;:2 +0x53
-main.color&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0xfa1c0, 0xc420014180, 0xc42000a2c0, 0x6, ...&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+main.color(0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0xfa1c0, 0xc420014180, 0xc42000a2c0, 0x6, ...)
 	/Users/sarahchen/Documents/go/src/golang-ray-tracer/main.go:14 +0xdb
-main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+main.main()
 	/Users/sarahchen/Documents/go/src/golang-ray-tracer/main.go:51 +0x4c6
-&lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;status 2
+exit status 2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
-&lt;p&gt;Thus the lack of coding the past few days. Though having to return to work this week also impeded progress. In any case, while this error means my program’s unable to access the list I created within my &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList&lt;/code&gt; data structure, instead of trying to do a quick fix, I really need to go back to the basics and figure out what I’m doing in my code.&lt;/p&gt;
+&lt;p&gt;Thus the lack of coding the past few days. Though having to return to work this week also impeded progress. In any case, while this error means my program’s unable to access the list I created within my &lt;code&gt;HitableList&lt;/code&gt; data structure, instead of trying to do a quick fix, I really need to go back to the basics and figure out what I’m doing in my code.&lt;/p&gt;
 
 &lt;p&gt;In other words I need to learn what rendering objects means.&lt;/p&gt;
 
@@ -193,41 +189,39 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 
 &lt;p&gt;Struct is a type that contains named field.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt; introduces a new type, followed by the name of the type (Circle). &lt;code class=&quot;highlighter-rouge&quot;&gt;struct&lt;/code&gt; keyword indicates we’re defining a &lt;code class=&quot;highlighter-rouge&quot;&gt;struct&lt;/code&gt; type and a list of fields inside the curly braces.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;type&lt;/code&gt; introduces a new type, followed by the name of the type (Circle). &lt;code&gt;struct&lt;/code&gt; keyword indicates we’re defining a &lt;code&gt;struct&lt;/code&gt; type and a list of fields inside the curly braces.&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;type Circle struct {
+  x, y, r float64
+}
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pi&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Go automatically passes a pointer into this method without the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; operator&lt;/p&gt;
+func (c *Circle) area() float64 {
+  return math.Pi * c.r*c.r
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Go automatically passes a pointer into this method without the &lt;code&gt;&amp;amp;&lt;/code&gt; operator&lt;/p&gt;
 
 &lt;h1 id=&quot;pointers&quot;&gt;Pointers.&lt;/h1&gt;
 
-&lt;p&gt;If there’s one thing I learned about Go and C, it’s that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last &lt;a href=&quot;https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719&quot;&gt;push&lt;/a&gt;, you can see how I had to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hit&lt;/code&gt; function by reference in order for the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitRecord&lt;/code&gt; struct to modify the values of its properties without creating a new object.&lt;/p&gt;
+&lt;p&gt;If there’s one thing I learned about Go and C, it’s that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last &lt;a href=&quot;https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719&quot;&gt;push&lt;/a&gt;, you can see how I had to call the &lt;code&gt;Hit&lt;/code&gt; function by reference in order for the &lt;code&gt;HitRecord&lt;/code&gt; struct to modify the values of its properties without creating a new object.&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_min&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_max&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HitRecord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func (s Sphere) Hit(r models.Ray, t_min float64, t_max float64, rec *HitRecord) bool {
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Similarly, in the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Hitable&lt;/code&gt; interface, I needed to pass in a reference to the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitRecord&lt;/code&gt; rather than create new objects that don’t store or allow the object to act as a record to whether the object is hittable.&lt;/p&gt;
+&lt;p&gt;Similarly, in the &lt;code&gt;HitableList&lt;/code&gt; and &lt;code&gt;Hitable&lt;/code&gt; interface, I needed to pass in a reference to the &lt;code&gt;HitRecord&lt;/code&gt; rather than create new objects that don’t store or allow the object to act as a record to whether the object is hittable.&lt;/p&gt;
 
 &lt;p&gt;Talking about it now makes it seem like a noobish mistake, but lesson learned! Pointers are friends :)&lt;/p&gt;
 </description>
-        <pubDate>Thu, 05 Jan 2017 09:56:26 -0600</pubDate>
-        <link>http://localhost:4000/go/projects/2017/01/05/Jotting-notes-about-go.html</link>
-        <guid isPermaLink="true">http://localhost:4000/go/projects/2017/01/05/Jotting-notes-about-go.html</guid>
+        <pubDate>Thu, 05 Jan 2017 07:56:26 -0800</pubDate>
+        <link>https://schen22.github.io/go/projects/2017/01/05/Jotting-notes-about-go.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/go/projects/2017/01/05/Jotting-notes-about-go.html</guid>
         
         
-        <category>Go</category>
+        <category>go</category>
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
@@ -237,10 +231,10 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/out2-bug.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I went over my code in &lt;code class=&quot;highlighter-rouge&quot;&gt;main.go&lt;/code&gt; in the way I understood it:&lt;/p&gt;
+&lt;p&gt;I went over my code in &lt;code&gt;main.go&lt;/code&gt; in the way I understood it:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Begin the gradient background in the lower left corner: (-2, -1, -1). Define the width and height of the background to 4 and 2 units; respectively. Represent with the vectors: &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;4,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;2,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Begin the gradient background in the lower left corner: (-2, -1, -1). Define the width and height of the background to 4 and 2 units; respectively. Represent with the vectors: &lt;code&gt;{4, 0, 0}&lt;/code&gt; and &lt;code&gt;{0, 2, 0}&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;For each pixel between the coordinates, scale the ray of light with the horizontal and vertical vectors that are scaled incrementally with the magnitudes u, v.&lt;/li&gt;
   &lt;li&gt;Form the ray with the direction of the added horizontal, vertical scalars.&lt;/li&gt;
   &lt;li&gt;Find the color of the ray by finding its unit vector and scale the magnitude by the y-coordinate that’s bounded by [0, 1].&lt;/li&gt;
@@ -256,12 +250,12 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 
 &lt;p&gt;Onwards to Chapter 4 now! Adding a sphere. Maybe I’ll add more to this post later.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 27 Dec 2016 21:18:26 -0600</pubDate>
-        <link>http://localhost:4000/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html</guid>
+        <pubDate>Tue, 27 Dec 2016 19:18:26 -0800</pubDate>
+        <link>https://schen22.github.io/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html</guid>
         
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
@@ -290,40 +284,39 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
   &lt;li&gt;Green goes from black to green from bottom to top.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;package main
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+import &quot;fmt&quot;
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ny&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+func main() {
+  nx := 200
+  ny := 100
 
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;P3&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;%d %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ny&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ny&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ny&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ir&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255.99&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ig&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255.99&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ib&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255.99&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d %d %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+  fmt.Printf(&quot;P3\n%d %d\n255\n&quot;, nx, ny)
+  for j := ny - 1; j &amp;gt;= 0; j-- {
+    for i := 0; i &amp;lt; nx; i++ {
+      r := float64(i) / float64(nx)
+      g := float64(j) / float64(ny)
+      b := 0.2
+      ir := int(255.99 * r)
+      ig := int(255.99 * g)
+      ib := int(255.99 * b)
+      fmt.Printf(&quot;%d %d %d\n&quot;, ir, ig, ib)
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/out1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After asking my friend a few questions, I understand a little more about what the code is doing. &lt;code class=&quot;highlighter-rouge&quot;&gt;nx&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ny&lt;/code&gt; represent the dimensions of the image created. So there are 200x100 pixels in the image created. Each pixel has a rgb value, where each color is represented in bytes: [0, 255]. Each pixel’s value is adjusted by a fraction, akin to how light changes an infinitesimal amount to create a rainbow. As the &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt; value stays the same, the &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt; values change by fractions to create the red-green spectrum we see in the output.&lt;/p&gt;
+&lt;p&gt;After asking my friend a few questions, I understand a little more about what the code is doing. &lt;code&gt;nx&lt;/code&gt; and &lt;code&gt;ny&lt;/code&gt; represent the dimensions of the image created. So there are 200x100 pixels in the image created. Each pixel has a rgb value, where each color is represented in bytes: [0, 255]. Each pixel’s value is adjusted by a fraction, akin to how light changes an infinitesimal amount to create a rainbow. As the &lt;code&gt;b&lt;/code&gt; value stays the same, the &lt;code&gt;r&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt; values change by fractions to create the red-green spectrum we see in the output.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 22 Dec 2016 20:56:26 -0600</pubDate>
-        <link>http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html</guid>
+        <pubDate>Thu, 22 Dec 2016 18:56:26 -0800</pubDate>
+        <link>https://schen22.github.io/projects/2016/12/22/Chapter-One-Output-an-Image.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/projects/2016/12/22/Chapter-One-Output-an-Image.html</guid>
         
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
@@ -331,11 +324,11 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <title>Setting Up Go Environment</title>
         <description>&lt;p&gt;Writing out how I set up my environment so I can remember later:&lt;/p&gt;
 
-&lt;p&gt;I've downloaded the &lt;code class=&quot;highlighter-rouge&quot;&gt;go1.7.4darwin-amd64.pkg&lt;/code&gt; from &lt;a href=&quot;https://golang.org/dl/&quot;&gt;golang&lt;/a&gt;. Upon installing the package, the &lt;code class=&quot;highlighter-rouge&quot;&gt;usr/local/go/bin&lt;/code&gt; directory was put in my &lt;code class=&quot;highlighter-rouge&quot;&gt;PATH&lt;/code&gt; environment variable.&lt;/p&gt;
+&lt;p&gt;I&#39;ve downloaded the &lt;code&gt;go1.7.4darwin-amd64.pkg&lt;/code&gt; from &lt;a href=&quot;https://golang.org/dl/&quot;&gt;golang&lt;/a&gt;. Upon installing the package, the &lt;code&gt;usr/local/go/bin&lt;/code&gt; directory was put in my &lt;code&gt;PATH&lt;/code&gt; environment variable.&lt;/p&gt;
 
-&lt;p&gt;Now I need to figure out where to set my &lt;code class=&quot;highlighter-rouge&quot;&gt;GOPATH&lt;/code&gt; to. According to the documentation, the &lt;code class=&quot;highlighter-rouge&quot;&gt;GOPATH&lt;/code&gt; environment variable “specifies directories containing Go projects and their binaries outside the &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; folder for Go”.&lt;/p&gt;
+&lt;p&gt;Now I need to figure out where to set my &lt;code&gt;GOPATH&lt;/code&gt; to. According to the documentation, the &lt;code&gt;GOPATH&lt;/code&gt; environment variable “specifies directories containing Go projects and their binaries outside the &lt;code&gt;root&lt;/code&gt; folder for Go”.&lt;/p&gt;
 
-&lt;p&gt;Translation: it specifies where to look for Go code. Does that mean for every Go project, the &lt;code class=&quot;highlighter-rouge&quot;&gt;GOPATH&lt;/code&gt; will be different?&lt;/p&gt;
+&lt;p&gt;Translation: it specifies where to look for Go code. Does that mean for every Go project, the &lt;code&gt;GOPATH&lt;/code&gt; will be different?&lt;/p&gt;
 
 &lt;p&gt;Well according to the wiki, we use a single GOPATH:&lt;/p&gt;
 
@@ -343,25 +336,23 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
   &lt;p&gt;Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I guess I'll just create a directory that will contain all my Go code and add the following lines to my &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; so that I won’t have to set it every time I open my terminal.&lt;/p&gt;
+&lt;p&gt;I guess I&#39;ll just create a directory that will contain all my Go code and add the following lines to my &lt;code&gt;~/.bash_profile&lt;/code&gt; so that I won’t have to set it every time I open my terminal.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/Users/sarahchen/Documents/Personal/go&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOPATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;//&lt;/span&gt;://bin:&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/bin:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;export GOPATH=&quot;/Users/sarahchen/Documents/Personal/go&quot;
+export PATH=&quot;${GOPATH//://bin:}/bin:$PATH&quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
-&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bash_profile&lt;/code&gt; to reload the file and apply to your current terminal session.&lt;/p&gt;
+&lt;p&gt;Type &lt;code&gt;source ~/.bash_profile&lt;/code&gt; to reload the file and apply to your current terminal session.&lt;/p&gt;
 
-&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;go env&lt;/code&gt; to check all the environment variables for Go.&lt;/p&gt;
+&lt;p&gt;Run &lt;code&gt;go env&lt;/code&gt; to check all the environment variables for Go.&lt;/p&gt;
 
-&lt;p&gt;Word of advice - that last bit for setting the path environment variable, &lt;code class=&quot;highlighter-rouge&quot;&gt;:$PATH&lt;/code&gt;, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.&lt;/p&gt;
+&lt;p&gt;Word of advice - that last bit for setting the path environment variable, &lt;code&gt;:$PATH&lt;/code&gt;, is quite important. I accidentally didn&#39;t have it, and I immediately received these terrifying errors.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;
--bash: tail: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
--bash: cut: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
--bash: sed: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ cd
+-bash: tail: command not found
+-bash: cut: command not found
+-bash: sed: command not found
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;But ey, all is well! Fixed it by just resetting my PATH environment variables. To test it all, I followed this  &lt;a href=&quot;https://www.golang-book.com/guides/machine_setup#osx-finished&quot;&gt;link&lt;/a&gt; and celebrated by playing some Tetris.&lt;/p&gt;
 
@@ -371,18 +362,18 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 
 &lt;p&gt;Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO. Time to read the &lt;a href=&quot;https://golang.org/doc/code.html&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 18 Dec 2016 07:50:26 -0600</pubDate>
-        <link>http://localhost:4000/projects/2016/12/18/Setting-Up-Go-Environment.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2016/12/18/Setting-Up-Go-Environment.html</guid>
+        <pubDate>Sun, 18 Dec 2016 05:50:26 -0800</pubDate>
+        <link>https://schen22.github.io/projects/2016/12/18/Setting-Up-Go-Environment.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/projects/2016/12/18/Setting-Up-Go-Environment.html</guid>
         
         
-        <category>Projects</category>
+        <category>projects</category>
         
       </item>
     
       <item>
-        <title>It's alive!</title>
-        <description>&lt;p&gt;Wahoo! My website's live and functioning. MWAHAHA.&lt;/p&gt;
+        <title>It&#39;s alive!</title>
+        <description>&lt;p&gt;Wahoo! My website&#39;s live and functioning. MWAHAHA.&lt;/p&gt;
 
 &lt;p&gt;I wanted to build a website to keep track of, and hold myself accountable to the projects I want to build. I also wanted to test out how to use Jekyll and host pages on Github. For now, I can keep talking to myself on here instead of out loud! Win-win-win.&lt;/p&gt;
 
@@ -393,43 +384,45 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
   &lt;li&gt;Follow &lt;em&gt;Ray Tracing in One Weekend&lt;/em&gt; and implement in Go.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I'll move forward from there.&lt;/p&gt;
+&lt;p&gt;Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I&#39;ll move forward from there.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 17 Dec 2016 21:30:26 -0600</pubDate>
-        <link>http://localhost:4000/goals/2016/12/17/it's-alive.html</link>
-        <guid isPermaLink="true">http://localhost:4000/goals/2016/12/17/it's-alive.html</guid>
+        <pubDate>Sat, 17 Dec 2016 19:30:26 -0800</pubDate>
+        <link>https://schen22.github.io/goals/2016/12/17/it's-alive.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/goals/2016/12/17/it's-alive.html</guid>
         
         
-        <category>Goals</category>
+        <category>goals</category>
         
       </item>
     
       <item>
         <title>Reflections as a Software Engineer</title>
-        <description>&lt;p&gt;It's been about six months since I joined IBM as a software engineer. About the amount of time people say it takes for someone to become fully accustomed to the job and its expectations. To be honest, I feel like I've changed a lot in the past six months in terms of mindset, character, and the actions I take.&lt;/p&gt;
+        <description>&lt;p&gt;[Disclosure: I left IBM around June 2017, and joined Facebook shortly after. I’m forever thankful for all the opportunities IBM offered me.]&lt;/p&gt;
 
-&lt;p&gt;I used to be hesitant about asking for help, and doubted every decision I made. Now I realize how much time I waste when I'm hesitant or doubtful. Instead, I just don't think about it. I ask questions when I need clarification or when I'm confused. I advocate for myself and let people know I want to be more involved. I encourage myself to speak up by applauding myself silently whenever I speak to a group of people. I build confidence in the code I write by having more pairs of eyes read my code and provide feedback. My goal is to learn more, so I just keep going and I go out there to learn more.&lt;/p&gt;
+&lt;p&gt;It&#39;s been about six months since I joined IBM as a software engineer. About the amount of time people say it takes for someone to become fully accustomed to the job and its expectations. To be honest, I feel like I&#39;ve changed a lot in the past six months in terms of mindset, character, and the actions I take.&lt;/p&gt;
 
-&lt;p&gt;My favorite part about my job is having access to the depth and breadth of knowledge at IBM. I'm able to talk to people in Massachusetts, New York, China, Brazil, from my little standing desk in Austin. For an explanation of what I do at work - I'm currently helping build and maintain the Swift SDK for Watson services offered on Bluemix. This means I get the opportunity to also consume the SDK and write awesome demo apps to showcase all the services.&lt;/p&gt;
+&lt;p&gt;I used to be hesitant about asking for help, and doubted every decision I made. Now I realize how much time I waste when I&#39;m hesitant or doubtful. Instead, I just don&#39;t think about it. I ask questions when I need clarification or when I&#39;m confused. I advocate for myself and let people know I want to be more involved. I encourage myself to speak up by applauding myself silently whenever I speak to a group of people. I build confidence in the code I write by having more pairs of eyes read my code and provide feedback. My goal is to learn more, so I just keep going and I go out there to learn more.&lt;/p&gt;
 
-&lt;p&gt;The best days are when I reach out to the Watson Developer Cloud and discuss how to implement a model or interface with the goal to easily use and maintain in the future. The first time I asked for help, I was timid and shy, and wasn't sure if I would be fast enough to understand what they were saying. I was afraid I would be judged for the stream of questions that I would have, or that the code I was writing was a poor, stupid implementation. But I'm thankful I reached out because I had the most invigorating, amazing conversation. The setting was uncomfortable enough to stimulate my understanding of how to best design implementations and features for an SDK. I ended that work day with feelings of exhilaration. Like the first time I drove a car by myself.&lt;/p&gt;
+&lt;p&gt;My favorite part about my job is having access to the depth and breadth of knowledge at IBM. I&#39;m able to talk to people in Massachusetts, New York, China, Brazil, from my little standing desk in Austin. For an explanation of what I do at work - I&#39;m currently helping build and maintain the Swift SDK for Watson services offered on Bluemix. This means I get the opportunity to also consume the SDK and write awesome demo apps to showcase all the services.&lt;/p&gt;
 
-&lt;p&gt;The harder days that seem like a drag are when I am so buried in my code or work that I forget to talk to people. Those are no bueno, but at the same time, complaining about having to write code is like complaining about being full. It's a much appreciated, desired necessity.&lt;/p&gt;
+&lt;p&gt;The best days are when I reach out to the Watson Developer Cloud and discuss how to implement a model or interface with the goal to easily use and maintain in the future. The first time I asked for help, I was timid and shy, and wasn&#39;t sure if I would be fast enough to understand what they were saying. I was afraid I would be judged for the stream of questions that I would have, or that the code I was writing was a poor, stupid implementation. But I&#39;m thankful I reached out because I had the most invigorating, amazing conversation. The setting was uncomfortable enough to stimulate my understanding of how to best design implementations and features for an SDK. I ended that work day with feelings of exhilaration. Like the first time I drove a car by myself.&lt;/p&gt;
 
-&lt;p&gt;Sometimes time passes so quickly, I have to remind myself how much I've accomplished within these six months. I'm so thankful for the mentors I've found, and for the opportunity I've been given to work at IBM.&lt;/p&gt;
+&lt;p&gt;The harder days that seem like a drag are when I am so buried in my code or work that I forget to talk to people. Those are no bueno, but at the same time, complaining about having to write code is like complaining about being full. It&#39;s a much appreciated, desired necessity.&lt;/p&gt;
 
-&lt;p&gt;Within the past six months, I won awards at IBM's New Talent Showcase for 'Best Overall Poster' and 'Best Exhibit Poster.' My technical mentor and I made an app showcasing Watson's Alchemy API, Conversation, Speech to Text and Text to Speech services. The app went on to be presented at the &lt;a href=&quot;http://www-01.ibm.com/software/events/wow/&quot;&gt;World of Watson Conference&lt;/a&gt; by our department's Distinguished Engineer (for non-IBM'ers that means he's high up there in the org chart). I also had the awesome opportunity to attend &lt;a href=&quot;http://ghc.anitaborg.org/&quot;&gt;Grace Hopper Conference&lt;/a&gt; to recruit for IBM and attend talks. I organized a few presentations at local charter schools to inspire students to become engineers by presenting an augmented reality Pokemon app a two teammates and I made. And right now, I stepped up to become team lead and scrum master for &lt;a href=&quot;https://github.com/watson-developer-cloud/ios-sdk&quot;&gt;Watson Developer Cloud’s Swift SDK&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sometimes time passes so quickly, I have to remind myself how much I&#39;ve accomplished within these six months. I&#39;m so thankful for the mentors I&#39;ve found, and for the opportunity I&#39;ve been given to work at IBM.&lt;/p&gt;
 
-&lt;p&gt;I say all these to reassure myself of what I've done - why I am capable and should be confident in my abilities. I think recognizing accomplishments and practicing humility should go hand in hand. It's important for me to speak up for myself and not get drowned out by those with louder voices. And I need to keep reminding myself to do so.&lt;/p&gt;
+&lt;p&gt;Within the past six months, I won awards at IBM&#39;s New Talent Showcase for &#39;Best Overall Poster&#39; and &#39;Best Exhibit Poster.&#39; My technical mentor and I made an app showcasing Watson&#39;s Alchemy API, Conversation, Speech to Text and Text to Speech services. The app went on to be presented at the &lt;a href=&quot;http://www-01.ibm.com/software/events/wow/&quot;&gt;World of Watson Conference&lt;/a&gt; by our department&#39;s Distinguished Engineer (for non-IBM&#39;ers that means he&#39;s high up there in the org chart). I also had the awesome opportunity to attend &lt;a href=&quot;http://ghc.anitaborg.org/&quot;&gt;Grace Hopper Conference&lt;/a&gt; to recruit for IBM and attend talks. I organized a few presentations at local charter schools to inspire students to become engineers by presenting an augmented reality Pokemon app a two teammates and I made. And right now, I stepped up to become team lead and scrum master for &lt;a href=&quot;https://github.com/watson-developer-cloud/ios-sdk&quot;&gt;Watson Developer Cloud’s Swift SDK&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the end of the day, regardless of how I feel and what I've accomplished - I'm an engineer at IBM. I'm not saying what I do defines what it means to be an engineer. 'Engineer' is just a title I have, and I'm just doing my best to learn as much as I can. I'm super excited and thankful for all that I can learn, and have learned here.&lt;/p&gt;
+&lt;p&gt;I say all these to reassure myself of what I&#39;ve done - why I am capable and should be confident in my abilities. I think recognizing accomplishments and practicing humility should go hand in hand. It&#39;s important for me to speak up for myself and not get drowned out by those with louder voices. And I need to keep reminding myself to do so.&lt;/p&gt;
+
+&lt;p&gt;At the end of the day, regardless of how I feel and what I&#39;ve accomplished - I&#39;m an engineer at IBM. I&#39;m not saying what I do defines what it means to be an engineer. &#39;Engineer&#39; is just a title I have, and I&#39;m just doing my best to learn as much as I can. I&#39;m super excited and thankful for all that I can learn, and have learned here.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Dec 2016 14:30:26 -0600</pubDate>
-        <link>http://localhost:4000/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</guid>
+        <pubDate>Fri, 16 Dec 2016 12:30:26 -0800</pubDate>
+        <link>https://schen22.github.io/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</link>
+        <guid isPermaLink="true">https://schen22.github.io/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html</guid>
         
         
-        <category>Reflections</category>
+        <category>reflections</category>
         
       </item>
     
