@@ -16,8 +16,8 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://schen22.github.io/">
-  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="https://schen22.github.io/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 
   <!-- Google analytics -->
   <script>
@@ -77,8 +77,42 @@
 
     <article class="post_card post">
       <header class="post_header">
-        <h2 class="post_title"><a href="/reflections/projects/2017/03/11/Gotta-Catch-Em-All.html">Gotta Catch 'em All</a></h2>
-        <time class="post_date">11 March 2017, Saturday</time>
+        <h2 class="post_title"><a href="/2018/01/13/Next-steps.html">Next Steps</a></h2>
+        <time class="post_date">13 January 2018, Saturday</time>
+      </header>
+      <div class="post_excerpt">
+        <p>
+          
+          
+
+           
+          <a class="read-more" href="/2018/01/13/Next-steps.html"> »  </a>
+        </p> 
+      </div>
+      <footer class="post_meta">
+
+
+        
+        <!--
+        
+        -->
+
+        <!--
+        
+        -->
+
+        <!--p class="readmore">
+          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
+        </p-->
+      </footer>
+      <hr/>
+    </article>
+    
+
+    <article class="post_card post">
+      <header class="post_header">
+        <h2 class="post_title"><a href="/reflections/projects/2017/03/12/Gotta-Catch-Em-All.html">Gotta Catch 'em All</a></h2>
+        <time class="post_date">12 March 2017, Sunday</time>
       </header>
       <div class="post_excerpt">
         <p>
@@ -111,9 +145,8 @@
 
 <p>A 6-year old kid tried to peek behind the phone to see if Bulbasaur was hiding behind it. As he realized nothing was there, he looked back at the screen and yelped in delight again as he saw Bulbasaur again. He tried to hold out his hand to touch Bulbasaur, to locate where he was on the map; only to find his hand again with Bulbasaur in the background! He repeated the same actions again, and looked up in surprise. Right then and there, his look to me and the sparkle and hint at magic made all the hours I put into improving, debugging and testing the app, printing vinyl prints and coordinating volunteer efforts, worth it. Here’s to creating more magical moments for people to experience.</p>
 
-
            
-          <a class="read-more" href="/reflections/projects/2017/03/11/Gotta-Catch-Em-All.html"> »  </a>
+          <a class="read-more" href="/reflections/projects/2017/03/12/Gotta-Catch-Em-All.html"> »  </a>
         </p> 
       </div>
       <footer class="post_meta">
@@ -122,13 +155,13 @@
         
         <!--
         
-        <a href="/category/reflections">
+        <a href="/category/Reflections">
           <data data-icon="ei-archive"></data>
-          reflections</a>
+          Reflections</a>
         
-        <a href="/category/projects">
+        <a href="/category/Projects">
           <data data-icon="ei-archive"></data>
-          projects</a>
+          Projects</a>
         
         -->
 
@@ -156,21 +189,20 @@
 
 <p>Taking into account the point a ray hits a sphere, let’s say <em>N</em> is the Normal of the point. A reflected ray’s unit vector <em>v</em> will have the direction <em>(v + 2B)</em>, where <em>B</em> is the dot product of the vector <em>v</em> and the hit point’s normal <em>N</em>. The results in the projection of the normal vector onto the ray, as seen with the following code:</p>
 
-<pre><code class="language-go">func Reflect(v models.Vec3, n models.Vec3) models.Vec3 {
-	return v.SubtractVector(n.MultiplyNum(2.0 * v.Dot(n)))
-}
-</code></pre>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">func</span><span class="x"> </span><span class="n">Reflect</span><span class="p">(</span><span class="n">v</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="p">,</span><span class="x"> </span><span class="n">n</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="p">)</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Vec3</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="k">return</span><span class="x"> </span><span class="n">v</span><span class="o">.</span><span class="n">SubtractVector</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">MultiplyNum</span><span class="p">(</span><span class="m">2.0</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">v</span><span class="o">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div></div>
 
 <p>On the other hand, lambertian materials diffuse rays. Light is reflected at many angles, so we depict this through randomizing how the ray is scattered:</p>
 
-<pre><code class="language-go">target := rec.P.AddVector(rec.Normal).AddVector(models.RandomInUnitSphere())
-*scattered = models.Ray{Origin: rec.P, Direction: target.SubtractVector(rec.P)}
-</code></pre>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">target</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="o">.</span><span class="n">AddVector</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">Normal</span><span class="p">)</span><span class="o">.</span><span class="n">AddVector</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">RandomInUnitSphere</span><span class="p">())</span><span class="x">
+</span><span class="o">*</span><span class="n">scattered</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Ray</span><span class="p">{</span><span class="n">Origin</span><span class="o">:</span><span class="x"> </span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="p">,</span><span class="x"> </span><span class="n">Direction</span><span class="o">:</span><span class="x"> </span><span class="n">target</span><span class="o">.</span><span class="n">SubtractVector</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">P</span><span class="p">)}</span><span class="x">
+</span></code></pre></div></div>
 
-<p>Modifying <code>main.go</code> to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:</p>
+<p>Modifying <code class="highlighter-rouge">main.go</code> to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:</p>
 
 <p><img src="/assets/img/fuzz1.png" alt="" /></p>
-
 
            
           <a class="read-more" href="/projects/2017/01/24/Abstract-different-materials.html"> »  </a>
@@ -182,9 +214,9 @@
         
         <!--
         
-        <a href="/category/projects">
+        <a href="/category/Projects">
           <data data-icon="ei-archive"></data>
-          projects</a>
+          Projects</a>
         
         -->
 
@@ -244,7 +276,6 @@
 
 <p><img src="/assets/img/out8-without-pimples.jpg" alt="" /></p>
 
-
            
           <a class="read-more" href="/projects/2017/01/17/Adding-Materials-to-Objects.html"> »  </a>
         </p> 
@@ -255,9 +286,9 @@
         
         <!--
         
-        <a href="/category/projects">
+        <a href="/category/Projects">
           <data data-icon="ei-archive"></data>
-          projects</a>
+          Projects</a>
         
         -->
 
@@ -283,21 +314,20 @@
           
           <p>So it turned out my bug was including the name of the interface within my struct. So for example, I had:</p>
 
-<pre><code class="language-go">type HitableList struct {
-	Hitable
-	List     []Hitable
-	ListSize int
-}
-</code></pre>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span><span class="x"> </span><span class="n">HitableList</span><span class="x"> </span><span class="k">struct</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="n">Hitable</span><span class="x">
+	</span><span class="n">List</span><span class="x">     </span><span class="p">[]</span><span class="n">Hitable</span><span class="x">
+	</span><span class="n">ListSize</span><span class="x"> </span><span class="kt">int</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div></div>
 
-<p>However, when I initialized the <code>HitableList</code> object, I would leave the <code>Hitable</code> property uninitialized with <code>HitableList(List: list, ListSize: size)</code>. This would then create the value: <code>{&lt;nil&gt; [{ {0 0 -1} 0.5} { {0 -100.5 -1} 100}] 2}</code>that resulted in the nil pointer dereference error I had received. At the same time, I’m not really sure why the <code>Hit</code> function would have ever accessed these <code>nil</code> values. In any case, once I removed all the extraneous <code>Hitable</code> properties in all the objects I had, I was able to produce this (wrong) image.</p>
+<p>However, when I initialized the <code class="highlighter-rouge">HitableList</code> object, I would leave the <code class="highlighter-rouge">Hitable</code> property uninitialized with <code class="highlighter-rouge">HitableList(List: list, ListSize: size)</code>. This would then create the value: <code class="highlighter-rouge">{&lt;nil&gt; [{ {0 0 -1} 0.5} { {0 -100.5 -1} 100}] 2}</code>that resulted in the nil pointer dereference error I had received. At the same time, I’m not really sure why the <code class="highlighter-rouge">Hit</code> function would have ever accessed these <code class="highlighter-rouge">nil</code> values. In any case, once I removed all the extraneous <code class="highlighter-rouge">Hitable</code> properties in all the objects I had, I was able to produce this (wrong) image.</p>
 
 <p><img src="/assets/img/out5bug.jpg" alt="" /></p>
 
-<p>As I added print statements into my <code>color</code> function to better understand why the sphere wasn’t being created, I realized my <code>HitRecord</code> object kept getting created. Thus I had to modify my functions and function calls to pass by reference to make sure the record of the surface normals on the object would be recorded and tracked, thereby producing the following final image:</p>
+<p>As I added print statements into my <code class="highlighter-rouge">color</code> function to better understand why the sphere wasn’t being created, I realized my <code class="highlighter-rouge">HitRecord</code> object kept getting created. Thus I had to modify my functions and function calls to pass by reference to make sure the record of the surface normals on the object would be recorded and tracked, thereby producing the following final image:</p>
 
 <p><img src="/assets/img/out5.jpg" alt="" /></p>
-
 
            
           <a class="read-more" href="/projects/2017/01/13/Debugging-and-Chapter-5.html"> »  </a>
@@ -309,107 +339,9 @@
         
         <!--
         
-        <a href="/category/projects">
+        <a href="/category/Projects">
           <data data-icon="ei-archive"></data>
-          projects</a>
-        
-        -->
-
-        <!--
-        
-        -->
-
-        <!--p class="readmore">
-          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
-        </p-->
-      </footer>
-      <hr/>
-    </article>
-    
-
-    <article class="post_card post">
-      <header class="post_header">
-        <h2 class="post_title"><a href="/go/projects/2017/01/05/Jotting-notes-about-go.html">Refactoring and jotting notes about go</a></h2>
-        <time class="post_date">05 January 2017, Thursday</time>
-      </header>
-      <div class="post_excerpt">
-        <p>
-          
-          <p>I hit somewhat of a rut after refactoring. I ran into this error message after implementing a <code>hitable</code>, <code>hitableList</code>, and <code>sphere</code> objects for the ray tracer:</p>
-
-<pre><code class="language-bash">$ go run main.go &gt; assets/out5.png
-panic: runtime error: invalid memory address or nil pointer dereference
-[signal SIGSEGV: segmentation violation code=0x1 addr=0x20 pc=0x5efd3]
-
-goroutine 1 [running]:
-panic(0x92420, 0xc42000a0c0)
-	/usr/local/Cellar/go/1.7.4_1/libexec/src/runtime/panic.go:500 +0x1a1
-golang-ray-tracer/objects.(*HitableList).Hit(0xc420014180, 0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0x0, 0x7fefffffffffffff, 0x0, ...)
-	&lt;autogenerated&gt;:2 +0x53
-main.color(0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0xfa1c0, 0xc420014180, 0xc42000a2c0, 0x6, ...)
-	/Users/sarahchen/Documents/go/src/golang-ray-tracer/main.go:14 +0xdb
-main.main()
-	/Users/sarahchen/Documents/go/src/golang-ray-tracer/main.go:51 +0x4c6
-exit status 2
-</code></pre>
-
-<p>Thus the lack of coding the past few days. Though having to return to work this week also impeded progress. In any case, while this error means my program’s unable to access the list I created within my <code>HitableList</code> data structure, instead of trying to do a quick fix, I really need to go back to the basics and figure out what I’m doing in my code.</p>
-
-<p>In other words I need to learn what rendering objects means.</p>
-
-<h2 id="referencing-scratchapixel">Referencing scratchapixel.</h2>
-
-<p>Color and brightness is depicted through how light interacts with an object’s materials. Light contains photons that can be absorbed, reflected or transmitted by an object. The percentage of photons absorbed, reflected and transmitted determines how objects appear in a scene.</p>
-
-<p>White light contains red, blue and green photons. The color red appears when green and blue photons are absorbed. The red photons reflect the object and allows our eyes to see the object. Each point on an object reflects light rays in different direction. Our eyes’ photoreceptors then converts light into neural signals for our brains to interpret.</p>
-
-<h2 id="learning-go">Learning Go</h2>
-
-<p>Struct is a type that contains named field.</p>
-
-<p><code>type</code> introduces a new type, followed by the name of the type (Circle). <code>struct</code> keyword indicates we’re defining a <code>struct</code> type and a list of fields inside the curly braces.</p>
-
-<pre><code class="language-go">type Circle struct {
-  x, y, r float64
-}
-
-func (c *Circle) area() float64 {
-  return math.Pi * c.r*c.r
-}
-</code></pre>
-<p>Go automatically passes a pointer into this method without the <code>&amp;</code> operator</p>
-
-<h1 id="pointers">Pointers.</h1>
-
-<p>If there’s one thing I learned about Go and C, it’s that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last <a href="https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719">push</a>, you can see how I had to call the <code>Hit</code> function by reference in order for the <code>HitRecord</code> struct to modify the values of its properties without creating a new object.</p>
-
-<pre><code class="language-go">func (s Sphere) Hit(r models.Ray, t_min float64, t_max float64, rec *HitRecord) bool {
-	...
-}
-</code></pre>
-
-<p>Similarly, in the <code>HitableList</code> and <code>Hitable</code> interface, I needed to pass in a reference to the <code>HitRecord</code> rather than create new objects that don’t store or allow the object to act as a record to whether the object is hittable.</p>
-
-<p>Talking about it now makes it seem like a noobish mistake, but lesson learned! Pointers are friends :)</p>
-
-
-           
-          <a class="read-more" href="/go/projects/2017/01/05/Jotting-notes-about-go.html"> »  </a>
-        </p> 
-      </div>
-      <footer class="post_meta">
-
-
-        
-        <!--
-        
-        <a href="/category/go">
-          <data data-icon="ei-archive"></data>
-          go</a>
-        
-        <a href="/category/projects">
-          <data data-icon="ei-archive"></data>
-          projects</a>
+          Projects</a>
         
         -->
 

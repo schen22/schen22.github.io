@@ -16,8 +16,8 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://schen22.github.io/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html">
-  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="https://schen22.github.io/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/projects/2016/12/27/Chapter-Three-Rays-Simple-Camera-Background.html">
+  <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 
   <!-- Google analytics -->
   <script>
@@ -78,26 +78,28 @@
   </header>
 
   <div class="article-content" itemprop="articleBody">
-    For the longest time I was stuck on this bug where the gradient was off. I couldn't figure it out.
+    <p>For the longest time I was stuck on this bug where the gradient was off. I couldn’t figure it out.</p>
 
-![]({{site.baseurl}}/assets/img/out2-bug.jpg)
+<p><img src="/assets/img/out2-bug.jpg" alt="" /></p>
 
-I went over my code in `main.go` in the way I understood it:
+<p>I went over my code in <code class="highlighter-rouge">main.go</code> in the way I understood it:</p>
 
-* Begin the gradient background in the lower left corner: (-2, -1, -1). Define the width and height of the background to 4 and 2 units; respectively. Represent with the vectors: `{4, 0, 0}` and `{0, 2, 0}`.
-* For each pixel between the coordinates, scale the ray of light with the horizontal and vertical vectors that are scaled incrementally with the magnitudes u, v.
-* Form the ray with the direction of the added horizontal, vertical scalars.
-* Find the color of the ray by finding its unit vector and scale the magnitude by the y-coordinate that's bounded by [0, 1].
-* Form a linear interpolation between blue (0.5, 0.7, 1.0) to white (1.0, 1.0, 1.0) and compute the resulting vector from the direction.
-* Convert the color vector into RGB values and print out.
+<ul>
+  <li>Begin the gradient background in the lower left corner: (-2, -1, -1). Define the width and height of the background to 4 and 2 units; respectively. Represent with the vectors: <code class="highlighter-rouge">{4, 0, 0}</code> and <code class="highlighter-rouge">{0, 2, 0}</code>.</li>
+  <li>For each pixel between the coordinates, scale the ray of light with the horizontal and vertical vectors that are scaled incrementally with the magnitudes u, v.</li>
+  <li>Form the ray with the direction of the added horizontal, vertical scalars.</li>
+  <li>Find the color of the ray by finding its unit vector and scale the magnitude by the y-coordinate that’s bounded by [0, 1].</li>
+  <li>Form a linear interpolation between blue (0.5, 0.7, 1.0) to white (1.0, 1.0, 1.0) and compute the resulting vector from the direction.</li>
+  <li>Convert the color vector into RGB values and print out.</li>
+</ul>
 
-I finally realized I had a problem of variable shadowing where I was overriding the values of my horizontal and vertical vectors within my for loops.
+<p>I finally realized I had a problem of variable shadowing where I was overriding the values of my horizontal and vertical vectors within my for loops.</p>
 
-After fixing the error, I received the expected output:
+<p>After fixing the error, I received the expected output:</p>
 
-![]({{site.baseurl}}/assets/img/out2.jpg)
+<p><img src="/assets/img/out2.jpg" alt="" /></p>
 
-Onwards to Chapter 4 now! Adding a sphere. Maybe I'll add more to this post later.
+<p>Onwards to Chapter 4 now! Adding a sphere. Maybe I’ll add more to this post later.</p>
 
   </div>
 
@@ -123,7 +125,7 @@ Onwards to Chapter 4 now! Adding a sphere. Maybe I'll add more to this post late
   <div class="authorinfo box">
     <p>Author | Sarah Chen</p>
     <p class="bio">
-      Currently a software engineer at IBM's Mobile Innovation Lab.
+      Currently a software engineer at Facebook.
     </p>
   </div>
 </section>
