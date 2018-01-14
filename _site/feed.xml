@@ -5,9 +5,54 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Jan 2018 11:36:25 -0800</pubDate>
-    <lastBuildDate>Sun, 14 Jan 2018 11:36:25 -0800</lastBuildDate>
+    <pubDate>Sun, 14 Jan 2018 12:47:04 -0800</pubDate>
+    <lastBuildDate>Sun, 14 Jan 2018 12:47:04 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Ideas to Research</title>
+        <description>&lt;p&gt;Fun fact of the day: according to Pew Research Center, 77% of Americans own a smartphone of some kind. It’s more than doubled since 2011, where only 35% of Americans owned a smartphone:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/smartphone_ownership.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yay for app development? Topics I want to look more into to explore and do in my free time, if ever I find myself sitting around at home:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Objective-C Patterns and Best Practices: focus on a topic to research into with various use cases. I can finally take advantage of the books I bought to help with this:
+    &lt;ul&gt;
+      &lt;li&gt;Memory Management&lt;/li&gt;
+      &lt;li&gt;App lifecycles&lt;/li&gt;
+      &lt;li&gt;Facebook technologies (GraphQL, ComponentKit)&lt;/li&gt;
+      &lt;li&gt;Design patterns: Listener/Announcer, Protocols&lt;/li&gt;
+      &lt;li&gt;Basic object-oriented programming ideas&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Explore various AR app ideas
+    &lt;ul&gt;
+      &lt;li&gt;Premise: I recently did a fun AR app that seemed to draw people closer together by having them experience Pokemon at the same time. However it relied on providing a smartphone with a pre-downloaded app. I wonder when we’ll replace our smartphone reliance?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Graphics
+    &lt;ul&gt;
+      &lt;li&gt;Replicate a scene from Piper (https://fburl.com/b14u4io8)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;App ideas:
+    &lt;ul&gt;
+      &lt;li&gt;Sample componentKit app to build up components knowledge.&lt;/li&gt;
+      &lt;li&gt;Fun compliments storage app.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 13 Jan 2018 23:20:26 -0800</pubDate>
+        <link>http://localhost:4000/projects/2018/01/14/Ideas-to-Research.html</link>
+        <guid isPermaLink="true">http://localhost:4000/projects/2018/01/14/Ideas-to-Research.html</guid>
+        
+        
+        <category>Projects</category>
+        
+      </item>
     
       <item>
         <title>Next Steps</title>
@@ -398,30 +443,6 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         
         
         <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>It's alive!</title>
-        <description>&lt;p&gt;Wahoo! My website's live and functioning. MWAHAHA.&lt;/p&gt;
-
-&lt;p&gt;I wanted to build a website to keep track of, and hold myself accountable to the projects I want to build. I also wanted to test out how to use Jekyll and host pages on Github. For now, I can keep talking to myself on here instead of out loud! Win-win-win.&lt;/p&gt;
-
-&lt;p&gt;The first projects I wanted to tackle:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Build this website and host it on github&lt;/li&gt;
-  &lt;li&gt;Follow &lt;em&gt;Ray Tracing in One Weekend&lt;/em&gt; and implement in Go.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I'll move forward from there.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 17 Dec 2016 19:30:26 -0800</pubDate>
-        <link>http://localhost:4000/goals/2016/12/17/it's-alive.html</link>
-        <guid isPermaLink="true">http://localhost:4000/goals/2016/12/17/it's-alive.html</guid>
-        
-        
-        <category>Goals</category>
         
       </item>
     
