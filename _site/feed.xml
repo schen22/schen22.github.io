@@ -5,9 +5,82 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Jan 2018 12:47:04 -0800</pubDate>
-    <lastBuildDate>Sun, 14 Jan 2018 12:47:04 -0800</lastBuildDate>
+    <pubDate>Sun, 21 Jan 2018 13:38:58 -0800</pubDate>
+    <lastBuildDate>Sun, 21 Jan 2018 13:38:58 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Back to Basics with Property Attributes</title>
+        <description>&lt;p&gt;Some things that seem obvious to others, to me need to be studied more thoroughly. One such topic I want to focus on this week is properties.
+But why Objective-C? Mainly because that’s the language we use at Facebook to build our app. And also because I want to better understand why we choose to use Objective-C rather than the ‘sexier’ Swift language.&lt;/p&gt;
+
+&lt;p&gt;Properties are thought of as accessors to a variable in a data object.&lt;/p&gt;
+
+&lt;p&gt;@synthesize: controls name of instance variable.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@synthesize&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_myType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@synthesize&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_myName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Usually we would just let the compiler automatically write the code for these methods (ie. autosynthesis). For example, the two instance variables above would instead be &lt;code class=&quot;highlighter-rouge&quot;&gt;_type&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_name&lt;/code&gt; with autosynthesis.&lt;/p&gt;
+
+&lt;p&gt;To prevent the compiler from synthesizing an accessor method we can use @dynamic. This tells the compiler to not create an instance variable and accessor. Instead the compiler trusts us that the variable will be available at runtime:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@dynamic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Property Attributes&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For example: &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readwrite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Atomicity&lt;/strong&gt;: By default accessors are locked to ensure atomicity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;: (readonly, readwrite) where only a getter is available for the former and a getter/setter available for the latter.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Memory-Management&lt;/strong&gt;: affects only the setter
+    &lt;ul&gt;
+      &lt;li&gt;assign: used for scalar types like CGFloat or NSInteger&lt;/li&gt;
+      &lt;li&gt;strong: the property defines an owning relationship. I wonder if I can make this analogy. Let’s say we have six Pokemon on hand and we catch a seventh one: Gulpin. Because we are required to hold six Pokemon at all time, we first “retain” Gulpin, “release” Caterpie and set Guplin as our new sixth Pokemon. Similar to a &lt;strong&gt;strong&lt;/strong&gt; semantic when a new value is set we first retain it, release the old value, and then set the new value.&lt;/li&gt;
+      &lt;li&gt;weak: property defines a nonowning relationship. When a new value is set, the new value is not retained and the old value is not released. The main difference between weak and assign is that a weak property’s value will have nilled out if the object it’s defined as is ever destroyed. (Hm I guess the Pokemon analogy doesn’t work at all. Will need to think more otherwise I’ll just be confusing myself. Shall update later).&lt;/li&gt;
+      &lt;li&gt;unsafe_unretained: same as assign but indicates a nonowning relationship (unretained) that’s not nilled out (unsafe) when the target is destroyed&lt;/li&gt;
+      &lt;li&gt;copy: owning relationship like strong but rather than retaining value, it copies the value. Usually used for NSString* or mutable objects to preserve encapsulation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Method Names&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;getter=&lt;name&gt;: usually used for Bool properties to define getter name.
+&lt;/name&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;didLearn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BOOL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;setter=&lt;name&gt;: specifies setter name. Not usually used.&lt;/name&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Definitions I need to remember&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;To be &lt;strong&gt;Statically allocated&lt;/strong&gt; means that memory is allocated at compile time.&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;runtime&lt;/strong&gt; is like the baker at a bakery that grabs all the ingredients (data structure, functions, memory-management methods, etc.) to mix together and bake a cake (aka the library that code is linked to to run).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Objective-C discovers object type at runtime and can be described as a messaging structure with dynamic binding.&lt;/p&gt;
+
+&lt;p&gt;Let’s break that sentence down: Messaging structure uses dynamic binding, meaning the runtime decides which code gets executed. (Whereas languages like python has function calling which decides which code will be executed. I think?).&lt;/p&gt;
+
+&lt;p&gt;Need to finish this up later. Time to grocery shop!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jan 2018 23:20:26 -0800</pubDate>
+        <link>http://localhost:4000/obj-c/2018/01/21/Back-to-Basics-Properties.html</link>
+        <guid isPermaLink="true">http://localhost:4000/obj-c/2018/01/21/Back-to-Basics-Properties.html</guid>
+        
+        
+        <category>Obj-C</category>
+        
+      </item>
     
       <item>
         <title>Ideas to Research</title>
@@ -389,57 +462,6 @@ main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
         <pubDate>Thu, 22 Dec 2016 18:56:26 -0800</pubDate>
         <link>http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2016/12/22/Chapter-One-Output-an-Image.html</guid>
-        
-        
-        <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Setting Up Go Environment</title>
-        <description>&lt;p&gt;Writing out how I set up my environment so I can remember later:&lt;/p&gt;
-
-&lt;p&gt;I've downloaded the &lt;code class=&quot;highlighter-rouge&quot;&gt;go1.7.4darwin-amd64.pkg&lt;/code&gt; from &lt;a href=&quot;https://golang.org/dl/&quot;&gt;golang&lt;/a&gt;. Upon installing the package, the &lt;code class=&quot;highlighter-rouge&quot;&gt;usr/local/go/bin&lt;/code&gt; directory was put in my &lt;code class=&quot;highlighter-rouge&quot;&gt;PATH&lt;/code&gt; environment variable.&lt;/p&gt;
-
-&lt;p&gt;Now I need to figure out where to set my &lt;code class=&quot;highlighter-rouge&quot;&gt;GOPATH&lt;/code&gt; to. According to the documentation, the &lt;code class=&quot;highlighter-rouge&quot;&gt;GOPATH&lt;/code&gt; environment variable “specifies directories containing Go projects and their binaries outside the &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; folder for Go”.&lt;/p&gt;
-
-&lt;p&gt;Translation: it specifies where to look for Go code. Does that mean for every Go project, the &lt;code class=&quot;highlighter-rouge&quot;&gt;GOPATH&lt;/code&gt; will be different?&lt;/p&gt;
-
-&lt;p&gt;Well according to the wiki, we use a single GOPATH:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I guess I'll just create a directory that will contain all my Go code and add the following lines to my &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; so that I won’t have to set it every time I open my terminal.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/Users/sarahchen/Documents/Personal/go&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOPATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;//&lt;/span&gt;://bin:&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/bin:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bash_profile&lt;/code&gt; to reload the file and apply to your current terminal session.&lt;/p&gt;
-
-&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;go env&lt;/code&gt; to check all the environment variables for Go.&lt;/p&gt;
-
-&lt;p&gt;Word of advice - that last bit for setting the path environment variable, &lt;code class=&quot;highlighter-rouge&quot;&gt;:$PATH&lt;/code&gt;, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-bash&lt;/span&gt;: tail: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
-&lt;span class=&quot;nt&quot;&gt;-bash&lt;/span&gt;: cut: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
-&lt;span class=&quot;nt&quot;&gt;-bash&lt;/span&gt;: sed: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;But ey, all is well! Fixed it by just resetting my PATH environment variables. To test it all, I followed this  &lt;a href=&quot;https://www.golang-book.com/guides/machine_setup#osx-finished&quot;&gt;link&lt;/a&gt; and celebrated by playing some Tetris.&lt;/p&gt;
-
-&lt;p&gt;Running a hello, world program:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/hello-world-golang.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Success! Setting up environments always takes awhile. But now to actually begin the ray tracing project! WAHOOO. Time to read the &lt;a href=&quot;https://golang.org/doc/code.html&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 18 Dec 2016 05:50:26 -0800</pubDate>
-        <link>http://localhost:4000/projects/2016/12/18/Setting-Up-Go-Environment.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2016/12/18/Setting-Up-Go-Environment.html</guid>
         
         
         <category>Projects</category>

@@ -77,6 +77,104 @@
 
     <article class="post_card post">
       <header class="post_header">
+        <h2 class="post_title"><a href="/obj-c/2018/01/21/Back-to-Basics-Properties.html">Back to Basics with Property Attributes</a></h2>
+        <time class="post_date">21 January 2018, Sunday</time>
+      </header>
+      <div class="post_excerpt">
+        <p>
+          
+          <p>Some things that seem obvious to others, to me need to be studied more thoroughly. One such topic I want to focus on this week is properties.
+But why Objective-C? Mainly because that’s the language we use at Facebook to build our app. And also because I want to better understand why we choose to use Objective-C rather than the ‘sexier’ Swift language.</p>
+
+<p>Properties are thought of as accessors to a variable in a data object.</p>
+
+<p>@synthesize: controls name of instance variable.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">Pokemon</span>
+<span class="k">@synthesize</span> <span class="n">type</span> <span class="o">=</span> <span class="n">_myType</span><span class="p">;</span>
+<span class="k">@synthesize</span> <span class="n">name</span> <span class="o">=</span> <span class="n">_myName</span><span class="p">;</span>
+<span class="k">@end</span>
+</code></pre></div></div>
+
+<p>Usually we would just let the compiler automatically write the code for these methods (ie. autosynthesis). For example, the two instance variables above would instead be <code class="highlighter-rouge">_type</code> and <code class="highlighter-rouge">_name</code> with autosynthesis.</p>
+
+<p>To prevent the compiler from synthesizing an accessor method we can use @dynamic. This tells the compiler to not create an instance variable and accessor. Instead the compiler trusts us that the variable will be available at runtime:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">Pokemon</span>
+<span class="k">@dynamic</span> <span class="n">type</span><span class="p">,</span> <span class="n">name</span><span class="p">;</span>
+<span class="k">@end</span>
+</code></pre></div></div>
+
+<p><em>Property Attributes</em></p>
+
+<p>For example: <code class="highlighter-rouge"><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">type</span><span class="p">;</span></code></p>
+
+<ul>
+  <li><strong>Atomicity</strong>: By default accessors are locked to ensure atomicity.</li>
+  <li><strong>Read/Write</strong>: (readonly, readwrite) where only a getter is available for the former and a getter/setter available for the latter.</li>
+  <li><strong>Memory-Management</strong>: affects only the setter
+    <ul>
+      <li>assign: used for scalar types like CGFloat or NSInteger</li>
+      <li>strong: the property defines an owning relationship. I wonder if I can make this analogy. Let’s say we have six Pokemon on hand and we catch a seventh one: Gulpin. Because we are required to hold six Pokemon at all time, we first “retain” Gulpin, “release” Caterpie and set Guplin as our new sixth Pokemon. Similar to a <strong>strong</strong> semantic when a new value is set we first retain it, release the old value, and then set the new value.</li>
+      <li>weak: property defines a nonowning relationship. When a new value is set, the new value is not retained and the old value is not released. The main difference between weak and assign is that a weak property’s value will have nilled out if the object it’s defined as is ever destroyed. (Hm I guess the Pokemon analogy doesn’t work at all. Will need to think more otherwise I’ll just be confusing myself. Shall update later).</li>
+      <li>unsafe_unretained: same as assign but indicates a nonowning relationship (unretained) that’s not nilled out (unsafe) when the target is destroyed</li>
+      <li>copy: owning relationship like strong but rather than retaining value, it copies the value. Usually used for NSString* or mutable objects to preserve encapsulation.</li>
+    </ul>
+  </li>
+  <li><strong>Method Names</strong>:
+    <ul>
+      <li>getter=<name>: usually used for Bool properties to define getter name.
+</name>        <ul>
+          <li><code class="highlighter-rouge"><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">didLearn</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">learn</span><span class="p">;</span></code></li>
+        </ul>
+      </li>
+      <li>setter=<name>: specifies setter name. Not usually used.</name></li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>Definitions I need to remember</em></p>
+<ul>
+  <li>To be <strong>Statically allocated</strong> means that memory is allocated at compile time.</li>
+  <li>A <strong>runtime</strong> is like the baker at a bakery that grabs all the ingredients (data structure, functions, memory-management methods, etc.) to mix together and bake a cake (aka the library that code is linked to to run).</li>
+</ul>
+
+<p>Objective-C discovers object type at runtime and can be described as a messaging structure with dynamic binding.</p>
+
+<p>Let’s break that sentence down: Messaging structure uses dynamic binding, meaning the runtime decides which code gets executed. (Whereas languages like python has function calling which decides which code will be executed. I think?).</p>
+
+<p>Need to finish this up later. Time to grocery shop!</p>
+
+           
+          <a class="read-more" href="/obj-c/2018/01/21/Back-to-Basics-Properties.html"> »  </a>
+        </p> 
+      </div>
+      <footer class="post_meta">
+
+
+        
+        <!--
+        
+        <a href="/category/Obj-C">
+          <data data-icon="ei-archive"></data>
+          Obj-C</a>
+        
+        -->
+
+        <!--
+        
+        -->
+
+        <!--p class="readmore">
+          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
+        </p-->
+      </footer>
+      <hr/>
+    </article>
+    
+
+    <article class="post_card post">
+      <header class="post_header">
         <h2 class="post_title"><a href="/projects/2018/01/14/Ideas-to-Research.html">Ideas to Research</a></h2>
         <time class="post_date">14 January 2018, Sunday</time>
       </header>
@@ -297,78 +395,6 @@ Sarah</p>
 
            
           <a class="read-more" href="/projects/2017/01/24/Abstract-different-materials.html"> »  </a>
-        </p> 
-      </div>
-      <footer class="post_meta">
-
-
-        
-        <!--
-        
-        <a href="/category/Projects">
-          <data data-icon="ei-archive"></data>
-          Projects</a>
-        
-        -->
-
-        <!--
-        
-        -->
-
-        <!--p class="readmore">
-          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
-        </p-->
-      </footer>
-      <hr/>
-    </article>
-    
-
-    <article class="post_card post">
-      <header class="post_header">
-        <h2 class="post_title"><a href="/projects/2017/01/17/Adding-Materials-to-Objects.html">Adding Materials to Objects</a></h2>
-        <time class="post_date">17 January 2017, Tuesday</time>
-      </header>
-      <div class="post_excerpt">
-        <p>
-          
-          <p>In order to take out the jagged edges of the sphere as seen in the last post, the edge pixels must be a blend of the foreground and background. This is done by averaging samples of each material in each pixel. For each pixel, there are several samples within that pixel. Then send rays through each sample. The colors of these rays are averaged.</p>
-
-<p>This difference allows the blending of edge pixels (pixels in between the background and the foreground) as seen in the comparison between the picture from last chapter and the picture after averaging the pixel colors.</p>
-
-<p><img src="/assets/img/out5out6_comparison.jpg" alt="" /></p>
-
-<p>As I moved onto creating more things within the images, I learned to create objects and materials. The fun ensued. More progress and cooler pictures were formed!</p>
-
-<p>The following pictures are examples of diffuse objects that take on the color of their surroundings, adjusted for their own intrinsic color. As Peter Shirley explains in his book, “Light that reflects off a diffuse surface has its direction randomized.” At the same time, the darker the surface is, the more likely absorption is.</p>
-
-<p>The algorithm to create this is as follows (somewhat summarized):</p>
-
-<blockquote>
-  <p>Pick a random point <em>s</em> on a unit radius sphere tangent to the hitpoint. Send a ray from the hitpoint <em>p</em> to the random point <em>s</em>. The sphere then has center (p+N), where <em>N</em> is the length of the ray.</p>
-</blockquote>
-
-<p>Next Peter Shirley notes:</p>
-
-<blockquote>
-  <p>Pick a random point in a unit radius sphere <em>centered at the origin</em> (rather than tangent to the hitpoint) by using a <em>rejection method</em>. Pick a random point in the unit cube where <em>x, y</em> and <em>z</em> range from -1 to +1, rejecting all points that do not fall within the sphere.</p>
-</blockquote>
-
-<p>Rejection method is a technique used to generate observations from a distribution.</p>
-
-<p>The described method gives us the following image:</p>
-
-<p><img src="/assets/img/out7.jpg" alt="" /></p>
-
-<p>After we adjust for the image to be ‘gamma corrected’, we see a light gray color in the image:</p>
-
-<p><img src="/assets/img/out8.jpg" alt="" /></p>
-
-<p>Apparently the above picture hosts a “shadow acne problem.” In other word pimply splotches due to rays reflecting off of not at exactly t = 0, but instead at t being very close to zero. In order to remove the “shadow acne problem” we have to better specify to ignore hits very near zero, resulting in the following picture:</p>
-
-<p><img src="/assets/img/out8-without-pimples.jpg" alt="" /></p>
-
-           
-          <a class="read-more" href="/projects/2017/01/17/Adding-Materials-to-Objects.html"> »  </a>
         </p> 
       </div>
       <footer class="post_meta">
