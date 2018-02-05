@@ -5,9 +5,56 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 23:43:12 -0800</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 23:43:12 -0800</lastBuildDate>
+    <pubDate>Mon, 05 Feb 2018 09:36:47 -0800</pubDate>
+    <lastBuildDate>Mon, 05 Feb 2018 09:36:47 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>How to define success</title>
+        <description>&lt;p&gt;I’ve decided I want to define success more concretely, and I happened upon a great read this past weekend that inspired this redefinition. Rather than to be defined or (what I feel at times) restricted to the job I have, the role I play on my team, or the lines of code I write a day, I want to define success on the basis of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the number minutes I spend running every day in order to stay healthy and do all the things I want to do in life.&lt;/li&gt;
+  &lt;li&gt;the number of times I laugh or enjoy the conversations I have by staying present and open-minded to situations around me.&lt;/li&gt;
+  &lt;li&gt;the number of minutes I spend on the phone with my parents because I care about my family.&lt;/li&gt;
+  &lt;li&gt;the number of times I speak up among a group of people in order to remember I have a voice.&lt;/li&gt;
+  &lt;li&gt;the number of lessons learned to satisfy my love of learning and desire to understand.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Health, presence, family, attitude and aptitude. Suffice it to say I think these can act as goals to ground me throughout the day to concentrate more on what I want to do, and less on what I do.&lt;/p&gt;
+
+&lt;p&gt;While there’s no measure that I can compare myself to just yet, I can create some type of iPython notebook to track (at the very least) physical exercise. I’ve been wanting to get a little more in data analysis. And plus I’m signed up for the half marathon so honestly I should be running more than the 2-3 miles I get. THREE BIRDS WITH ONE STONE! Oh wait, four! Because this way I can guarantee comparisons of myself to me (rather than others).&lt;/p&gt;
+
+&lt;p&gt;Now though, I’m wondering how do these definitions of success relate to the goals that I have at work?&lt;/p&gt;
+
+&lt;p&gt;I guess to put a different spin on it: in order to learn more, I have to review more code, and ask questions to code more effectively. In a way, the more I do, the more I learn. So by the communicative property, if learning comes first, inherently, the goals or expectations set at work will follow. I think the most important lesson I’ve learned is, “Me first.” Because honestly there’s no one else that will ever do so, nor would I want them to. I have to own my own way and what I do. To do this I have to be comfortable with putting myself first.&lt;/p&gt;
+
+&lt;p&gt;This doesn’t mean I should become a jackass or some arrogant coworker who only thinks of what I want and ignores all else. I still have my values to keep me in check for that thankfully. Rather, it’s more I want to focus on what I want to accomplish, how to get to where I want to go; rather than to concentrate on how others are doing or give in to the norm. For example the other day at Costco there was this couple that cut in front of me. And rather than speaking up, I just stood there silently and took it. While this may be an extreme example, it’s been aggravating me that I hadn’t spoke up.&lt;/p&gt;
+
+&lt;p&gt;But at the same time that’s okay because I can take it as a learning experience. I just need to practice what I should say in these settings because I’m not used to that happening to me. (I mean come on, I’m a cute Asian girl; who can ignore me :P). In any case, next time I’m prepared to say, “Excuse me sir/miss, I was already here in line,” and then give them a chance to explain themselves. If they’re in some sort of emergency then by all means take my spot; but I shouldn’t let people take advantage of me.&lt;/p&gt;
+
+&lt;p&gt;Random other goals I’ll update at another time but want to jot down for now:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I want to increase my circle of influence.&lt;/li&gt;
+  &lt;li&gt;I want to go backpacking or camping in the mountains.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cheerios,&lt;/p&gt;
+
+&lt;p&gt;Sarah&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do.&lt;/em&gt; - Sarah Ban Breathnach&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Feb 2018 23:20:26 -0800</pubDate>
+        <link>http://localhost:4000/quibbles/reflections/2018/02/05/How-to-define-success.html</link>
+        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/02/05/How-to-define-success.html</guid>
+        
+        
+        <category>Quibbles</category>
+        
+        <category>Reflections</category>
+        
+      </item>
     
       <item>
         <title>Subclassing and Alternatives</title>
@@ -87,6 +134,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Overall it looks like subclasses are more commonly used for implementing custom parts of a platform, and model objects. i.e. in view controllers when we subclass UIViewController; or building a UITableViewCell with custom layout. Any time something can be more reusable across other parts of the project seem to be a good opportunity to subclass.&lt;/p&gt;
+
+&lt;p&gt;Until next time. Back to work!&lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Feb 2018 23:20:26 -0800</pubDate>
         <link>http://localhost:4000/obj-c/2018/02/04/Subclassing-and-Alternatives.html</link>
@@ -421,76 +470,6 @@ Sarah&lt;/p&gt;
         <link>http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</guid>
         
-        
-        <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Refactoring and jotting notes about go</title>
-        <description>&lt;p&gt;I hit somewhat of a rut after refactoring. I ran into this error message after implementing a &lt;code class=&quot;highlighter-rouge&quot;&gt;hitable&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;hitableList&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;sphere&lt;/code&gt; objects for the ray tracer:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;go run main.go &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; assets/out5.png
-panic: runtime error: invalid memory address or nil pointer dereference
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;signal SIGSEGV: segmentation violation &lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x1 &lt;span class=&quot;nv&quot;&gt;addr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x20 &lt;span class=&quot;nv&quot;&gt;pc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x5efd3]
-
-goroutine 1 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;running]:
-panic&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x92420, 0xc42000a0c0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-	/usr/local/Cellar/go/1.7.4_1/libexec/src/runtime/panic.go:500 +0x1a1
-golang-ray-tracer/objects.&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;HitableList&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.Hit&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0xc420014180, 0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0x0, 0x7fefffffffffffff, 0x0, ...&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-	&amp;lt;autogenerated&amp;gt;:2 +0x53
-main.color&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x0, 0x0, 0x0, 0xc000000000000000, 0x3fef5c28f5c28f5c, 0xbff0000000000000, 0xfa1c0, 0xc420014180, 0xc42000a2c0, 0x6, ...&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-	/Users/sarahchen/Documents/go/src/golang-ray-tracer/main.go:14 +0xdb
-main.main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
-	/Users/sarahchen/Documents/go/src/golang-ray-tracer/main.go:51 +0x4c6
-&lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;status 2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Thus the lack of coding the past few days. Though having to return to work this week also impeded progress. In any case, while this error means my program’s unable to access the list I created within my &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList&lt;/code&gt; data structure, instead of trying to do a quick fix, I really need to go back to the basics and figure out what I’m doing in my code.&lt;/p&gt;
-
-&lt;p&gt;In other words I need to learn what rendering objects means.&lt;/p&gt;
-
-&lt;h2 id=&quot;referencing-scratchapixel&quot;&gt;Referencing scratchapixel.&lt;/h2&gt;
-
-&lt;p&gt;Color and brightness is depicted through how light interacts with an object’s materials. Light contains photons that can be absorbed, reflected or transmitted by an object. The percentage of photons absorbed, reflected and transmitted determines how objects appear in a scene.&lt;/p&gt;
-
-&lt;p&gt;White light contains red, blue and green photons. The color red appears when green and blue photons are absorbed. The red photons reflect the object and allows our eyes to see the object. Each point on an object reflects light rays in different direction. Our eyes’ photoreceptors then converts light into neural signals for our brains to interpret.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-go&quot;&gt;Learning Go&lt;/h2&gt;
-
-&lt;p&gt;Struct is a type that contains named field.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt; introduces a new type, followed by the name of the type (Circle). &lt;code class=&quot;highlighter-rouge&quot;&gt;struct&lt;/code&gt; keyword indicates we’re defining a &lt;code class=&quot;highlighter-rouge&quot;&gt;struct&lt;/code&gt; type and a list of fields inside the curly braces.&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pi&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Go automatically passes a pointer into this method without the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; operator&lt;/p&gt;
-
-&lt;h1 id=&quot;pointers&quot;&gt;Pointers.&lt;/h1&gt;
-
-&lt;p&gt;If there’s one thing I learned about Go and C, it’s that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last &lt;a href=&quot;https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719&quot;&gt;push&lt;/a&gt;, you can see how I had to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hit&lt;/code&gt; function by reference in order for the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitRecord&lt;/code&gt; struct to modify the values of its properties without creating a new object.&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_min&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_max&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HitRecord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Similarly, in the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Hitable&lt;/code&gt; interface, I needed to pass in a reference to the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitRecord&lt;/code&gt; rather than create new objects that don’t store or allow the object to act as a record to whether the object is hittable.&lt;/p&gt;
-
-&lt;p&gt;Talking about it now makes it seem like a noobish mistake, but lesson learned! Pointers are friends :)&lt;/p&gt;
-</description>
-        <pubDate>Thu, 05 Jan 2017 07:56:26 -0800</pubDate>
-        <link>http://localhost:4000/go/projects/2017/01/05/Jotting-notes-about-go.html</link>
-        <guid isPermaLink="true">http://localhost:4000/go/projects/2017/01/05/Jotting-notes-about-go.html</guid>
-        
-        
-        <category>Go</category>
         
         <category>Projects</category>
         
