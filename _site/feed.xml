@@ -5,9 +5,52 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Feb 2018 09:36:47 -0800</pubDate>
-    <lastBuildDate>Mon, 05 Feb 2018 09:36:47 -0800</lastBuildDate>
+    <pubDate>Mon, 05 Mar 2018 08:55:47 -0800</pubDate>
+    <lastBuildDate>Mon, 05 Mar 2018 08:55:47 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Adventure Time</title>
+        <description>&lt;p&gt;There’s more to life than solely success.&lt;/p&gt;
+
+&lt;p&gt;The pursuit of happiness; the desire to see who others are for who they are. To recognize that everyone is fighting their own battles. We are who we are, and although it’s simple enough to say, to truly always be accepting of others and of myself is so much more challenging.&lt;/p&gt;
+
+&lt;p&gt;This past weekend I had the amazing opportunity to travel to New York. Call it a whim - but it’s helped me open my eyes even more.&lt;/p&gt;
+
+&lt;p&gt;It’s so easy to get caught up in everyday life. I know I’ve reflected on this before already. But I still haven’t learned a good handle on how to remind myself to enjoy where I am. I have a tendency to rush through the things I do because I’m impatient to get to the next step, to get to the next level, to get to the next stage of my life.&lt;/p&gt;
+
+&lt;p&gt;People always tell me - enjoy where you are now because you only live your life once. #yolo.&lt;/p&gt;
+
+&lt;p&gt;But I always disliked that piece of advice. It made me feel as if they know something about where they are now, that I don’t. That they’ve already overcome challenges that I have yet to even know about - and who likes feeling left out?&lt;/p&gt;
+
+&lt;p&gt;But it’s so easy to forget how beautiful and wonderful life is. How every single moment, every challenge is precious and unable to be repeated. I could argue that there’s a diminishing margins of returns to everything that I do, and another side could argue the inevitable “it depends.”&lt;/p&gt;
+
+&lt;p&gt;I brought up New York because I discovered there’s so much more of the world that I have yet to see. Even though it wasn’t my first time there (I hated my first visit there for the record), I was fascinated by how I was able to walk down the street and neither understand nor recognize any of the languages being spoken. Given, I was walking down a pretty touristy area right next to Wall Street; but I was amazed by the diversity of the people. I kept waiting, smiling at my stupid excitement, waiting for some couple or some family or some group of people or some one to walk by and speak english - but no one did. And how I loved it.&lt;/p&gt;
+
+&lt;p&gt;There’s so much more to life than I can even dream about. Tell that to five year old me and you’d catch me staring back at you with the answer, “but I like the candy I dream about.” The beyond and the unknown used to scare me; but it’s exciting and motivating. I want to see the world’s wonders and challenge the scope of how I view the world. I want to continue to have these paradigm shifts. I want to hear people’s stories. I don’t think traveling is the answer, but it’s one of the means. I think more importantly is the desire for me to see and to listen. To push myself out of my comfort zone and to socialize more with people.&lt;/p&gt;
+
+&lt;p&gt;This reminds me of a conversation I had with a friend of mine recently. He asked me, “How do you work so hard and stay motivated?” I looked at him, amazed that he even thought I worked hard. And further, “What’s your end goal?”&lt;/p&gt;
+
+&lt;p&gt;I don’t know. But I think we make people who we think they are in our minds. That’s not to say that his opinion of me isn’t true or justified. My point isn’t about the validity of the statement or to even answer the question, but to remark how the way I see myself isn’t the way how others see me and vice versa. It’s fascinating to me how the human mind works. Questions, the desire to know how others think and do; the desire to understand and learn more. It helps make connections and establish a common ground to walk together though.&lt;/p&gt;
+
+&lt;p&gt;The fact that we all come from different walks of life and yet are so troubled by our own problems we forget that sometimes the answer lies in simply talking to others.&lt;/p&gt;
+
+&lt;p&gt;“Be the change you wish to see in the world.” - Mahatma Gandhi. My sister used to wear this shirt all the time; maybe to help advertise people to join the high school JSA club advertised on the front of the shirt. (kidding). I think we all aspire to be more - to make a difference and assert our place in the world.  I think we all have the desire to be someone - someone to be remembered, someone who’s invaluable, someone who feels as if they belong and are needed.&lt;/p&gt;
+
+&lt;p&gt;(Rambling again. But some in literature could call it a stream of consciousness. I don’t recommend that book by James Joyce by the way. The stream of consciousness was terrible to follow).&lt;/p&gt;
+
+&lt;p&gt;I’m just beginning my own journey and I’m so truly excited for what’s to come because where I’m at now. By golly gosh darn. Life’s simply amazing because I allow it to be.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Mar 2018 23:20:26 -0800</pubDate>
+        <link>http://localhost:4000/quibbles/reflections/2018/03/04/Adventure-Time.html</link>
+        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/03/04/Adventure-Time.html</guid>
+        
+        
+        <category>Quibbles</category>
+        
+        <category>Reflections</category>
+        
+      </item>
     
       <item>
         <title>How to define success</title>
@@ -441,34 +484,6 @@ Sarah&lt;/p&gt;
         <pubDate>Tue, 17 Jan 2017 10:34:26 -0800</pubDate>
         <link>http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</link>
         <guid isPermaLink="true">http://localhost:4000/projects/2017/01/17/Adding-Materials-to-Objects.html</guid>
-        
-        
-        <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Debugging and Chapter 5</title>
-        <description>&lt;p&gt;So it turned out my bug was including the name of the interface within my struct. So for example, I had:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HitableList&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hitable&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hitable&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListSize&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;However, when I initialized the &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList&lt;/code&gt; object, I would leave the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hitable&lt;/code&gt; property uninitialized with &lt;code class=&quot;highlighter-rouge&quot;&gt;HitableList(List: list, ListSize: size)&lt;/code&gt;. This would then create the value: &lt;code class=&quot;highlighter-rouge&quot;&gt;{&amp;lt;nil&amp;gt; [{ {0 0 -1} 0.5} { {0 -100.5 -1} 100}] 2}&lt;/code&gt;that resulted in the nil pointer dereference error I had received. At the same time, I’m not really sure why the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hit&lt;/code&gt; function would have ever accessed these &lt;code class=&quot;highlighter-rouge&quot;&gt;nil&lt;/code&gt; values. In any case, once I removed all the extraneous &lt;code class=&quot;highlighter-rouge&quot;&gt;Hitable&lt;/code&gt; properties in all the objects I had, I was able to produce this (wrong) image.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/out5bug.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As I added print statements into my &lt;code class=&quot;highlighter-rouge&quot;&gt;color&lt;/code&gt; function to better understand why the sphere wasn’t being created, I realized my &lt;code class=&quot;highlighter-rouge&quot;&gt;HitRecord&lt;/code&gt; object kept getting created. Thus I had to modify my functions and function calls to pass by reference to make sure the record of the surface normals on the object would be recorded and tracked, thereby producing the following final image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/out5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 13 Jan 2017 10:34:26 -0800</pubDate>
-        <link>http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2017/01/13/Debugging-and-Chapter-5.html</guid>
         
         
         <category>Projects</category>
