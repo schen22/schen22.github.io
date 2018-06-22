@@ -5,9 +5,42 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 May 2018 23:58:16 -0700</pubDate>
-    <lastBuildDate>Sun, 20 May 2018 23:58:16 -0700</lastBuildDate>
+    <pubDate>Fri, 22 Jun 2018 11:13:10 -0700</pubDate>
+    <lastBuildDate>Fri, 22 Jun 2018 11:13:10 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Nuggets</title>
+        <description>&lt;p&gt;I wanted to share nuggets of wisdom from various people I’ve been meeting up within the industry. The primary questions I’ve been asking are what drives their confidence, what their journey entails, and what the most pivotal moment of their career has been so far. It was fascinating to learn and observe how everyone has their own style, work ethic and drive; and yet they all attained a relative degree of success and satisfaction that they wanted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nugget #1: Optimize for happiness.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For me, this translates to building something useful for others: share warm and fuzzies, allow others to feel that they belong, and give people a platform to be heard by recognizing every person has a voice they can use. Facebook has the power to accomplish this, but more on this later.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nugget #2: Believe in yourself.&lt;/strong&gt; Continue doing what needs to be done, and the rest will follow.&lt;/p&gt;
+
+&lt;p&gt;My mentor resolves conflicts by being so good others are unable to ignore them. Of course, it helps that my mentor loves to build and solve problems. Truly an inspiration for me to keep learning from. :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nugget #2.5: Trust yourself.&lt;/strong&gt; You’ll become better at estimating and setting deadlines. Tell your manager what the unknown factors are and add a little more time into how long you think it might actually take.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nugget #3: Break things to learn!&lt;/strong&gt; Break apart small pieces to figure out what makes a solution work. For any challenge you’re facing, someone has probably already built a solution or something that’s similar.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nugget #4: Keep on moving forward.&lt;/strong&gt; As long as you don’t hate what you’re doing and don’t hate your team - keep at it. There’s always a better way to do something, and you should always recognize that. But don’t beat yourself up for not implementing the perfect solution right off the bat. Recognize that there’s always a better way to build what you’re building, but also recognize that you’ve gotten better, you’ve improved, and that you’ve learned.&lt;/p&gt;
+
+&lt;p&gt;My mentor encouraged me to look back at old code I’ve written, then realize that I probably wouldn’t have written it that way if I were to do it again. And that’s progress.&lt;/p&gt;
+
+&lt;p&gt;After meeting up with multiple people, I also realized it’s not just advice I was looking for. I was looking for some way to find myself and find my own drive, intuition, and confidence. But at some point I just have to tune out the self-doubt I have in order to focus on what’s next. Just keep moving forward and the path will follow.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Jun 2018 18:20:26 -0700</pubDate>
+        <link>http://localhost:4000/reflections/advice/2018/06/18/Nuggets.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/advice/2018/06/18/Nuggets.html</guid>
+        
+        
+        <category>Reflections</category>
+        
+        <category>Advice</category>
+        
+      </item>
     
       <item>
         <title>Day 0</title>
@@ -453,36 +486,6 @@ Sarah&lt;/p&gt;
         
         
         <category>Reflections</category>
-        
-        <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Abstract Different Materials</title>
-        <description>&lt;p&gt;Getting to the real meat/exciting part of the project. By creating Metal and Lambertian materials, I learned how each material interacts with rays.&lt;/p&gt;
-
-&lt;p&gt;Taking into account the point a ray hits a sphere, let’s say &lt;em&gt;N&lt;/em&gt; is the Normal of the point. A reflected ray’s unit vector &lt;em&gt;v&lt;/em&gt; will have the direction &lt;em&gt;(v + 2B)&lt;/em&gt;, where &lt;em&gt;B&lt;/em&gt; is the dot product of the vector &lt;em&gt;v&lt;/em&gt; and the hit point’s normal &lt;em&gt;N&lt;/em&gt;. The results in the projection of the normal vector onto the ray, as seen with the following code:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Reflect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec3&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SubtractVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MultiplyNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;On the other hand, lambertian materials diffuse rays. Light is reflected at many angles, so we depict this through randomizing how the ray is scattered:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RandomInUnitSphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scattered&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Origin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Direction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SubtractVector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Modifying &lt;code class=&quot;highlighter-rouge&quot;&gt;main.go&lt;/code&gt; to take into various materials of spheres, and adding fuzzier reflections for larger spheres, we’re given the following image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/fuzz1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 24 Jan 2017 10:34:26 -0800</pubDate>
-        <link>http://localhost:4000/projects/2017/01/24/Abstract-different-materials.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2017/01/24/Abstract-different-materials.html</guid>
-        
         
         <category>Projects</category>
         
