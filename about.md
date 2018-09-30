@@ -10,19 +10,16 @@ Hey it's Sarah! I'm a software engineer working at Facebook. My current interest
 
 Feel free to explore this website for reflections on books I'm reading, learnings, side projects; thoughts I have on life that I think are worth jotting and sharing.
 
-Books I'm currently reading and love:
+Books I'm currently reading and love (as of 9/2018):
+- The Consolations of Philosophy by Alain de Botton
+
+List of books I've finished and love:
 - A Walk in the Woods
 - The Man who Mistook his Wife for a Hat
-- Mr. Penumbra's 24-Hour Bookstore
 - Settling for More
-
-Books I've checked out but I'm afraid I'll run out of time to read before they're due back at the library:
 - All the Light We Cannot See
-- The Alchemist
 
-I can just hear the gasp of shock from you - I can't believe it either! I have yet to read the famous classic others adore. You'll have to forgive me though; my excuse is that it's on my list of books to read!
-
-I just realized need to make a commenting section so I can receive book recommendations. Hm.. putting that in the backlog. Feel free to reach out to me if you're so inclined to add to my book list. I'm always happy to talk book. :)
+I just realized I need to make a commenting section so I can receive book recommendations. The list of books I have so far is a bit bare. I should probably start updating and using GoodReads more too. Hm.. putting all that in the backlog. Feel free to reach out to me if you're so inclined to add to my book list. I'm always happy to talk book and/or shop. :)
 
 Here's a dog stealing a cookie in an attempt to encourage more smiles smiled today:
 
