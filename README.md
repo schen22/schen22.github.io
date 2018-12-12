@@ -10,9 +10,9 @@ Install rvm:
 
 `$ gem install bundler --user-install`
 
-`$ rvm install ruby 2.4.1`
+`$ rvm install ruby 2.5.1`
 
-`$ sudo gem install jekyll`
+`$ gem install jekyll`
 
 If it's complaining about needing a specific json version (i.e. "Make sure that `gem install json -v '1.8.1'` succeeds before bundling.") run:
 
