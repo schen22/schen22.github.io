@@ -10,14 +10,20 @@ Hey it's Sarah! I'm a software engineer working at Facebook. My current interest
 
 Feel free to explore this website for reflections on books I'm reading, learnings, side projects; thoughts I have on life that I think are worth jotting and sharing.
 
-Books I'm currently reading and love (as of 9/2018):
-- The Consolations of Philosophy by Alain de Botton
+Books I'm currently reading (as of 12/2018):
+- Code Complete 2 by Steve McConnell
+- Eleanor and Park by Rainbow Rowell
 
 List of books I've finished and love:
 - A Walk in the Woods
 - The Man who Mistook his Wife for a Hat
 - Settling for More
 - All the Light We Cannot See
+- Surely You're Joking Mr. Feynman
+
+Books on hold:
+- The Consolations of Philosophy by Alain de Botton
+- The Elegance of the Hedgehog by Muriel Barbery
 
 I just realized I need to make a commenting section so I can receive book recommendations. The list of books I have so far is a bit bare. I should probably start updating and using GoodReads more too. Hm.. putting all that in the backlog. Feel free to reach out to me if you're so inclined to add to my book list. I'm always happy to talk book and/or shop. :)
 
