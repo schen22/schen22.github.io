@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Back to Basics with Property Attributes</title>
-  <meta name="description" content="Some things that seem obvious to others, to me need to be studied more thoroughly. One such topic I want to focus on this week is properties.But why Objectiv...">
+  <title>Ideas to Research</title>
+  <meta name="description" content="Fun fact of the day: according to Pew Research Center, 77% of Americans own a smartphone of some kind. It’s more than doubled since 2011, where only 35% of A...">
 
   <!-- evil icon -->
 
@@ -16,7 +16,7 @@
   <!-- todo: include this into main.css -->
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/obj-c/2018/01/21/Back-to-Basics-Properties.html">
+  <link rel="canonical" href="http://localhost:4000/projects/2018/01/13/Ideas-to-Research.html">
   <link rel="alternate" type="application/rss+xml" title="Sarah Chen" href="http://localhost:4000/feed.xml">
 
   <!-- Google analytics -->
@@ -73,72 +73,44 @@
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="artilce_header">
-    <h1 class="artilce_title" itemprop="name headline">Back to Basics with Property Attributes</h1>
-    <p class="artilce_meta"><time datetime="2018-01-20T23:20:26-08:00" itemprop="datePublished">Jan 21, 2018</time></p>
+    <h1 class="artilce_title" itemprop="name headline">Ideas to Research</h1>
+    <p class="artilce_meta"><time datetime="2018-01-13T23:20:26-08:00" itemprop="datePublished">Jan 13, 2018</time></p>
   </header>
 
   <div class="article-content" itemprop="articleBody">
-    <p>Some things that seem obvious to others, to me need to be studied more thoroughly. One such topic I want to focus on this week is properties.
-But why Objective-C? Mainly because that’s the language we use at Facebook to build our app. And also because I want to better understand why we choose to use Objective-C rather than the ‘sexier’ Swift language.</p>
+    <p>Fun fact of the day: according to Pew Research Center, 77% of Americans own a smartphone of some kind. It’s more than doubled since 2011, where only 35% of Americans owned a smartphone:</p>
 
-<p>Properties are thought of as accessors to a variable in a data object.</p>
+<p><img src="/assets/img/smartphone_ownership.png" alt="" /></p>
 
-<p>@synthesize: controls name of instance variable.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">Pokemon</span>
-<span class="k">@synthesize</span> <span class="n">type</span> <span class="o">=</span> <span class="n">_myType</span><span class="p">;</span>
-<span class="k">@synthesize</span> <span class="n">name</span> <span class="o">=</span> <span class="n">_myName</span><span class="p">;</span>
-<span class="k">@end</span>
-</code></pre></div></div>
-
-<p>Usually we would just let the compiler automatically write the code for these methods (ie. autosynthesis). For example, the two instance variables above would instead be <code class="highlighter-rouge">_type</code> and <code class="highlighter-rouge">_name</code> with autosynthesis.</p>
-
-<p>To prevent the compiler from synthesizing an accessor method we can use @dynamic. This tells the compiler to not create an instance variable and accessor. Instead the compiler trusts us that the variable will be available at runtime:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">Pokemon</span>
-<span class="k">@dynamic</span> <span class="n">type</span><span class="p">,</span> <span class="n">name</span><span class="p">;</span>
-<span class="k">@end</span>
-</code></pre></div></div>
-
-<p><em>Property Attributes</em></p>
-
-<p>For example: <code class="highlighter-rouge"><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">type</span><span class="p">;</span></code></p>
+<p>Yay for app development? Topics I want to look more into to explore and do in my free time, if ever I find myself sitting around at home:</p>
 
 <ul>
-  <li><strong>Atomicity</strong>: By default accessors are locked to ensure atomicity.</li>
-  <li><strong>Read/Write</strong>: (readonly, readwrite) where only a getter is available for the former and a getter/setter available for the latter.</li>
-  <li><strong>Memory-Management</strong>: affects only the setter
+  <li>Objective-C Patterns and Best Practices: focus on a topic to research into with various use cases. I can finally take advantage of the books I bought to help with this:
     <ul>
-      <li>assign: used for scalar types like CGFloat or NSInteger</li>
-      <li>strong: the property defines an owning relationship. I wonder if I can make this analogy. Let’s say we have six Pokemon on hand and we catch a seventh one: Gulpin. Because we are required to hold six Pokemon at all time, we first “retain” Gulpin, “release” Caterpie and set Guplin as our new sixth Pokemon. Similar to a <strong>strong</strong> semantic when a new value is set we first retain it, release the old value, and then set the new value.</li>
-      <li>weak: property defines a nonowning relationship. When a new value is set, the new value is not retained and the old value is not released. The main difference between weak and assign is that a weak property’s value will have nilled out if the object it’s defined as is ever destroyed. (Hm I guess the Pokemon analogy doesn’t work at all. Will need to think more otherwise I’ll just be confusing myself. Shall update later).</li>
-      <li>unsafe_unretained: same as assign but indicates a nonowning relationship (unretained) that’s not nilled out (unsafe) when the target is destroyed</li>
-      <li>copy: owning relationship like strong but rather than retaining value, it copies the value. Usually used for NSString* or mutable objects to preserve encapsulation.</li>
+      <li>Memory Management</li>
+      <li>App lifecycles</li>
+      <li>Facebook technologies (GraphQL, ComponentKit)</li>
+      <li>Design patterns: Listener/Announcer, Protocols</li>
+      <li>Basic object-oriented programming ideas</li>
     </ul>
   </li>
-  <li><strong>Method Names</strong>:
+  <li>Explore various AR app ideas
     <ul>
-      <li>getter=<name>: usually used for Bool properties to define getter name.
-</name>        <ul>
-          <li><code class="highlighter-rouge"><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">didLearn</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">learn</span><span class="p">;</span></code></li>
-        </ul>
-      </li>
-      <li>setter=<name>: specifies setter name. Not usually used.</name></li>
+      <li>Premise: I recently did a fun AR app that seemed to draw people closer together by having them experience Pokemon at the same time. However it relied on providing a smartphone with a pre-downloaded app. I wonder when we’ll replace our smartphone reliance?</li>
+    </ul>
+  </li>
+  <li>Graphics
+    <ul>
+      <li>Replicate a scene from Piper (https://fburl.com/b14u4io8)</li>
+    </ul>
+  </li>
+  <li>App ideas:
+    <ul>
+      <li>Sample componentKit app to build up components knowledge.</li>
+      <li>Fun compliments storage app.</li>
     </ul>
   </li>
 </ul>
-
-<p><em>Definitions I need to remember</em></p>
-<ul>
-  <li>To be <strong>Statically allocated</strong> means that memory is allocated at compile time.</li>
-  <li>A <strong>runtime</strong> is like the baker at a bakery that grabs all the ingredients (data structure, functions, memory-management methods, etc.) to mix together and bake a cake (aka the library that code is linked to to run).</li>
-</ul>
-
-<p>Objective-C discovers object type at runtime and can be described as a messaging structure with dynamic binding.</p>
-
-<p>Let’s break that sentence down: Messaging structure uses dynamic binding, meaning the runtime decides which code gets executed. (Whereas languages like python has function calling which decides which code will be executed. I think?).</p>
-
-<p>Need to finish this up later. Time to grocery shop!</p>
 
   </div>
 

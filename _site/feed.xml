@@ -5,9 +5,9 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Dec 2018 00:05:20 -0800</pubDate>
-    <lastBuildDate>Wed, 12 Dec 2018 00:05:20 -0800</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
+    <pubDate>Wed, 12 Dec 2018 00:14:17 -0800</pubDate>
+    <lastBuildDate>Wed, 12 Dec 2018 00:14:17 -0800</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
     
       <item>
         <title>Quibbles 1</title>
@@ -350,8 +350,8 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;I’m just beginning my own journey and I’m so truly excited for what’s to come because where I’m at now. By golly gosh darn. Life’s simply amazing because I allow it to be.&lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Mar 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/reflections/2018/03/04/Adventure-Time.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/03/04/Adventure-Time.html</guid>
+        <link>http://localhost:4000/quibbles/reflections/2018/03/03/Adventure-Time.html</link>
+        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/03/03/Adventure-Time.html</guid>
         
         
         <category>Quibbles</category>
@@ -397,8 +397,8 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;&lt;em&gt;The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do.&lt;/em&gt; - Sarah Ban Breathnach&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Feb 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/reflections/2018/02/05/How-to-define-success.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/02/05/How-to-define-success.html</guid>
+        <link>http://localhost:4000/quibbles/reflections/2018/02/04/How-to-define-success.html</link>
+        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/02/04/How-to-define-success.html</guid>
         
         
         <category>Quibbles</category>
@@ -489,8 +489,8 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;Until next time. Back to work!&lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Feb 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/obj-c/2018/02/04/Subclassing-and-Alternatives.html</link>
-        <guid isPermaLink="true">http://localhost:4000/obj-c/2018/02/04/Subclassing-and-Alternatives.html</guid>
+        <link>http://localhost:4000/obj-c/2018/02/03/Subclassing-and-Alternatives.html</link>
+        <guid isPermaLink="true">http://localhost:4000/obj-c/2018/02/03/Subclassing-and-Alternatives.html</guid>
         
         
         <category>Obj-C</category>
@@ -524,8 +524,8 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;Here’s to continuing to explore and learn; to keep plodding along. Despite the increasingly long hours I spend at work it’s honestly so exciting to see how we breathe life into a product. I feel extremely grateful to be a part of the grueling process to make something that’s so carefully researched and thought out. As for our deadline, we’ll see whether we can make it. When our deadline is set won’t determine what I’ll accomplish. I can only control what I do every day - step after step, task after task, and how I challenge myself to move faster, improve, and learn more.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Jan 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/2018/01/28/Quibbles.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/2018/01/28/Quibbles.html</guid>
+        <link>http://localhost:4000/quibbles/2018/01/27/Quibbles.html</link>
+        <guid isPermaLink="true">http://localhost:4000/quibbles/2018/01/27/Quibbles.html</guid>
         
         
         <category>Quibbles</category>
