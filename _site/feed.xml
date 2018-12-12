@@ -5,9 +5,127 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Sep 2018 12:00:32 -0700</pubDate>
-    <lastBuildDate>Sun, 30 Sep 2018 12:00:32 -0700</lastBuildDate>
+    <pubDate>Tue, 11 Dec 2018 23:52:53 -0800</pubDate>
+    <lastBuildDate>Tue, 11 Dec 2018 23:52:53 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Quibbles 1</title>
+        <description>&lt;p&gt;“I believe that maturity is not an outgrowing, but a growing up: that an adult is not a dead child, but a child who survived” - Ursula K Le Guin&lt;/p&gt;
+
+&lt;p&gt;“The opposite of spare time is, I guess, occupied time. In my case I still don’t know what spare time is because all my time is occupied. It always has been and it is now. It’s occupied by living.” - Ursula K Le Guin&lt;/p&gt;
+
+&lt;p&gt;I keep reading voraciously to find the answer. What’s my question though? I have this unsettling unease where I keep wanting to settle down. Like an unreachable itch to satisfy the unease won’t rest. Where am I going, to what end will I reach my destination?&lt;/p&gt;
+
+&lt;p&gt;Sometimes it’s just about going out there and doing it.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 Oct 2018 18:20:26 -0700</pubDate>
+        <link>http://localhost:4000/quibbles/2018/10/21/Quibbles-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/quibbles/2018/10/21/Quibbles-1.html</guid>
+        
+        
+        <category>Quibbles</category>
+        
+      </item>
+    
+      <item>
+        <title>Online reading list</title>
+        <description>&lt;p&gt;Will probably need to keep this post updated.&lt;/p&gt;
+
+&lt;p&gt;Side projects to work on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/mvGOv9KEJWg&quot;&gt;AR portal to another world&lt;/a&gt;!
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.raywenderlich.com/5516-building-a-portal-app-in-arkit-getting-started&quot;&gt;https://www.raywenderlich.com/5516-building-a-portal-app-in-arkit-getting-started&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.raywenderlich.com/5519-building-a-portal-app-in-arkit-adding-objects&quot;&gt;https://www.raywenderlich.com/5519-building-a-portal-app-in-arkit-adding-objects&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;People to follow:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/nathangitter&quot;&gt;Nathan Gitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/yumaSoerianto&quot;&gt;Yuma&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/AndyyHope&quot;&gt;Andy Hope&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;body push oriented lines. how?! &lt;a href=&quot;https://twitter.com/zachlieberman/status/1044399106007871488&quot;&gt;Zach Lieberman&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Simple chat app to send ar stickers!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To save for later:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nytimes.com/2018/09/30/us/samantha-bee-cecile-richards-self-doubt.html&quot;&gt;Overcoming self-doubt&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;“Start before you’re ready. Because if you wait until everything is lined up — your kids are the right age, or you’ve got the right degrees, or you have the right clothes — then life is going to pass you by.” - Samantha Richards&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=18104814&quot;&gt;Best Textbooks in each subject&lt;/a&gt; &amp;lt;- This is a link.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Blogs to check on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Patrick Collision link on other blogs to follow: &lt;a href=&quot;https://patrickcollison.com/people&quot;&gt;blogs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Article links: &lt;a href=&quot;https://nintil.com/2018/09/09/links-20/#more-11801&quot;&gt;https://nintil.com/2018/09/09/links-20/#more-11801&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On learning how to create a webserver:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ruslanspivak.com/lsbaws-part1/&quot;&gt;https://ruslanspivak.com/lsbaws-part1/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa&quot;&gt;https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Creating and figuring out how messaging apps work:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codetiburon.com/create-chat-app-like-whatsapp/&quot;&gt;https://codetiburon.com/create-chat-app-like-whatsapp/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How does data flow between server and client?
+I think people usually use websockets; I’m not sure where I heard of this before though but after quick googling it looks like websockets are the next step after creating a server. I suppose I could use libraries like StarScream? And I suppose &lt;a href=&quot;https://www.raywenderlich.com/861-websockets-on-ios-with-starscream&quot;&gt;https://www.raywenderlich.com/861-websockets-on-ios-with-starscream&lt;/a&gt; actually lays out building a simple chat app&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Data flow&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;to be filled in.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Extras:&lt;/p&gt;
+
+&lt;p&gt;NSMutableArray deep dive:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray&lt;/li&gt;
+  &lt;li&gt;http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On C:
+https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf&lt;/p&gt;
+
+&lt;p&gt;Spring 16 61B Lectures:
+https://www.youtube.com/watch?v=LVu7SOLNCWM&amp;amp;list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf&lt;/p&gt;
+
+&lt;p&gt;https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx&lt;/p&gt;
+
+&lt;p&gt;Data structures summary:&lt;/p&gt;
+
+&lt;p&gt;super helpful to think about what data structures are and how to approach increasing efficiency and performance through combination of understanding problem type and what to solve
+https://www.youtube.com/watch?v=i-OuY5o_G8g&amp;amp;index=7&amp;amp;list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI&lt;/p&gt;
+
+&lt;p&gt;Recommended technical reading:
+&lt;a href=&quot;https://blog.codinghorror.com/recommended-reading-for-developers/&quot;&gt;https://blog.codinghorror.com/recommended-reading-for-developers/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Currently reading Code Complete 2!&lt;/p&gt;
+
+&lt;p&gt;I need to read more code design books.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Sep 2018 18:20:26 -0700</pubDate>
+        <link>http://localhost:4000/goodreads/2018/09/30/Online-reading-list.html</link>
+        <guid isPermaLink="true">http://localhost:4000/goodreads/2018/09/30/Online-reading-list.html</guid>
+        
+        
+        <category>GoodReads</category>
+        
+      </item>
     
       <item>
         <title>Reacting to change</title>
@@ -405,124 +523,6 @@
         
         
         <category>Quibbles</category>
-        
-      </item>
-    
-      <item>
-        <title>Back to Basics with Property Attributes</title>
-        <description>&lt;p&gt;Some things that seem obvious to others, to me need to be studied more thoroughly. One such topic I want to focus on this week is properties.
-But why Objective-C? Mainly because that’s the language we use at Facebook to build our app. And also because I want to better understand why we choose to use Objective-C rather than the ‘sexier’ Swift language.&lt;/p&gt;
-
-&lt;p&gt;Properties are thought of as accessors to a variable in a data object.&lt;/p&gt;
-
-&lt;p&gt;@synthesize: controls name of instance variable.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@synthesize&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_myType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@synthesize&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_myName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Usually we would just let the compiler automatically write the code for these methods (ie. autosynthesis). For example, the two instance variables above would instead be &lt;code class=&quot;highlighter-rouge&quot;&gt;_type&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_name&lt;/code&gt; with autosynthesis.&lt;/p&gt;
-
-&lt;p&gt;To prevent the compiler from synthesizing an accessor method we can use @dynamic. This tells the compiler to not create an instance variable and accessor. Instead the compiler trusts us that the variable will be available at runtime:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@dynamic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Property Attributes&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;For example: &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;readwrite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Atomicity&lt;/strong&gt;: By default accessors are locked to ensure atomicity.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Read/Write&lt;/strong&gt;: (readonly, readwrite) where only a getter is available for the former and a getter/setter available for the latter.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Memory-Management&lt;/strong&gt;: affects only the setter
-    &lt;ul&gt;
-      &lt;li&gt;assign: used for scalar types like CGFloat or NSInteger&lt;/li&gt;
-      &lt;li&gt;strong: the property defines an owning relationship. I wonder if I can make this analogy. Let’s say we have six Pokemon on hand and we catch a seventh one: Gulpin. Because we are required to hold six Pokemon at all time, we first “retain” Gulpin, “release” Caterpie and set Guplin as our new sixth Pokemon. Similar to a &lt;strong&gt;strong&lt;/strong&gt; semantic when a new value is set we first retain it, release the old value, and then set the new value.&lt;/li&gt;
-      &lt;li&gt;weak: property defines a nonowning relationship. When a new value is set, the new value is not retained and the old value is not released. The main difference between weak and assign is that a weak property’s value will have nilled out if the object it’s defined as is ever destroyed. (Hm I guess the Pokemon analogy doesn’t work at all. Will need to think more otherwise I’ll just be confusing myself. Shall update later).&lt;/li&gt;
-      &lt;li&gt;unsafe_unretained: same as assign but indicates a nonowning relationship (unretained) that’s not nilled out (unsafe) when the target is destroyed&lt;/li&gt;
-      &lt;li&gt;copy: owning relationship like strong but rather than retaining value, it copies the value. Usually used for NSString* or mutable objects to preserve encapsulation.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Method Names&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;getter=&lt;name&gt;: usually used for Bool properties to define getter name.
-&lt;/name&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;didLearn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BOOL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;setter=&lt;name&gt;: specifies setter name. Not usually used.&lt;/name&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Definitions I need to remember&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;To be &lt;strong&gt;Statically allocated&lt;/strong&gt; means that memory is allocated at compile time.&lt;/li&gt;
-  &lt;li&gt;A &lt;strong&gt;runtime&lt;/strong&gt; is like the baker at a bakery that grabs all the ingredients (data structure, functions, memory-management methods, etc.) to mix together and bake a cake (aka the library that code is linked to to run).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Objective-C discovers object type at runtime and can be described as a messaging structure with dynamic binding.&lt;/p&gt;
-
-&lt;p&gt;Let’s break that sentence down: Messaging structure uses dynamic binding, meaning the runtime decides which code gets executed. (Whereas languages like python has function calling which decides which code will be executed. I think?).&lt;/p&gt;
-
-&lt;p&gt;Need to finish this up later. Time to grocery shop!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Jan 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/obj-c/2018/01/21/Back-to-Basics-Properties.html</link>
-        <guid isPermaLink="true">http://localhost:4000/obj-c/2018/01/21/Back-to-Basics-Properties.html</guid>
-        
-        
-        <category>Obj-C</category>
-        
-      </item>
-    
-      <item>
-        <title>Ideas to Research</title>
-        <description>&lt;p&gt;Fun fact of the day: according to Pew Research Center, 77% of Americans own a smartphone of some kind. It’s more than doubled since 2011, where only 35% of Americans owned a smartphone:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/smartphone_ownership.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Yay for app development? Topics I want to look more into to explore and do in my free time, if ever I find myself sitting around at home:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Objective-C Patterns and Best Practices: focus on a topic to research into with various use cases. I can finally take advantage of the books I bought to help with this:
-    &lt;ul&gt;
-      &lt;li&gt;Memory Management&lt;/li&gt;
-      &lt;li&gt;App lifecycles&lt;/li&gt;
-      &lt;li&gt;Facebook technologies (GraphQL, ComponentKit)&lt;/li&gt;
-      &lt;li&gt;Design patterns: Listener/Announcer, Protocols&lt;/li&gt;
-      &lt;li&gt;Basic object-oriented programming ideas&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Explore various AR app ideas
-    &lt;ul&gt;
-      &lt;li&gt;Premise: I recently did a fun AR app that seemed to draw people closer together by having them experience Pokemon at the same time. However it relied on providing a smartphone with a pre-downloaded app. I wonder when we’ll replace our smartphone reliance?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Graphics
-    &lt;ul&gt;
-      &lt;li&gt;Replicate a scene from Piper (https://fburl.com/b14u4io8)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;App ideas:
-    &lt;ul&gt;
-      &lt;li&gt;Sample componentKit app to build up components knowledge.&lt;/li&gt;
-      &lt;li&gt;Fun compliments storage app.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 13 Jan 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/projects/2018/01/14/Ideas-to-Research.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/2018/01/14/Ideas-to-Research.html</guid>
-        
-        
-        <category>Projects</category>
         
       </item>
     
