@@ -5,19 +5,25 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Dec 2018 23:52:53 -0800</pubDate>
-    <lastBuildDate>Tue, 11 Dec 2018 23:52:53 -0800</lastBuildDate>
+    <pubDate>Tue, 11 Dec 2018 23:58:06 -0800</pubDate>
+    <lastBuildDate>Tue, 11 Dec 2018 23:58:06 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Quibbles 1</title>
-        <description>&lt;p&gt;“I believe that maturity is not an outgrowing, but a growing up: that an adult is not a dead child, but a child who survived” - Ursula K Le Guin&lt;/p&gt;
+        <description>&lt;p&gt;Ursula K Le Guin quotes&lt;/p&gt;
 
-&lt;p&gt;“The opposite of spare time is, I guess, occupied time. In my case I still don’t know what spare time is because all my time is occupied. It always has been and it is now. It’s occupied by living.” - Ursula K Le Guin&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“I believe that maturity is not an outgrowing, but a growing up: that an adult is not a dead child, but a child who survived.”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;I keep reading voraciously to find the answer. What’s my question though? I have this unsettling unease where I keep wanting to settle down. Like an unreachable itch to satisfy the unease won’t rest. Where am I going, to what end will I reach my destination?&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“The opposite of spare time is, I guess, occupied time. In my case I still don’t know what spare time is because all my time is occupied. It always has been and it is now. It’s occupied by living.”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Sometimes it’s just about going out there and doing it.&lt;/p&gt;
+&lt;p&gt;I keep reading voraciously to find the answer. What’s my question though? I have this unsettling unease where I keep wanting to settle down. An unreachable itch that won’t rest until I figure out what is is that I do best. Where am I going? What marks the end? What is my destination?&lt;/p&gt;
+
+&lt;p&gt;Sometimes it’s just about going out there and doing it. Whatever ‘it’ refers to.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Oct 2018 18:20:26 -0700</pubDate>
         <link>http://localhost:4000/quibbles/2018/10/21/Quibbles-1.html</link>
