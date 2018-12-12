@@ -48,21 +48,21 @@ Data flow
 Extras:
 
 NSMutableArray deep dive:
-- https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray
-- http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/
+- [https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray](https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray)
+- [http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/](http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/)
 
 On C:
-https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf
+[https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf](https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf)
 
 Spring 16 61B Lectures:
-https://www.youtube.com/watch?v=LVu7SOLNCWM&list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf
+[https://www.youtube.com/watch?v=LVu7SOLNCWM&list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf](https://www.youtube.com/watch?v=LVu7SOLNCWM&list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf)
 
-https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx
+[https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx](https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx)
 
 Data structures summary:
 
 super helpful to think about what data structures are and how to approach increasing efficiency and performance through combination of understanding problem type and what to solve
-https://www.youtube.com/watch?v=i-OuY5o_G8g&index=7&list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI
+[https://www.youtube.com/watch?v=i-OuY5o_G8g&index=7&list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI](https://www.youtube.com/watch?v=i-OuY5o_G8g&index=7&list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI)
 
 
 Recommended technical reading:

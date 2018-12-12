@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Dec 2018 00:01:11 -0800</pubDate>
-    <lastBuildDate>Wed, 12 Dec 2018 00:01:11 -0800</lastBuildDate>
+    <pubDate>Wed, 12 Dec 2018 00:05:20 -0800</pubDate>
+    <lastBuildDate>Wed, 12 Dec 2018 00:05:20 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -100,22 +100,22 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 
 &lt;p&gt;NSMutableArray deep dive:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray&lt;/li&gt;
-  &lt;li&gt;http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray&quot;&gt;https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/&quot;&gt;http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;On C:
-https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf&lt;/p&gt;
+&lt;a href=&quot;https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf&quot;&gt;https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Spring 16 61B Lectures:
-https://www.youtube.com/watch?v=LVu7SOLNCWM&amp;amp;list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf&lt;/p&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=LVu7SOLNCWM&amp;amp;list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf&quot;&gt;https://www.youtube.com/watch?v=LVu7SOLNCWM&amp;amp;list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx&quot;&gt;https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Data structures summary:&lt;/p&gt;
 
 &lt;p&gt;super helpful to think about what data structures are and how to approach increasing efficiency and performance through combination of understanding problem type and what to solve
-https://www.youtube.com/watch?v=i-OuY5o_G8g&amp;amp;index=7&amp;amp;list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI&lt;/p&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=i-OuY5o_G8g&amp;amp;index=7&amp;amp;list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI&quot;&gt;https://www.youtube.com/watch?v=i-OuY5o_G8g&amp;amp;index=7&amp;amp;list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Recommended technical reading:
 &lt;a href=&quot;https://blog.codinghorror.com/recommended-reading-for-developers/&quot;&gt;https://blog.codinghorror.com/recommended-reading-for-developers/&lt;/a&gt;&lt;/p&gt;
