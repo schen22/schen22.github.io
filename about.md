@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hey it's Sarah! I'm a software engineer working at Facebook. My current interests are in mobile development and random stuff like figuring out how to keep my apartment clean. I also enjoy teaching, cooking, running, hiking, and wandering. Currently I'm in the middle of a journey to find a good bookstore and/or coffee shop to frequent.
+Hey it's Sarah! I'm a software engineer working at Facebook. My current interests are in mobile development and random stuff like figuring out how to keep my apartment clean. I also enjoy teaching, cooking, running, hiking, and wandering. Currently I'm in the continuous journey of finding great bookstores. I define a great bookstore by how many rare finds I can find in their sale section. :3
 
 **Updates:** I may have found a keeper! Books Inc is fairly close to me, and endearingly claims the title of "the oldest bookstore of the West." They provide a substantial book selection for an independent store. Though I suppose that should come as no surprise because more people here support local businesses.
 

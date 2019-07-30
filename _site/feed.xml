@@ -5,17 +5,51 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Jul 2019 22:38:15 -0700</pubDate>
-    <lastBuildDate>Mon, 29 Jul 2019 22:38:15 -0700</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 07:15:25 -0700</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 07:15:25 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
-        <title>Day 3</title>
-        <description>&lt;p&gt;“Tomorrow or the next day or the next month or maybe even next year (my personal record is nine years waiting for the second half of a refactoring), the insight comes. Either you understand why you were wrong, or you understand why you were right. In any case, the next step is clear. You take the step with the confidence you had when you started. Maybe you’re even a little abashed at how stupid you could have been not to have seen it all along. Don’t be. It happens to everyone.”&lt;/p&gt;
+        <title>2 years</title>
+        <description>&lt;p&gt;On July 26th, I reached 2 years at Facebook. You may have read a similar form &lt;a href=&quot;https://schen22.github.io/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html&quot;&gt;of this post&lt;/a&gt; already. This is a new version of that post but with more ramblings. Having worked a total of three years in industry I felt it was time for another yearly reflection mark.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Kent Beck&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;I recently came across reflections I wrote in college about my relationship with Computer Science and Software Engineering. I read about how my first internship with IBM my junior summer in college was “A dream come true that made me fall in love with CS.”&lt;/p&gt;
+
+&lt;p&gt;Fundamentally that internship was pivotal in allowing me discover how much I love to build. All the self-doubts I had of myself were conquered because of this sole desire to build, to be better, and to make cool and useful things.&lt;/p&gt;
+
+&lt;p&gt;Boring drive? I don’t know - that drive to build and improve has led me to where I am today. If you told sophomore year college me how I would be working at Facebook building one of the most used products, I would’ve scoffed in your face, “Yeah, right.”&lt;/p&gt;
+
+&lt;p&gt;I used to hold all software engineers and people who majored in Computer Science on pedestals. I had thought: “All the projects I worked on [at IBM] and the people I met were amazing. I want to be just as cool and smart as they were/are.” The one thing that’s changed about me the most over the course of three years is how I view myself, and other engineers.&lt;/p&gt;
+
+&lt;p&gt;Some of my coworkers are bad-ass wizards who push me to learn and explore beyond my boundaries. All of my coworkers are great and easy to work with (thankfully). However, it was important for me to recognize &lt;em&gt;most&lt;/em&gt; engineers are not god-like people who can just figure things out instantly, code without introducing any bugs, and have a complete understanding of how things work.&lt;/p&gt;
+
+&lt;p&gt;Great engineers are people that know how to identify problems, figure out which problem to solve, and apply themselves lazily so that minimal effort drives maximum product value. Realizing this made it easier for me to feel more like I belonged, and less like I was not qualified to be an engineer among the best and the brightest.&lt;/p&gt;
+
+&lt;p&gt;To be able to create the best products, I need to be able to collaborate well. This means that any thoughts or opinions I have of others that would reduce the chances of my talking with them would be detrimental to the product vision I have in my head.&lt;/p&gt;
+
+&lt;p&gt;Of course there were times that I lost sight of the big picture goal I had for why I was an engineer. Things aren’t always rainbows and sunshine :) Sometimes my passion to build went out like a fire due to things outside of my control: upper management, bureaucracy. Sometimes my passion disappeared if I failed to have a growth mindset. However this passion to build would always be re-kindled upon talking with my co-workers, learning something I never knew before, and observing how users use the products I create.&lt;/p&gt;
+
+&lt;p&gt;The development cycle to me is a process of never ending improvement. I have faith that for any product and problem space I choose to work on, the solutions I find and the product I build have the potential to improve and better people’s lives. And that continues to excite me.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to even more exciting adventures and the next few years.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;assets/img/2-years.jpg&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Warm and fuzzies. My team is truly the best.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Jul 2019 18:20:26 -0700</pubDate>
+        <link>http://localhost:4000/reflections/2019/07/29/2-years.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2019/07/29/2-years.html</guid>
+        
+        
+        <category>Reflections</category>
+        
+      </item>
+    
+      <item>
+        <title>Day 3</title>
+        <description>&lt;p&gt;“Tomorrow or the next day or the next month or maybe even next year (my personal record is nine years waiting for the second half of a refactoring), the insight comes. Either you understand why you were wrong, or you understand why you were right. In any case, the next step is clear. You take the step with the confidence you had when you started. Maybe you’re even a little abashed at how stupid you could have been not to have seen it all along. Don’t be. It happens to everyone.” - Kent Beck&lt;/p&gt;
 
 &lt;p&gt;I’m currently reading through (or more accurately, attempting to read through) “Refactoring: Improving the Design of Existing Code.” The reasons for why is I can recognize when code is beautiful, but I can’t figure out what makes code beautiful. I can grasp the over-arching concepts of readability, scoping, hiding information other classes or functions shouldn’t need to know, ease of adding to or flexibility of the code’s core foundation.&lt;/p&gt;
 
@@ -421,53 +455,6 @@ I think people usually use websockets; I’m not sure where I heard of this befo
         <pubDate>Sat, 03 Mar 2018 23:20:26 -0800</pubDate>
         <link>http://localhost:4000/quibbles/reflections/2018/03/03/Adventure-Time.html</link>
         <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/03/03/Adventure-Time.html</guid>
-        
-        
-        <category>Quibbles</category>
-        
-        <category>Reflections</category>
-        
-      </item>
-    
-      <item>
-        <title>How to define success</title>
-        <description>&lt;p&gt;I’ve decided I want to define success more concretely, and I happened upon a great read this past weekend that inspired this redefinition. Rather than to be defined or (what I feel at times) restricted to the job I have, the role I play on my team, or the lines of code I write a day, I want to define success on the basis of the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;the number minutes I spend running every day in order to stay healthy and do all the things I want to do in life.&lt;/li&gt;
-  &lt;li&gt;the number of times I laugh or enjoy the conversations I have by staying present and open-minded to situations around me.&lt;/li&gt;
-  &lt;li&gt;the number of minutes I spend on the phone with my parents because I care about my family.&lt;/li&gt;
-  &lt;li&gt;the number of times I speak up among a group of people in order to remember I have a voice.&lt;/li&gt;
-  &lt;li&gt;the number of lessons learned to satisfy my love of learning and desire to understand.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Health, presence, family, attitude and aptitude. Suffice it to say I think these can act as goals to ground me throughout the day to concentrate more on what I want to do, and less on what I do.&lt;/p&gt;
-
-&lt;p&gt;While there’s no measure that I can compare myself to just yet, I can create some type of iPython notebook to track (at the very least) physical exercise. I’ve been wanting to get a little more in data analysis. And plus I’m signed up for the half marathon so honestly I should be running more than the 2-3 miles I get. THREE BIRDS WITH ONE STONE! Oh wait, four! Because this way I can guarantee comparisons of myself to me (rather than others).&lt;/p&gt;
-
-&lt;p&gt;Now though, I’m wondering how do these definitions of success relate to the goals that I have at work?&lt;/p&gt;
-
-&lt;p&gt;I guess to put a different spin on it: in order to learn more, I have to review more code, and ask questions to code more effectively. In a way, the more I do, the more I learn. So by the communicative property, if learning comes first, inherently, the goals or expectations set at work will follow. I think the most important lesson I’ve learned is, “Me first.” Because honestly there’s no one else that will ever do so, nor would I want them to. I have to own my own way and what I do. To do this I have to be comfortable with putting myself first.&lt;/p&gt;
-
-&lt;p&gt;This doesn’t mean I should become a jackass or some arrogant coworker who only thinks of what I want and ignores all else. I still have my values to keep me in check for that thankfully. Rather, it’s more I want to focus on what I want to accomplish, how to get to where I want to go; rather than to concentrate on how others are doing or give in to the norm. For example the other day at Costco there was this couple that cut in front of me. And rather than speaking up, I just stood there silently and took it. While this may be an extreme example, it’s been aggravating me that I hadn’t spoke up.&lt;/p&gt;
-
-&lt;p&gt;But at the same time that’s okay because I can take it as a learning experience. I just need to practice what I should say in these settings because I’m not used to that happening to me. (I mean come on, I’m a cute Asian girl; who can ignore me :P). In any case, next time I’m prepared to say, “Excuse me sir/miss, I was already here in line,” and then give them a chance to explain themselves. If they’re in some sort of emergency then by all means take my spot; but I shouldn’t let people take advantage of me.&lt;/p&gt;
-
-&lt;p&gt;Random other goals I’ll update at another time but want to jot down for now:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I want to increase my circle of influence.&lt;/li&gt;
-  &lt;li&gt;I want to go backpacking or camping in the mountains.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Cheerios,&lt;/p&gt;
-
-&lt;p&gt;Sarah&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do.&lt;/em&gt; - Sarah Ban Breathnach&lt;/p&gt;
-</description>
-        <pubDate>Sun, 04 Feb 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/reflections/2018/02/04/How-to-define-success.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/02/04/How-to-define-success.html</guid>
         
         
         <category>Quibbles</category>
