@@ -2,7 +2,7 @@
 layout: post
 title: What builds a community?
 date: 2018-06-18 19:20:26 -0600
-categories: Quibbles
+categories: Reflections
 ---
 
 "A group of people living in the same place or having a particular characteristic in common."

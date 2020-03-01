@@ -2,7 +2,7 @@
 layout: post
 title:  "Refactoring and jotting notes about go"
 date: 2017-01-05 09:56:26 -0600
-categories: Go Projects
+categories: Languages
 ---
 
 I hit somewhat of a rut after refactoring. I ran into this error message after implementing a `hitable`, `hitableList`, and `sphere` objects for the ray tracer:

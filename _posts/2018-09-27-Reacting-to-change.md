@@ -2,7 +2,7 @@
 layout: post
 title: Reacting to change
 date: 2018-09-27 19:20:26 -0600
-categories: Quibbles
+categories: Reflections
 ---
 
 For this post I want to try out the Socratic method I happened upon in this new book I'm reading, _The Consolations of Philosophy_ by Alain de Botton.

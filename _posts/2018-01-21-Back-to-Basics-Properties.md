@@ -2,7 +2,7 @@
 layout: post
 title:  Back to Basics with Property Attributes
 date: 2018-01-21 01:20:26 -0600
-categories: Obj-C
+categories: Languages
 ---
 
 Some things that seem obvious to others, to me need to be studied more thoroughly. One such topic I want to focus on this week is properties.

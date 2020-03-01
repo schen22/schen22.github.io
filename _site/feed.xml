@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 07:15:25 -0700</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 07:15:25 -0700</lastBuildDate>
+    <pubDate>Sun, 01 Mar 2020 09:12:27 -0800</pubDate>
+    <lastBuildDate>Sun, 01 Mar 2020 09:12:27 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -61,11 +61,11 @@ But there’s a flip side in that I’m a starter, not a finisher. I get attract
 &lt;p&gt;Leaving this post as is and unresolved, but actively working to improve this by just coding and reading more code.&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Feb 2019 17:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/2019/02/01/Day-3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/2019/02/01/Day-3.html</guid>
+        <link>http://localhost:4000/reflections/2019/02/01/Day-3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2019/02/01/Day-3.html</guid>
         
         
-        <category>Quibbles</category>
+        <category>Reflections</category>
         
       </item>
     
@@ -102,11 +102,9 @@ But there’s a flip side in that I’m a starter, not a finisher. I get attract
 &lt;center&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0snNB1yS3IE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
 </description>
         <pubDate>Sat, 12 Jan 2019 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/reflections/2019/01/12/Day-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2019/01/12/Day-2.html</guid>
+        <link>http://localhost:4000/reflections/2019/01/12/Day-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2019/01/12/Day-2.html</guid>
         
-        
-        <category>Quibbles</category>
         
         <category>Reflections</category>
         
@@ -129,11 +127,11 @@ But there’s a flip side in that I’m a starter, not a finisher. I get attract
 &lt;p&gt;Sometimes it’s just about going out there and doing it. Whatever ‘it’ refers to.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Oct 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/quibbles/2018/10/21/Quibbles-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/2018/10/21/Quibbles-1.html</guid>
+        <link>http://localhost:4000/reflections/2018/10/21/Quibbles-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2018/10/21/Quibbles-1.html</guid>
         
         
-        <category>Quibbles</category>
+        <category>Reflections</category>
         
       </item>
     
@@ -311,11 +309,11 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;I’m pretty stoked to try them out myself. Hopefully the perf work I’m starting to do at work can help contribute to the large battery drains that I observed previously when working with Unity and game dev. On another note I really wish I’d gone to the try!Swift conference, but that’s okay. Another year another time.&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Sep 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/quibbles/2018/09/27/Reacting-to-change.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/2018/09/27/Reacting-to-change.html</guid>
+        <link>http://localhost:4000/reflections/2018/09/27/Reacting-to-change.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2018/09/27/Reacting-to-change.html</guid>
         
         
-        <category>Quibbles</category>
+        <category>Reflections</category>
         
       </item>
     
@@ -334,11 +332,11 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;Just food for thought.&lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Jun 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/quibbles/2018/06/18/What-builds-a-community.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/2018/06/18/What-builds-a-community.html</guid>
+        <link>http://localhost:4000/reflections/2018/06/18/What-builds-a-community.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2018/06/18/What-builds-a-community.html</guid>
         
         
-        <category>Quibbles</category>
+        <category>Reflections</category>
         
       </item>
     
@@ -365,13 +363,11 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;After meeting up with multiple people, I also realized it’s not just advice I was looking for. I was looking for some way to find myself and find my own drive, intuition, and confidence. But at some point I just have to tune out the self-doubt I have in order to focus on what’s next. Just keep moving forward and the path will follow.&lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Jun 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/advice/2018/06/18/Nuggets.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/advice/2018/06/18/Nuggets.html</guid>
+        <link>http://localhost:4000/reflections/2018/06/18/Nuggets.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2018/06/18/Nuggets.html</guid>
         
         
         <category>Reflections</category>
-        
-        <category>Advice</category>
         
       </item>
     
@@ -410,11 +406,9 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 20 May 2018 00:20:26 -0700</pubDate>
-        <link>http://localhost:4000/quibbles/reflections/2018/05/20/Day-0.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/05/20/Day-0.html</guid>
+        <link>http://localhost:4000/reflections/2018/05/20/Day-0.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2018/05/20/Day-0.html</guid>
         
-        
-        <category>Quibbles</category>
         
         <category>Reflections</category>
         
@@ -453,11 +447,9 @@ I think people usually use websockets; I’m not sure where I heard of this befo
 &lt;p&gt;I’m just beginning my own journey and I’m so truly excited for what’s to come because where I’m at now. By golly gosh darn. Life’s simply amazing because I allow it to be.&lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Mar 2018 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/quibbles/reflections/2018/03/03/Adventure-Time.html</link>
-        <guid isPermaLink="true">http://localhost:4000/quibbles/reflections/2018/03/03/Adventure-Time.html</guid>
+        <link>http://localhost:4000/reflections/2018/03/03/Adventure-Time.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2018/03/03/Adventure-Time.html</guid>
         
-        
-        <category>Quibbles</category>
         
         <category>Reflections</category>
         

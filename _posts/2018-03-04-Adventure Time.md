@@ -2,7 +2,7 @@
 layout: post
 title:  Adventure Time
 date: 2018-03-04 01:20:26 -0600
-categories: Quibbles Reflections
+categories: Reflections
 ---
 
 There's more to life than solely success.

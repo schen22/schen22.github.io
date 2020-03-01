@@ -2,7 +2,7 @@
 layout: post
 title:  Subclassing and Alternatives
 date: 2018-02-04 01:20:26 -0600
-categories: Obj-C
+categories: Languages
 ---
 
 Sunday learning for today has taken me longer than usual. At the same time I think it's quite necessary to understand these various patterns that come across often: subclass, protocol, delegation, configuration objects, composition.

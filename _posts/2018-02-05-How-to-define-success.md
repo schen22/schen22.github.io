@@ -2,7 +2,7 @@
 layout: post
 title:  How to define success
 date: 2018-02-05 01:20:26 -0600
-categories: Quibbles Reflections
+categories: Reflections
 ---
 
 I've decided I want to define success more concretely, and I happened upon a great read this past weekend that inspired this redefinition. Rather than to be defined or (what I feel at times) restricted to the job I have, the role I play on my team, or the lines of code I write a day, I want to define success on the basis of the following:
