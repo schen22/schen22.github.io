@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Hi if you've happened upon this website, it's not maintained anymore! Maybe one day I'll get around to getting this up and running again. 
+Hey, thanks for taking a look at my page! This used to be a website where I jotted random thoughts and learning, but it needs to go through major scrubbing/re-vamp so I'm putting most of it under construction until I get another chance to take a look at it again (as of 9/2021).
 
-Here's a dog stealing a cookie in an attempt to encourage more smiles smiled today:
+re: 30 second blurb about me -- as an iOS and backend engineer, I love working with design and other product partners to build/ensure the best experience possible for end users. Outside of work I love to bug my friends and coerce them to go hiking or running with me. Otherwise you can usually find me at the park or at home reading.
 
-![]({{site.baseurl}}/assets/img/pug.gif)
+that's pretty much the tl;dr. Until next time!

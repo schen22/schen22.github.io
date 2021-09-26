@@ -10,7 +10,7 @@ Install rvm:
 
 `$ gem install bundler --user-install`
 
-`$ rvm install ruby 2.5.1`
+`$ rvm install ruby 3.0.0 && rvm use 3.0.0`
 
 `$ gem install jekyll`
 

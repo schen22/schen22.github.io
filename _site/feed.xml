@@ -5,37 +5,22 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Mar 2020 10:30:23 -0800</pubDate>
-    <lastBuildDate>Sun, 01 Mar 2020 10:30:23 -0800</lastBuildDate>
-    <generator>Jekyll v3.7.4</generator>
+    <pubDate>Sun, 26 Sep 2021 00:33:15 -0700</pubDate>
+    <lastBuildDate>Sun, 26 Sep 2021 00:33:15 -0700</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
     
       <item>
-        <title>Leap Day</title>
-        <description>&lt;p&gt;Happy Leap Day! Lately I’ve been interested in learning more about inequality, how markets work, and where money comes from. This post dives more into the economics aspects to better understand what I’ve learned.&lt;/p&gt;
+        <title>derpface</title>
+        <description>&lt;p&gt;Hi if you’ve happened upon this website, it’s not maintained anymore! tbd on when/if it ever will be again. Until then, wishing you all the best!&lt;/p&gt;
 
-&lt;p&gt;I’m still in the process to to learn various ideologies from Keynes, Friedman regarding macroeconomics, and explore their counter-arguments. The most fascinating thing I’ve learned thus far is that there exists various types of capitalism. And that there’s a blatant disregard and dislike most Americans hold fo socialism. But why, and what does socialism mean?&lt;/p&gt;
+&lt;p&gt;Have a cute doge gif stealing a cookie instead:&lt;/p&gt;
 
-&lt;p&gt;If anything my new interest categories I’m currently learning about remind me of my school days. I remember learning ‘-isms’ in a history class I took in high school. And all the economics courses I took in college. It’s quite amazing how things come full-circle. If only I had questions to focus my studies while learning in school, it would have made my learning so much more productive. Never too late though?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/pug.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Current question(s) focus I have is: why does inequality exist and what role does the market vs government vs corporations play to temper inequality?&lt;/p&gt;
-
-&lt;p&gt;In any case, I wanted to take a chance to reflect on what I’ve been learning from various books:&lt;/p&gt;
-
-&lt;p&gt;In &lt;em&gt;Free to Choose&lt;/em&gt; Friedman argues that governments is a limiting factor. Prices hold key pieces information to allow the market to self-function and provide. i.e. if the government interjects and mandates certain prices and limits for goods sold, there’s a negative consequences that prevent market players how to function and price accordingly. The underlying theme is that all buyers and sellers are pipelines that coexist and influence each other’s behaviors. Seems to make sense.&lt;/p&gt;
-
-&lt;p&gt;So let’s apply those principles to current US economics. Joseph Stiglitz’ presents in his book &lt;em&gt;The Great Divide&lt;/em&gt;: failure to follow free market principles have driven the inequality divide. Stiglitz argues how bailing out the big banks in 2008 have continued the trend to allow companies to preside and retain monopoly-like power. The argument is that this prevents the market from acting in accordance to basic principles of price-setting. This furthers the problem of inequality as those in the ‘top 1%’ stay at the top though ‘money-voting’ rather than ‘people-voting’. i.e. “socialism for the wealthy” as a result of tax cuts. The main theme was moving people to be selfish to support, create, restore the power of the middle-class for yourself to fulfill the American Dream. Else risk collapsing into Great Depression-like states.&lt;/p&gt;
-
-&lt;p&gt;Hrm. This leads me to wonder more about what are the incentives that drive banks, big-tech companies and workers? Obviously money. But here’s a thought experiment that’s been stuck in my head: if the government were to dole out subsidies to sponsor education at affordable rates (or free), and increase access to health care – does that mean the incentive to provide higher quality education and health care from those actors decrease?&lt;/p&gt;
-
-&lt;p&gt;My assumptions for this in practice are that health care and education costs will still stay the same though?&lt;/p&gt;
-
-&lt;p&gt;Reading and thinking more is making me confused. If I return to a sub-question I wanted to solve: what can I do to increase access to opportunities provided to me? I can help volunteer, teach others, or understand where the differences are to target.&lt;/p&gt;
-
-&lt;p&gt;I’ve tried the first two. But I haven’t done the last one at all. So I’ll continue to read, learn and think more I guess. Hopefully my line of thinking will become more coherent as time passes.  ¯_(ツ)_/¯&lt;/p&gt;
 </description>
-        <pubDate>Sat, 29 Feb 2020 09:30:26 -0800</pubDate>
-        <link>http://localhost:4000/reflections/2020/02/29/Inequality.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2020/02/29/Inequality.html</guid>
+        <pubDate>Sat, 25 Sep 2021 13:30:26 -0700</pubDate>
+        <link>http://localhost:4000/reflections/2021/09/25/to-be-continued.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/2021/09/25/to-be-continued.html</guid>
         
         
         <category>Reflections</category>
@@ -43,407 +28,65 @@
       </item>
     
       <item>
-        <title>2 years</title>
-        <description>&lt;p&gt;On July 26th, I reached 2 years at Facebook. You may have read a similar form &lt;a href=&quot;https://schen22.github.io/reflections/2016/12/16/Reflections-as-a-Software-Engineer.html&quot;&gt;of this post&lt;/a&gt; already. This is a new version of that post but with more ramblings. Having worked a total of three years in industry I felt it was time for another yearly reflection mark.&lt;/p&gt;
+        <title>Gotta Catch &apos;em All</title>
+        <description>&lt;p&gt;I was able to continue an Pokemon augmented reality project I’d been working on with two others at work; first as an event for IBM’s “Take Your Kid’s to Work Day,” then at talks for local charter schools, and just this past Tuesday, at &lt;a href=&quot;http://sxswedu.com/expo&quot;&gt;SXSW’s Education Exposition&lt;/a&gt; by participating in &lt;a href=&quot;https://www.tealsk12.org/&quot;&gt;TEALS’ Science Fair&lt;/a&gt;. TEALS stands for Technology Education and Literacy in Schools and helps promote computer science education courses in high schools. A huge passion of mine is to encourage and drive STEM education for K-12 public schools because I believe access to STEM drives more opportunities. STEM is growing at a rapid pace, and we need our future leaders, engineers, scientists, teachers and young professionals to be on the forefront of that change, earlier on. So what way is better than inspiring students into STEM through Pokemon? Makes it fun for both me and the audience.&lt;/p&gt;
 
-&lt;p&gt;I recently came across reflections I wrote in college about my relationship with Computer Science and Software Engineering. I read about how my first internship with IBM my junior summer in college was “A dream come true that made me fall in love with CS.”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/pokemil/sxsw_edu_expo.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Fundamentally that internship was pivotal in allowing me discover how much I love to build. All the self-doubts I had of myself were conquered because of this sole desire to build, to be better, and to make cool and useful things.&lt;/p&gt;
+&lt;p&gt;I worked with a designer who provided the 3D models and animation, and another engineer who introduced me to coding augmented reality games with Unity and Vuforia SDK. I added a shader to the 3D models to make sure the objects looked more like cartoons; otherwise the color was slightly off. When I added a shader though, I realized how similar all of the concepts were to the Ray Tracing project I had picked up! Depending on the albedo, and the number of light sources, the color of the 3D object differed. Taking into account that we had only one light source, and that handy toon shaders could be imported into the Unity project, I was happy to find how more realistic the Pokemon looked after the shader was applied.&lt;/p&gt;
 
-&lt;p&gt;Boring drive? I don’t know - that drive to build and improve has led me to where I am today. If you told sophomore year college me how I would be working at Facebook building one of the most used products, I would’ve scoffed in your face, “Yeah, right.”&lt;/p&gt;
+&lt;p&gt;Before a shader was applied:&lt;/p&gt;
 
-&lt;p&gt;I used to hold all software engineers and people who majored in Computer Science on pedestals. I had thought: “All the projects I worked on [at IBM] and the people I met were amazing. I want to be just as cool and smart as they were/are.” The one thing that’s changed about me the most over the course of three years is how I view myself, and other engineers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/pokemil/pikachu_preshader.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Some of my coworkers are bad-ass wizards who push me to learn and explore beyond my boundaries. All of my coworkers are great and easy to work with (thankfully). However, it was important for me to recognize &lt;em&gt;most&lt;/em&gt; engineers are not god-like people who can just figure things out instantly, code without introducing any bugs, and have a complete understanding of how things work.&lt;/p&gt;
+&lt;p&gt;After the shader was applied:&lt;/p&gt;
 
-&lt;p&gt;Great engineers are people that know how to identify problems, figure out which problem to solve, and apply themselves lazily so that minimal effort drives maximum product value. Realizing this made it easier for me to feel more like I belonged, and less like I was not qualified to be an engineer among the best and the brightest.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/pokemil/pikachu_postshader.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;To be able to create the best products, I need to be able to collaborate well. This means that any thoughts or opinions I have of others that would reduce the chances of my talking with them would be detrimental to the product vision I have in my head.&lt;/p&gt;
+&lt;p&gt;Putting everything together with the animation the designer gave us, the image recognition of the vinyl print in order to display the 3D object (Pikachu), here’s one of the Pokemon we were able to show at the SXSW Education Exposition:&lt;/p&gt;
 
-&lt;p&gt;Of course there were times that I lost sight of the big picture goal I had for why I was an engineer. Things aren’t always rainbows and sunshine :) Sometimes my passion to build went out like a fire due to things outside of my control: upper management, bureaucracy. Sometimes my passion disappeared if I failed to have a growth mindset. However this passion to build would always be re-kindled upon talking with my co-workers, learning something I never knew before, and observing how users use the products I create.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/pokemil/ar_demo.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The development cycle to me is a process of never ending improvement. I have faith that for any product and problem space I choose to work on, the solutions I find and the product I build have the potential to improve and better people’s lives. And that continues to excite me.&lt;/p&gt;
+&lt;p&gt;Overall the demo was a blast. We had three vinyl prints that represented three different Pokemon: Pikachu, Bulbasaur, and Mew. The students loved it, the parents loved it, the educators, after hearing my (and all the other IBM volunteers I was able to convince to come) spheal about how important AR could be within education, loved it. At first parents and educators were curious why we were at the exposition demonstrating a seemingly random AR game. However, augmented reality apps and games, similar to virtual reality, have the power to change how students will learn in the future.&lt;/p&gt;
 
-&lt;p&gt;Looking forward to even more exciting adventures and the next few years.&lt;/p&gt;
+&lt;p&gt;Imagine having similar icons to the vinyl print we created, placed in a textbook. A student points their phone into the textbook at the icon. The chapter is about animal cells and cell parts. Imagine students taking apart a cell, and discovering again what scientists had discovered in a lab, but in a classroom with their friends! Simply awe-inspiring. The concepts would be more intriguing as students would be relating to the experience first-hand, and hopefully as a result of being more intriguing, the idea behind the different parts of a cell would be better remembered. Of course, this is all from my perspective as an engineer and student. The actual implementation would be different, but the vision and goal to aim for is what I believe is unique.&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;assets/img/2-years.jpg&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;In terms of how we used the AR demo to encourage students towards STEM education, I asked students who were captivated by the Pokemon, what they want to build, what their favorite games were, what their favorite subjects were, and what they loved to do. I showed them how they could relate their passion for Pokemon, gaming, shopping, drawing, and marine biology to the AR game we made, and what we do at IBM. My main goal for attending and ensuring IBM had a presence at the SXSW Education Exposition, was to help students see that you don’t have to have the pre-conceived notion of an “engineering” or “science” mind to be an engineer or a creator. You don’t have to fit into any of the boxes people commonly portray programmers or computer scientists or innovators into. Instead, I wanted to help people see that everything is connected - and the passion to follow what you love, is the most important. (Aside from practicality and reality). The ability to dream and continue exploring was something I wanted to relate to everyone there.&lt;/p&gt;
 
-&lt;p&gt;Warm and fuzzies. My team is truly the best.&lt;/p&gt;
+&lt;p&gt;A 6-year old kid tried to peek behind the phone to see if Bulbasaur was hiding behind it. As he realized nothing was there, he looked back at the screen and yelped in delight again as he saw Bulbasaur again. He tried to hold out his hand to touch Bulbasaur, to locate where he was on the map; only to find his hand again with Bulbasaur in the background! He repeated the same actions again, and looked up in surprise. Right then and there, his look to me and the sparkle and hint at magic made all the hours I put into improving, debugging and testing the app, printing vinyl prints and coordinating volunteer efforts, worth it. Here’s to creating more magical moments for people to experience.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 Jul 2019 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/2019/07/29/2-years.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2019/07/29/2-years.html</guid>
+        <pubDate>Sat, 11 Mar 2017 23:20:26 -0800</pubDate>
+        <link>http://localhost:4000/reflections/projects/2017/03/11/Gotta-Catch-Em-All.html</link>
+        <guid isPermaLink="true">http://localhost:4000/reflections/projects/2017/03/11/Gotta-Catch-Em-All.html</guid>
         
         
         <category>Reflections</category>
         
-      </item>
-    
-      <item>
-        <title>Day 3</title>
-        <description>&lt;p&gt;“Tomorrow or the next day or the next month or maybe even next year (my personal record is nine years waiting for the second half of a refactoring), the insight comes. Either you understand why you were wrong, or you understand why you were right. In any case, the next step is clear. You take the step with the confidence you had when you started. Maybe you’re even a little abashed at how stupid you could have been not to have seen it all along. Don’t be. It happens to everyone.” - Kent Beck&lt;/p&gt;
-
-&lt;p&gt;I’m currently reading through (or more accurately, attempting to read through) “Refactoring: Improving the Design of Existing Code.” The reasons for why is I can recognize when code is beautiful, but I can’t figure out what makes code beautiful. I can grasp the over-arching concepts of readability, scoping, hiding information other classes or functions shouldn’t need to know, ease of adding to or flexibility of the code’s core foundation.&lt;/p&gt;
-
-&lt;p&gt;My questions here are how do people typically read technical books? This book, while great and gives solid and sound advice, is so super dense that I can’t help but feel I’m not getting all of what I should be out of what is being taught and explained.&lt;/p&gt;
-
-&lt;p&gt;“I think my career and the way I do things—the one word that kind of sums it up is “exploring.” I love exploring the edges—of ideas, of projects, and the physical earth, whatever it is—people too—and that I find very exciting.
-But there’s a flip side in that I’m a starter, not a finisher. I get attracted to new things. The field of compilers was just a marvelous field because the computers continued to present challenges. And the problems being solved continued to be increasingly challenging.” - Fran Allen&lt;/p&gt;
-
-&lt;p&gt;Leaving this post as is and unresolved, but actively working to improve this by just coding and reading more code.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Feb 2019 17:20:26 -0800</pubDate>
-        <link>http://localhost:4000/reflections/2019/02/01/Day-3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2019/02/01/Day-3.html</guid>
-        
-        
-        <category>Reflections</category>
+        <category>Projects</category>
         
       </item>
     
       <item>
-        <title>Day 2</title>
-        <description>&lt;p&gt;Today was wonderful.&lt;/p&gt;
+        <title>It&apos;s alive!</title>
+        <description>&lt;p&gt;Wahoo! My website&apos;s live and functioning. MWAHAHA.&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;assets/img/kay_performance.jpg&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to build a website to keep track of, and hold myself accountable to the projects I want to build. I also wanted to test out how to use Jekyll and host pages on Github. For now, I can keep talking to myself on here instead of out loud! Win-win-win.&lt;/p&gt;
 
-&lt;p&gt;As soon as Sarah Kay and Phil Kaye started performing, I started crying. I don’t know if growing older means I become more easily overtaken by emotions, or if I appreciate the beauty of language and words more - but I sure appreciate the ability to bask in the talents of others. Ohmygoodness witnessing others’ talents is truly awe-inspiring.&lt;/p&gt;
+&lt;p&gt;The first projects I wanted to tackle:&lt;/p&gt;
 
-&lt;p&gt;The words performed seemed to express the essence of life, of understanding, friendship, love, heartbreak, pain, conflict; the ups and downs of everyday moments. I want to say Sarah and Phil’s poems were simple but they are so much more. I rushed to buy Sarah’s books.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Build this website and host it on github&lt;/li&gt;
+  &lt;li&gt;Follow &lt;em&gt;Ray Tracing in One Weekend&lt;/em&gt; and implement in Go.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;assets/img/kay_books.jpg&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;The poem that’s stuck with me the most taught me that a murmuration is a flock of starlings. I can still remember: Sarah Kay lifts her arms to mimic a bird flying. As she speaks, a flock of birds forms the image of a bird across salted waves and a sanded beach. She hasn’t even started her poem yet. She explains how the poem she’s about to perform came into being, “I came across this quote one day, ‘the universe has already written the poem you were going to write,’ and I agonized over it as a poet.”&lt;/p&gt;
-
-&lt;p&gt;She then explained how there’s nothing truly new that exists in the world, but that doesn’t mean every poem she writes will necessarily recreate another’s work. It also doesn’t mean she needs to spend more time to create original, fresh work. Instead, poetry is about finding new perspectives to view the same, ‘old’ thing.&lt;/p&gt;
-
-&lt;p&gt;As an engineer, as an artist - there are the same trends that fall, rise, fall, only to rise again in a seemingly unpredictable fashion. The constant in the change is knowing that the same trend will come back again.&lt;/p&gt;
-
-&lt;p&gt;I think what stuck even more in my head is hearing that someone I’ve been admiring for 7 years now, can struggle and can overcome even after a decade or longer of performing as a professional artist - I don’t know why but it really comforted me. The realization of not needing to pressure myself to create distinct products was also nice.&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;assets/img/kay_signature.jpg&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you haven’t listened to Sarah Kay, I can’t recommend her art enough. The following poem comforted me my first semester at Berkeley when I felt homesick, soaked from the autumn downpour, and chilled to the core. Her poem provided me strength to keep moving forward. I guess that’s why I stood in line to grab her signature, too overcome to exchange anything other than my name. I think I even forgot to say thank you.&lt;/p&gt;
-
-&lt;p&gt;Thank you, Sarah. Thank you, Phil.&lt;/p&gt;
-
-&lt;center&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0snNB1yS3IE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
+&lt;p&gt;Maybe I should create timelines? But for now, I think I just want to get this website up and running first and then I&apos;ll move forward from there.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 12 Jan 2019 23:20:26 -0800</pubDate>
-        <link>http://localhost:4000/reflections/2019/01/12/Day-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2019/01/12/Day-2.html</guid>
+        <pubDate>Sat, 17 Dec 2016 19:30:26 -0800</pubDate>
+        <link>http://localhost:4000/goals/2016/12/17/it's-alive.html</link>
+        <guid isPermaLink="true">http://localhost:4000/goals/2016/12/17/it's-alive.html</guid>
         
         
-        <category>Reflections</category>
-        
-      </item>
-    
-      <item>
-        <title>Quibbles 1</title>
-        <description>&lt;p&gt;Ursula K Le Guin quotes&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“I believe that maturity is not an outgrowing, but a growing up: that an adult is not a dead child, but a child who survived.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“The opposite of spare time is, I guess, occupied time. In my case I still don’t know what spare time is because all my time is occupied. It always has been and it is now. It’s occupied by living.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I keep reading voraciously to find the answer. What’s my question though? I have this unsettling unease where I keep wanting to settle down. An unreachable itch that won’t rest until I figure out what it is that I do best. Where am I going? What marks the end? What is my destination?&lt;/p&gt;
-
-&lt;p&gt;Sometimes it’s just about going out there and doing it. Whatever ‘it’ refers to.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 21 Oct 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/2018/10/21/Quibbles-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2018/10/21/Quibbles-1.html</guid>
-        
-        
-        <category>Reflections</category>
-        
-      </item>
-    
-      <item>
-        <title>Online reading list</title>
-        <description>&lt;p&gt;Will probably need to keep this post updated.&lt;/p&gt;
-
-&lt;p&gt;Side projects to work on:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://youtu.be/mvGOv9KEJWg&quot;&gt;AR portal to another world&lt;/a&gt;!
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.raywenderlich.com/5516-building-a-portal-app-in-arkit-getting-started&quot;&gt;https://www.raywenderlich.com/5516-building-a-portal-app-in-arkit-getting-started&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.raywenderlich.com/5519-building-a-portal-app-in-arkit-adding-objects&quot;&gt;https://www.raywenderlich.com/5519-building-a-portal-app-in-arkit-adding-objects&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;People to follow:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/nathangitter&quot;&gt;Nathan Gitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/yumaSoerianto&quot;&gt;Yuma&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twitter.com/AndyyHope&quot;&gt;Andy Hope&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;body push oriented lines. how?! &lt;a href=&quot;https://twitter.com/zachlieberman/status/1044399106007871488&quot;&gt;Zach Lieberman&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Simple chat app to send ar stickers!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To save for later:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.nytimes.com/2018/09/30/us/samantha-bee-cecile-richards-self-doubt.html&quot;&gt;Overcoming self-doubt&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;“Start before you’re ready. Because if you wait until everything is lined up — your kids are the right age, or you’ve got the right degrees, or you have the right clothes — then life is going to pass you by.” - Samantha Richards&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=18104814&quot;&gt;Best Textbooks in each subject&lt;/a&gt; &amp;lt;- This is a link.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Blogs to check on:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Patrick Collision link on other blogs to follow: &lt;a href=&quot;https://patrickcollison.com/people&quot;&gt;blogs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Article links: &lt;a href=&quot;https://nintil.com/2018/09/09/links-20/#more-11801&quot;&gt;https://nintil.com/2018/09/09/links-20/#more-11801&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;On learning how to create a webserver:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ruslanspivak.com/lsbaws-part1/&quot;&gt;https://ruslanspivak.com/lsbaws-part1/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa&quot;&gt;https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Creating and figuring out how messaging apps work:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://codetiburon.com/create-chat-app-like-whatsapp/&quot;&gt;https://codetiburon.com/create-chat-app-like-whatsapp/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;How does data flow between server and client?
-I think people usually use websockets; I’m not sure where I heard of this before though but after quick googling it looks like websockets are the next step after creating a server. I suppose I could use libraries like StarScream? And I suppose &lt;a href=&quot;https://www.raywenderlich.com/861-websockets-on-ios-with-starscream&quot;&gt;https://www.raywenderlich.com/861-websockets-on-ios-with-starscream&lt;/a&gt; actually lays out building a simple chat app&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Data flow&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;to be filled in.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Extras:&lt;/p&gt;
-
-&lt;p&gt;NSMutableArray deep dive:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray&quot;&gt;https://stackoverflow.com/questions/22591296/what-is-the-data-structure-behind-nsmutablearray&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/&quot;&gt;http://ciechanowski.me/blog/2014/03/05/exposing-nsmutablearray/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;On C:
-&lt;a href=&quot;https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf&quot;&gt;https://medium.com/@wrongway4you/why-should-every-programmer-learn-c-ff490ad984bf&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Spring 16 61B Lectures:
-&lt;a href=&quot;https://www.youtube.com/watch?v=LVu7SOLNCWM&amp;amp;list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf&quot;&gt;https://www.youtube.com/watch?v=LVu7SOLNCWM&amp;amp;list=PLnp31xXvnfRrpDf-Wbt2tSVOH2Q0TLwJf&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx&quot;&gt;https://www.youtube.com/playlist?list=PLPcncwcN2UkazPbL42D-RiJL7Q_Kc9zWx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Data structures summary:&lt;/p&gt;
-
-&lt;p&gt;super helpful to think about what data structures are and how to approach increasing efficiency and performance through combination of understanding problem type and what to solve
-&lt;a href=&quot;https://www.youtube.com/watch?v=i-OuY5o_G8g&amp;amp;index=7&amp;amp;list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI&quot;&gt;https://www.youtube.com/watch?v=i-OuY5o_G8g&amp;amp;index=7&amp;amp;list=PL8FaHk7qbOD50LnOXTSpYgnVJQTIVFsmI&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Recommended technical reading:
-&lt;a href=&quot;https://blog.codinghorror.com/recommended-reading-for-developers/&quot;&gt;https://blog.codinghorror.com/recommended-reading-for-developers/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Currently reading Code Complete 2!&lt;/p&gt;
-
-&lt;p&gt;I need to read more code design books.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 30 Sep 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/goodreads/2018/09/30/Online-reading-list.html</link>
-        <guid isPermaLink="true">http://localhost:4000/goodreads/2018/09/30/Online-reading-list.html</guid>
-        
-        
-        <category>GoodReads</category>
-        
-      </item>
-    
-      <item>
-        <title>Reacting to change</title>
-        <description>&lt;p&gt;For this post I want to try out the Socratic method I happened upon in this new book I’m reading, &lt;em&gt;The Consolations of Philosophy&lt;/em&gt; by Alain de Botton.&lt;/p&gt;
-
-&lt;p&gt;Apparently I’ll need to:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Locate a statement confidently described as common sense. So for me that statement is:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;“Change is hard to get used to.”&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Imagine the statement is false by searching for situations or context the statement would not be true.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Could one ever remove comparison points and set the ‘changed state’ as the ‘base state’?&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Could a person ever not need to change and ‘naturally’ assimilate to situations through ignorance of any change that may or may not have happened?&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the statement contains an exception, the statement is not precise or is false.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;It is possible to mimic a blank slate and open mindset and not require change.&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;It is possible to not need to get used to change.&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Change the original statement to take the exception into account.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Change is perception that can involve either adjustment, or the ability to take every situation as new such that all change is new. In other words, change is the same as change having not occurred.&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;“The product of thought is superior to the product of intuition.”&lt;/p&gt;
-
-&lt;p&gt;tl;dr. Think about counter-arguments to blanket statements.&lt;/p&gt;
-
-&lt;p&gt;I thought of this topic primarily because I’ve gone through, and at times struggled, with many changes the past few months. I moved apartments, changed teams, gone through re-orgs, changed managers, acted as a manager, changed projects, and changed goals.&lt;/p&gt;
-
-&lt;p&gt;With every change that occurred I felt more pressure to prove to myself that I was just as good, if not better, than before. In a way I ironically wanted to prove to myself that nothing had changed and that I could continue to progress just as quickly as before. While I view every change as a new opportunity, it’s easy for any change to add further weight or stress onto any state. My conclusion in facing numerous changes is to take the time to refocus by re-evaluating my goals.&lt;/p&gt;
-
-&lt;p&gt;I’ve said before, but I want to optimize learning and trying as many things as I can. I don’t believe I’ve utilized where I live and where I work to the fullest extent. I want to figure out why I feel this way, and how I can better take advantage of my environment. In order to do so however I need to figure out in more detail what it is that I want to learn and do. Ultimately the main goal with this thought process is to build resilience and create an internal north star that focuses on honing my skills no matter how many external variables change.&lt;/p&gt;
-
-&lt;p&gt;So far the pattern of the work I do is defined by what is needed around me. The solutions that I then implement come intuitively based off of what I think defines a good product experience. I’ve so far acted on intuition (and have honed habits, or a ‘comfortable’ train of thought with regards to how to build a great product) by having external variables define what I do. That’s not to say that I haven’t learned or grown this past year, nor that reacting to external factors isn’t a good way to grow. On the contrary I’ve grown more than I could’ve ever hoped for prior to having accepted my job offer. The next step I want to take though is how to continue challenging myself in the face of having found a niche I’m comfortable with.&lt;/p&gt;
-
-&lt;p&gt;To practice the Socratic method - the other side could suggest that I can continue to develop my strength and focus in on what defines a great product experience (aka dive deep on what I’ve been doing). I’d then develop my original statement of “&lt;em&gt;I can challenge myself to find new areas of growth by seeking out different experiences&lt;/em&gt;” to “&lt;em&gt;Develop a well-rounded thought process to understand and recommend degrees of feasibility and necessity which could indirectly increase opportunities of finding other areas of strength&lt;/em&gt;”. Dang that’s a weak counterexample. The premise of the ‘refined’ statement is that I want to broaden and expand my skillset. For example, I can say that a great product experience can be limited by infrastructure right now; but I don’t know how or why and what solutions can solve this.&lt;/p&gt;
-
-&lt;p&gt;#######&lt;/p&gt;
-
-&lt;p&gt;This morning I took time to really learn. I went down the rabbit hole of reading article after articles of mikeash, nshipster, cocoawithlove, internal wikis on operating systems and performance optimizations. My new project requires me to understand the nuances of how the entire system works. While I know part of me wanted to work on iOS because I would have the opportunity to dive as deep as I wanted and better understand operating systems, not just the UI - diving deeper down the stack can be really intimidating.&lt;/p&gt;
-
-&lt;p&gt;Where do I start? Asking questions.&lt;/p&gt;
-
-&lt;p&gt;So what was the hard part? Running out of questions to ask because I wanted to ask ‘smart’ questions that are specific and seemed well-thought out.&lt;/p&gt;
-
-&lt;p&gt;A really wise coworker let me know for this type of work it’s okay to start out by asking broader question - framing questions to the expert on hand with ‘Here’s what I think: a, b, c, d. What do you think about my thought process?’ and basing conversations and growth off of the experiences of senior engineers.&lt;/p&gt;
-
-&lt;p&gt;That’s awesome. Already learning a new thought process.&lt;/p&gt;
-
-&lt;p&gt;#######&lt;/p&gt;
-
-&lt;p&gt;I want to explore ARKit and/or TensorFlow and attend a conference or MeetUp around picking up these technologies. I had a lot of fun helping create the Pokemon AR game two years back and want to do something similar again with a bit more functionality. I don’t know what role AR has to play other than in games and education just yet but after having watched these videos.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/r5eWys9B-no&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/OsnfQsBpKIs&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I’m pretty stoked to try them out myself. Hopefully the perf work I’m starting to do at work can help contribute to the large battery drains that I observed previously when working with Unity and game dev. On another note I really wish I’d gone to the try!Swift conference, but that’s okay. Another year another time.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 Sep 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/2018/09/27/Reacting-to-change.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2018/09/27/Reacting-to-change.html</guid>
-        
-        
-        <category>Reflections</category>
-        
-      </item>
-    
-      <item>
-        <title>What builds a community?</title>
-        <description>&lt;p&gt;“A group of people living in the same place or having a particular characteristic in common.”&lt;/p&gt;
-
-&lt;p&gt;This definition of ‘community’ suggests that people who disagree in opinions can still be in the same community. A single similar trait can grow a friendship. I find that concept fascinating.&lt;/p&gt;
-
-&lt;p&gt;When greeting or passing others in the hallway it’s easy to ignore or ‘forget’ to say hi and make small talk. All speculation without any numbers to back this, but there seem to be more people who are entrenched in their own online bubbles where the feed algorithm and social apps show people content they know they’ll enjoy and like.&lt;/p&gt;
-
-&lt;p&gt;Can a person online’s personality ever become the personality the show in person? I speak differently online than I do in person, but that’s primarily because I have the space to think about how to word the thoughts I have, or conversely, the ability to reply instantaneously without a second thought. I wonder if it’s possible to show our true selves online?&lt;/p&gt;
-
-&lt;p&gt;Or are we at the point where our online selves are our true selves?&lt;/p&gt;
-
-&lt;p&gt;Just food for thought.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 18 Jun 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/2018/06/18/What-builds-a-community.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2018/06/18/What-builds-a-community.html</guid>
-        
-        
-        <category>Reflections</category>
-        
-      </item>
-    
-      <item>
-        <title>Nuggets</title>
-        <description>&lt;p&gt;I wanted to share nuggets of wisdom from various people I’ve been meeting up within the industry. The primary questions I’ve been asking are what drives their confidence, what their journey entails, and what the most pivotal moment of their career has been so far. It was fascinating to learn and observe how everyone has their own style, work ethic and drive; and yet they all attained a relative degree of success and satisfaction that they wanted.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Nugget #1: Optimize for happiness.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For me, this translates to building something useful for others: share warm and fuzzies, allow others to feel that they belong, and give people a platform to be heard by recognizing every person has a voice they can use. Facebook has the power to accomplish this, but more on this later.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Nugget #2: Believe in yourself.&lt;/strong&gt; Continue doing what needs to be done, and the rest will follow.&lt;/p&gt;
-
-&lt;p&gt;My mentor resolves conflicts by being so good others are unable to ignore them. Of course, it helps that my mentor loves to build and solve problems. Truly an inspiration for me to keep learning from. :)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Nugget #2.5: Trust yourself.&lt;/strong&gt; You’ll become better at estimating and setting deadlines. Tell your manager what the unknown factors are and add a little more time into how long you think it might actually take.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Nugget #3: Break things to learn!&lt;/strong&gt; Break apart small pieces to figure out what makes a solution work. For any challenge you’re facing, someone has probably already built a solution or something that’s similar.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Nugget #4: Keep on moving forward.&lt;/strong&gt; As long as you don’t hate what you’re doing and don’t hate your team - keep at it. There’s always a better way to do something, and you should always recognize that. But don’t beat yourself up for not implementing the perfect solution right off the bat. Recognize that there’s always a better way to build what you’re building, but also recognize that you’ve gotten better, you’ve improved, and that you’ve learned.&lt;/p&gt;
-
-&lt;p&gt;My mentor encouraged me to look back at old code I’ve written, then realize that I probably wouldn’t have written it that way if I were to do it again. And that’s progress.&lt;/p&gt;
-
-&lt;p&gt;After meeting up with multiple people, I also realized it’s not just advice I was looking for. I was looking for some way to find myself and find my own drive, intuition, and confidence. But at some point I just have to tune out the self-doubt I have in order to focus on what’s next. Just keep moving forward and the path will follow.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 18 Jun 2018 18:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/2018/06/18/Nuggets.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2018/06/18/Nuggets.html</guid>
-        
-        
-        <category>Reflections</category>
-        
-      </item>
-    
-      <item>
-        <title>Day 0</title>
-        <description>&lt;p&gt;It’s been awhile again but I’ve been feeling a bit burnt out from work. Thus the need to force myself to reflect more often! So guiding questions if not for today, for every day:&lt;/p&gt;
-
-&lt;p&gt;What are three things that made me happy today? (I declare these warm and fuzzies).&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spending a late Sunday night playing board games spontaneously with friends while making Yu-Gi-Oh jokes to ‘trust in the heart of the cards’ and d-d-d-d-d-d-d-duel! Spontaneity I feel is harder to come by as years pass, so I lean more into the moment and appreciate how and when it happens.&lt;/li&gt;
-  &lt;li&gt;Chatting with my grandma, exchanging gossip and being able to remind her that I’ll see her soon.&lt;/li&gt;
-  &lt;li&gt;Seeing the California skyline - backdrop of mountains with a splatter of blue accented white background. California is beautiful and the scenic landscape definitely brought a smile to my face as I was driving down 237 today.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I don’t have much on my mind lately which worries me. The one thing I don’t want to become is a mindless worker bee that fulfills the expectations and plans passed down from above. Time passes without me realizing, and within a blink of an eye it’s already been almost a year since I’ve moved to the bay area. That frightens me, so how can I take back the reigns and take control of what happens daily? What’s my next step?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/hobbes_weird.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Step 1. Lean into what I know – time to start tinkering and put the anime away!&lt;/p&gt;
-
-&lt;p&gt;Step 2. Idea pot - quick, jot down all the things that come to mind within a minute:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Convert all the photos that get shared on Messenger in my family group chat into an album for my family to search through. Add in some photo recognition technology to allow people to easily search by date, place, name/nickname.&lt;/li&gt;
-  &lt;li&gt;Happiness jar that lets me jot down notes or special moments that make me happy every day for me to look back on. The goal is to help motivate through rough patches and remind myself just how beautiful life is.&lt;/li&gt;
-  &lt;li&gt;Create one frame of an animation you love. (Though tbh this has been on my mind for awhile, but it seems so difficult I haven’t really looked much into it.)&lt;/li&gt;
-  &lt;li&gt;Running journal - the one I mentioned a while back but never finished LOL.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Step 3. I’m making this up here - so I’m assuming this step should be a plan of action to commit to. Do what I love and ignore all of the wanted accolades, awards, recognition, whatever that puts unnecessary stress on myself. I can only control what I do, and how I feel about myself.&lt;/p&gt;
-
-&lt;p&gt;I’m not too sure what should or will come of this, but I hope I’ll create a project some time soon on Github. I like the idea of a happiness jar honestly. Should be a fairly straightforward thing to make - I’ll put up some prototypes and get to work.&lt;/p&gt;
-
-&lt;p&gt;Lastly, I challenge myself this week to ask to grab lunch with one of my role models at work. One of my coworkers I highly admire recently left. Regrettably I wasn’t able to say my farewells and thank you’s in person because I chickened out. I honestly can’t remember the last time I’ve been so timid at work to the point where I regret not doing something so badly. I don’t want that to happen again - thus this challenge. Like spontaneity, I need to lean in to my fear. And with that, the quote of the day is:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;“The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.” - Amelia Earhart&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sun, 20 May 2018 00:20:26 -0700</pubDate>
-        <link>http://localhost:4000/reflections/2018/05/20/Day-0.html</link>
-        <guid isPermaLink="true">http://localhost:4000/reflections/2018/05/20/Day-0.html</guid>
-        
-        
-        <category>Reflections</category>
+        <category>Goals</category>
         
       </item>
     
