@@ -5,32 +5,32 @@
 <p>Class clusters hide implementation details behind abstract classes. However, because objective-c has nothing to label classes as ‘abstract,’ convention is therefore found in the docs. (Which honestly I find pretty arbitrary and confusing..) Class clusters is a type of factory pattern that defines all the necessary logic those that inherit the base class must implement. In other words: subclasses can override default implementation of base classes. Here’s an example of a subclass with my favorite example using Pokemon:</p>
 
 <p><em>Abstract base class</em></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="nf">NS_ENUM</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">,</span> <span class="n">PokemonType</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">PokemonTypeWater</span><span class="p">,</span>
-  <span class="n">PokemonTypeFire</span><span class="p">,</span>
-  <span class="n">PokemonTypeGrass</span>
-<span class="p">}</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef NS_ENUM(NSUInteger, PokemonType) {
+  PokemonTypeWater,
+  PokemonTypeFire,
+  PokemonTypeGrass
+}
 
-<span class="k">@interface</span> <span class="nc">Pokemon</span><span class="p">:</span> <span class="nc">NSObject</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
-<span class="k">@property</span> <span class="n">NSUInteger</span> <span class="n">level</span><span class="p">;</span>
+@interface Pokemon: NSObject
+@property NSString *name;
+@property NSUInteger level;
 
-<span class="k">+</span> <span class="p">(</span><span class="n">Pokemon</span> <span class="o">*</span><span class="p">)</span><span class="nf">pokemonWithType</span><span class="p">:(</span><span class="n">PokemonType</span><span class="p">)</span><span class="nv">type</span><span class="p">;</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">attack</span><span class="p">;</span>
++ (Pokemon *)pokemonWithType:(PokemonType)type;
+- (void) attack;
 
-<span class="k">@end</span>
+@end
 </code></pre></div></div>
 <p><em>Subclass</em></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PokemonWater</span><span class="p">:</span> <span class="nc">Pokemon</span>
-<span class="k">@end</span>
-<span class="k">@implementation</span> <span class="nc">PokemonWater</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">attack</span> <span class="p">{</span>
-  <span class="p">[</span><span class="n">self</span> <span class="nf">waterGun</span><span class="p">];</span>
-<span class="p">}</span>
-<span class="k">@end</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface PokemonWater: Pokemon
+@end
+@implementation PokemonWater
+- (void) attack {
+  [self waterGun];
+}
+@end
 </code></pre></div></div>
 
-<p>In the subclass example, <code class="highlighter-rouge">attack</code> method is required to implement Pokemon. When checking for equality between subclasses, use <code class="highlighter-rouge">isKindOfClass:[Pokemon class]</code> method rather than comparing with <code class="highlighter-rouge">[Pokemon class]</code> itself.</p>
+<p>In the subclass example, <code class="language-plaintext highlighter-rouge">attack</code> method is required to implement Pokemon. When checking for equality between subclasses, use <code class="language-plaintext highlighter-rouge">isKindOfClass:[Pokemon class]</code> method rather than comparing with <code class="language-plaintext highlighter-rouge">[Pokemon class]</code> itself.</p>
 
 <ul>
   <li>Subclasses should inherit from the class cluster’s abstract base class.</li>
@@ -40,37 +40,37 @@
 
 <p>Out of all these rules for subclassing, the second one is the most confusing to me. So let’s walk through another Pokemon example.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PokemonWater</span> <span class="p">:</span> <span class="nc">Pokemon</span>
-<span class="p">{</span>
-  <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface PokemonWater : Pokemon
+{
+  NSString *name;
+  ...
+}
 
-<span class="o">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">initWithPokemon</span><span class="o">:</span><span class="p">(</span><span class="n">Pokemon</span> <span class="o">*</span><span class="p">)</span><span class="n">pokemon</span> <span class="n">name</span><span class="o">:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">name</span><span class="p">;</span>
-<span class="k">+</span> <span class="p">(</span><span class="n">PokemonWater</span> <span class="o">*</span><span class="p">)</span><span class="nf">waterPokemonFromPokemon</span><span class="p">:(</span><span class="n">Pokemon</span> <span class="o">*</span><span class="p">)</span><span class="nv">pokemon</span> <span class="nf">name</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span><span class="p">;</span>
+- (id)initWithPokemon:(Pokemon *)pokemon name:(NSString *)name;
++ (PokemonWater *)waterPokemonFromPokemon:(Pokemon *)pokemon name:(NSString *)name;
 
-<span class="k">@end</span>
+@end
 </code></pre></div></div>
 <p>In implementation:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">PokemonWater</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation PokemonWater
 
-<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithPokemon</span><span class="p">:(</span><span class="n">Pokemon</span> <span class="o">*</span><span class="p">)</span><span class="nv">pokemon</span> <span class="nf">name</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
-<span class="p">{</span>
-  <span class="c1">// Defining own storage from Pokemon type by calling on the superclass
-</span>  <span class="c1">// method for defining a Pokemon.
-</span>  <span class="k">if</span> <span class="p">(</span><span class="n">self</span> <span class="o">=</span> <span class="p">[</span><span class="n">super</span> <span class="nf">initWithLevel</span><span class="p">:</span><span class="n">pokemon</span><span class="p">.</span><span class="n">level</span> <span class="nf">personality</span><span class="p">:</span><span class="n">pokemon</span><span class="p">.</span><span class="n">personality</span><span class="p">])</span>
-  <span class="p">{</span>
-      <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
-<span class="p">}</span>
+- (id)initWithPokemon:(Pokemon *)pokemon name:(NSString *)name
+{
+  // Defining own storage from Pokemon type by calling on the superclass
+  // method for defining a Pokemon.
+  if (self = [super initWithLevel:pokemon.level personality:pokemon.personality])
+  {
+      self.name = name;
+  }
+  return self;
+}
 
-<span class="k">+</span> <span class="p">(</span><span class="n">PokemonWater</span> <span class="o">*</span><span class="p">)</span><span class="nf">waterPokemonFromPokemon</span><span class="p">:(</span><span class="n">Pokemon</span> <span class="o">*</span><span class="p">)</span><span class="nv">pokemon</span> <span class="nf">name</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
-<span class="p">{</span>
-  <span class="c1">// Again, defining own storage.
-</span>  <span class="k">return</span> <span class="p">[[</span><span class="n">PokemonWater</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithPokemon</span><span class="p">:</span><span class="n">pokemon</span> <span class="nf">name</span><span class="p">:</span><span class="n">name</span><span class="p">];</span>
-<span class="p">}</span>
++ (PokemonWater *)waterPokemonFromPokemon:(Pokemon *)pokemon name:(NSString *)name
+{
+  // Again, defining own storage.
+  return [[PokemonWater alloc] initWithPokemon:pokemon name:name];
+}
 </code></pre></div></div>
 
 <p>Overall it looks like subclasses are more commonly used for implementing custom parts of a platform, and model objects. i.e. in view controllers when we subclass UIViewController; or building a UITableViewCell with custom layout. Any time something can be more reusable across other parts of the project seem to be a good opportunity to subclass.</p>

@@ -1,4 +1,4 @@
-<p>I hit somewhat of a rut after refactoring. I ran into this error message after implementing a <code class="highlighter-rouge">hitable</code>, <code class="highlighter-rouge">hitableList</code>, and <code class="highlighter-rouge">sphere</code> objects for the ray tracer:</p>
+<p>I hit somewhat of a rut after refactoring. I ran into this error message after implementing a <code class="language-plaintext highlighter-rouge">hitable</code>, <code class="language-plaintext highlighter-rouge">hitableList</code>, and <code class="language-plaintext highlighter-rouge">sphere</code> objects for the ray tracer:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>go run main.go <span class="o">&gt;</span> assets/out5.png
 panic: runtime error: invalid memory address or nil pointer dereference
@@ -16,7 +16,7 @@ main.main<span class="o">()</span>
 <span class="nb">exit </span>status 2
 </code></pre></div></div>
 
-<p>Thus the lack of coding the past few days. Though having to return to work this week also impeded progress. In any case, while this error means my program’s unable to access the list I created within my <code class="highlighter-rouge">HitableList</code> data structure, instead of trying to do a quick fix, I really need to go back to the basics and figure out what I’m doing in my code.</p>
+<p>Thus the lack of coding the past few days. Though having to return to work this week also impeded progress. In any case, while this error means my program’s unable to access the list I created within my <code class="language-plaintext highlighter-rouge">HitableList</code> data structure, instead of trying to do a quick fix, I really need to go back to the basics and figure out what I’m doing in my code.</p>
 
 <p>In other words I need to learn what rendering objects means.</p>
 
@@ -30,27 +30,27 @@ main.main<span class="o">()</span>
 
 <p>Struct is a type that contains named field.</p>
 
-<p><code class="highlighter-rouge">type</code> introduces a new type, followed by the name of the type (Circle). <code class="highlighter-rouge">struct</code> keyword indicates we’re defining a <code class="highlighter-rouge">struct</code> type and a list of fields inside the curly braces.</p>
+<p><code class="language-plaintext highlighter-rouge">type</code> introduces a new type, followed by the name of the type (Circle). <code class="language-plaintext highlighter-rouge">struct</code> keyword indicates we’re defining a <code class="language-plaintext highlighter-rouge">struct</code> type and a list of fields inside the curly braces.</p>
 
-<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span><span class="x"> </span><span class="n">Circle</span><span class="x"> </span><span class="k">struct</span><span class="x"> </span><span class="p">{</span><span class="x">
-  </span><span class="n">x</span><span class="p">,</span><span class="x"> </span><span class="n">y</span><span class="p">,</span><span class="x"> </span><span class="n">r</span><span class="x"> </span><span class="kt">float64</span><span class="x">
-</span><span class="p">}</span><span class="x">
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="n">Circle</span> <span class="k">struct</span> <span class="p">{</span>
+  <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">r</span> <span class="kt">float64</span>
+<span class="p">}</span>
 
-</span><span class="k">func</span><span class="x"> </span><span class="p">(</span><span class="n">c</span><span class="x"> </span><span class="o">*</span><span class="n">Circle</span><span class="p">)</span><span class="x"> </span><span class="n">area</span><span class="p">()</span><span class="x"> </span><span class="kt">float64</span><span class="x"> </span><span class="p">{</span><span class="x">
-  </span><span class="k">return</span><span class="x"> </span><span class="n">math</span><span class="o">.</span><span class="n">Pi</span><span class="x"> </span><span class="o">*</span><span class="x"> </span><span class="n">c</span><span class="o">.</span><span class="n">r</span><span class="o">*</span><span class="n">c</span><span class="o">.</span><span class="n">r</span><span class="x">
-</span><span class="p">}</span><span class="x">
-</span></code></pre></div></div>
-<p>Go automatically passes a pointer into this method without the <code class="highlighter-rouge">&amp;</code> operator</p>
+<span class="k">func</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span><span class="n">Circle</span><span class="p">)</span> <span class="n">area</span><span class="p">()</span> <span class="kt">float64</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">Pi</span> <span class="o">*</span> <span class="n">c</span><span class="o">.</span><span class="n">r</span><span class="o">*</span><span class="n">c</span><span class="o">.</span><span class="n">r</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Go automatically passes a pointer into this method without the <code class="language-plaintext highlighter-rouge">&amp;</code> operator</p>
 
 <h1 id="pointers">Pointers.</h1>
 
-<p>If there’s one thing I learned about Go and C, it’s that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last <a href="https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719">push</a>, you can see how I had to call the <code class="highlighter-rouge">Hit</code> function by reference in order for the <code class="highlighter-rouge">HitRecord</code> struct to modify the values of its properties without creating a new object.</p>
+<p>If there’s one thing I learned about Go and C, it’s that pointers are friends. Especially in custom structs. If you take a look at the Objects created in my last <a href="https://github.com/schen22/golang-ray-tracer/tree/1aed656e8772ae35d032e6638ba254aa84c28719">push</a>, you can see how I had to call the <code class="language-plaintext highlighter-rouge">Hit</code> function by reference in order for the <code class="language-plaintext highlighter-rouge">HitRecord</code> struct to modify the values of its properties without creating a new object.</p>
 
-<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">func</span><span class="x"> </span><span class="p">(</span><span class="n">s</span><span class="x"> </span><span class="n">Sphere</span><span class="p">)</span><span class="x"> </span><span class="n">Hit</span><span class="p">(</span><span class="n">r</span><span class="x"> </span><span class="n">models</span><span class="o">.</span><span class="n">Ray</span><span class="p">,</span><span class="x"> </span><span class="n">t_min</span><span class="x"> </span><span class="kt">float64</span><span class="p">,</span><span class="x"> </span><span class="n">t_max</span><span class="x"> </span><span class="kt">float64</span><span class="p">,</span><span class="x"> </span><span class="n">rec</span><span class="x"> </span><span class="o">*</span><span class="n">HitRecord</span><span class="p">)</span><span class="x"> </span><span class="kt">bool</span><span class="x"> </span><span class="p">{</span><span class="x">
-	</span><span class="o">...</span><span class="x">
-</span><span class="p">}</span><span class="x">
-</span></code></pre></div></div>
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">func</span> <span class="p">(</span><span class="n">s</span> <span class="n">Sphere</span><span class="p">)</span> <span class="n">Hit</span><span class="p">(</span><span class="n">r</span> <span class="n">models</span><span class="o">.</span><span class="n">Ray</span><span class="p">,</span> <span class="n">t_min</span> <span class="kt">float64</span><span class="p">,</span> <span class="n">t_max</span> <span class="kt">float64</span><span class="p">,</span> <span class="n">rec</span> <span class="o">*</span><span class="n">HitRecord</span><span class="p">)</span> <span class="kt">bool</span> <span class="p">{</span>
+	<span class="o">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>Similarly, in the <code class="highlighter-rouge">HitableList</code> and <code class="highlighter-rouge">Hitable</code> interface, I needed to pass in a reference to the <code class="highlighter-rouge">HitRecord</code> rather than create new objects that don’t store or allow the object to act as a record to whether the object is hittable.</p>
+<p>Similarly, in the <code class="language-plaintext highlighter-rouge">HitableList</code> and <code class="language-plaintext highlighter-rouge">Hitable</code> interface, I needed to pass in a reference to the <code class="language-plaintext highlighter-rouge">HitRecord</code> rather than create new objects that don’t store or allow the object to act as a record to whether the object is hittable.</p>
 
 <p>Talking about it now makes it seem like a noobish mistake, but lesson learned! Pointers are friends :)</p>

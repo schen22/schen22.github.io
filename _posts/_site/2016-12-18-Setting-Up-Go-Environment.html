@@ -1,10 +1,10 @@
 <p>Writing out how I set up my environment so I can remember later:</p>
 
-<p>I've downloaded the <code class="highlighter-rouge">go1.7.4darwin-amd64.pkg</code> from <a href="https://golang.org/dl/">golang</a>. Upon installing the package, the <code class="highlighter-rouge">usr/local/go/bin</code> directory was put in my <code class="highlighter-rouge">PATH</code> environment variable.</p>
+<p>I've downloaded the <code class="language-plaintext highlighter-rouge">go1.7.4darwin-amd64.pkg</code> from <a href="https://golang.org/dl/">golang</a>. Upon installing the package, the <code class="language-plaintext highlighter-rouge">usr/local/go/bin</code> directory was put in my <code class="language-plaintext highlighter-rouge">PATH</code> environment variable.</p>
 
-<p>Now I need to figure out where to set my <code class="highlighter-rouge">GOPATH</code> to. According to the documentation, the <code class="highlighter-rouge">GOPATH</code> environment variable “specifies directories containing Go projects and their binaries outside the <code class="highlighter-rouge">root</code> folder for Go”.</p>
+<p>Now I need to figure out where to set my <code class="language-plaintext highlighter-rouge">GOPATH</code> to. According to the documentation, the <code class="language-plaintext highlighter-rouge">GOPATH</code> environment variable “specifies directories containing Go projects and their binaries outside the <code class="language-plaintext highlighter-rouge">root</code> folder for Go”.</p>
 
-<p>Translation: it specifies where to look for Go code. Does that mean for every Go project, the <code class="highlighter-rouge">GOPATH</code> will be different?</p>
+<p>Translation: it specifies where to look for Go code. Does that mean for every Go project, the <code class="language-plaintext highlighter-rouge">GOPATH</code> will be different?</p>
 
 <p>Well according to the wiki, we use a single GOPATH:</p>
 
@@ -12,22 +12,22 @@
   <p>Even though the GOPATH may be a list of directories, it is generally sufficient to use a single GOPATH for all Go code on your machine. Since all packages retrieved with “go get” have a unique URL (and thus a unique path on disk), having more than one GOPATH is almost never necessary when building with the Go tool.</p>
 </blockquote>
 
-<p>I guess I'll just create a directory that will contain all my Go code and add the following lines to my <code class="highlighter-rouge">~/.bash_profile</code> so that I won’t have to set it every time I open my terminal.</p>
+<p>I guess I'll just create a directory that will contain all my Go code and add the following lines to my <code class="language-plaintext highlighter-rouge">~/.bash_profile</code> so that I won’t have to set it every time I open my terminal.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span><span class="s2">"/Users/sarahchen/Documents/Personal/go"</span>
 <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">GOPATH</span><span class="p">//</span>://bin:<span class="k">}</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
 </code></pre></div></div>
 
-<p>Type <code class="highlighter-rouge">source ~/.bash_profile</code> to reload the file and apply to your current terminal session.</p>
+<p>Type <code class="language-plaintext highlighter-rouge">source ~/.bash_profile</code> to reload the file and apply to your current terminal session.</p>
 
-<p>Run <code class="highlighter-rouge">go env</code> to check all the environment variables for Go.</p>
+<p>Run <code class="language-plaintext highlighter-rouge">go env</code> to check all the environment variables for Go.</p>
 
-<p>Word of advice - that last bit for setting the path environment variable, <code class="highlighter-rouge">:$PATH</code>, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.</p>
+<p>Word of advice - that last bit for setting the path environment variable, <code class="language-plaintext highlighter-rouge">:$PATH</code>, is quite important. I accidentally didn't have it, and I immediately received these terrifying errors.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span>
-<span class="nt">-bash</span>: tail: <span class="nb">command </span>not found
-<span class="nt">-bash</span>: cut: <span class="nb">command </span>not found
-<span class="nt">-bash</span>: sed: <span class="nb">command </span>not found
+<span class="nt">-bash</span>: <span class="nb">tail</span>: <span class="nb">command </span>not found
+<span class="nt">-bash</span>: <span class="nb">cut</span>: <span class="nb">command </span>not found
+<span class="nt">-bash</span>: <span class="nb">sed</span>: <span class="nb">command </span>not found
 </code></pre></div></div>
 
 <p>But ey, all is well! Fixed it by just resetting my PATH environment variables. To test it all, I followed this  <a href="https://www.golang-book.com/guides/machine_setup#osx-finished">link</a> and celebrated by playing some Tetris.</p>

@@ -5,24 +5,24 @@ But why Objective-C? Mainly because that’s the language we use at Facebook to 
 
 <p>@synthesize: controls name of instance variable.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">Pokemon</span>
-<span class="k">@synthesize</span> <span class="n">type</span> <span class="o">=</span> <span class="n">_myType</span><span class="p">;</span>
-<span class="k">@synthesize</span> <span class="n">name</span> <span class="o">=</span> <span class="n">_myName</span><span class="p">;</span>
-<span class="k">@end</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation Pokemon
+@synthesize type = _myType;
+@synthesize name = _myName;
+@end
 </code></pre></div></div>
 
-<p>Usually we would just let the compiler automatically write the code for these methods (ie. autosynthesis). For example, the two instance variables above would instead be <code class="highlighter-rouge">_type</code> and <code class="highlighter-rouge">_name</code> with autosynthesis.</p>
+<p>Usually we would just let the compiler automatically write the code for these methods (ie. autosynthesis). For example, the two instance variables above would instead be <code class="language-plaintext highlighter-rouge">_type</code> and <code class="language-plaintext highlighter-rouge">_name</code> with autosynthesis.</p>
 
 <p>To prevent the compiler from synthesizing an accessor method we can use @dynamic. This tells the compiler to not create an instance variable and accessor. Instead the compiler trusts us that the variable will be available at runtime:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">Pokemon</span>
-<span class="k">@dynamic</span> <span class="n">type</span><span class="p">,</span> <span class="n">name</span><span class="p">;</span>
-<span class="k">@end</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation Pokemon
+@dynamic type, name;
+@end
 </code></pre></div></div>
 
 <p><em>Property Attributes</em></p>
 
-<p>For example: <code class="highlighter-rouge"><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">type</span><span class="p">;</span></code></p>
+<p>For example: <code class="language-plaintext highlighter-rouge">@property (nonatomic, readwrite, copy) NSString *type;</code></p>
 
 <ul>
   <li><strong>Atomicity</strong>: By default accessors are locked to ensure atomicity.</li>
@@ -40,7 +40,7 @@ But why Objective-C? Mainly because that’s the language we use at Facebook to 
     <ul>
       <li>getter=<name>: usually used for Bool properties to define getter name.
 </name>        <ul>
-          <li><code class="highlighter-rouge"><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">didLearn</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">learn</span><span class="p">;</span></code></li>
+          <li><code class="language-plaintext highlighter-rouge">@property (nonatomic, getter=didLearn) BOOL learn;</code></li>
         </ul>
       </li>
       <li>setter=<name>: specifies setter name. Not usually used.</name></li>
