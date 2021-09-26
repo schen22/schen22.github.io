@@ -14,6 +14,8 @@ Install rvm:
 
 `$ gem install jekyll`
 
+For correct/updated ruby version -- just run brew install && brew update if you'd previously installed ruby prior.
+
 If it's complaining about needing a specific json version (i.e. "Make sure that `gem install json -v '1.8.1'` succeeds before bundling.") run:
 
 `$ bundle update`
