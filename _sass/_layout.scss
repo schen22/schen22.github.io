@@ -71,7 +71,7 @@ body {
 }
 
 .nav {
-  line-height: $base-line-height;
+  line-height: $line-height-relaxed;
 
   .page-link {
     color: $text-color;
@@ -337,8 +337,6 @@ body.custom-background {
 
 .category-name {
   padding-top:20px;
-  text-transform:lowercase;
-  font-variant:small-caps;
   h2 {
    letter-spacing:0;
    border-bottom: 1px solid #ddd;
@@ -365,7 +363,7 @@ div.post_title span.date {
 /* others */
 
 .small-font{
-  font-size:$small-font-size;
+  font-size: $font-size-sm;
 }
 
 /* Media Queries

@@ -4,8 +4,26 @@ title: About
 permalink: /about/
 ---
 
-Thanks for taking a look at my page! This used to be a website where I jotted random thoughts and learnings, but it needs to go through major scrubbing/re-vamp so I'm putting most of it under construction until I get another chance to take a look at it again (as of 9/2021).
+## About Me
 
-re: 30 second blurb about me -- as an iOS and backend engineer, I love working with design and other product partners to build/ensure the best experience possible for end users. Outside of work I bug my friends and coerce them to go hiking or running with me. Otherwise you can find me at any combination of the following two sets combined: { home \| park \| library } U { reading books \| reading manga \| watching my latest anime or kdrama binge \| napping }.
+As a product engineer, I thrive at the intersection of user needs and technical implementation. I love working with design and product partners to build the best possible experience for end users.
 
-Until next time!
+Currently a Staff Software Engineer, I've had the opportunity to work on products serving hundreds of millions of users - from Facebook Stories to Instagram Insights to financial infrastructure at Novi. My approach focuses on clear problem definition, cross-organizational collaboration, and building with both technical excellence and user empathy.
+
+## Working With Me
+
+I operate with a people-first mentality and work best in environments that value:
+- **Positive reinforcement** and collaborative problem-solving
+- **Strong teams build strong products** mindset
+- **Cross-functional partnerships** with design, product, and research
+- **Mentoring and growth** - I've mentored 5+ engineers and love helping others succeed
+
+## Background
+
+With an economics background entering the CS world, I've learned that different perspectives drive innovation. I'm passionate about creating the safe, supportive spaces I wished existed when I was starting out - because anyone who enjoys building products belongs in tech.
+
+Outside of work, you can find me hiking, reading books and manga, watching anime or K-dramas, or working on personal projects like my current sabbatical explorations.
+
+---
+
+**[📄 View My Resume](resume.pdf)** | **[🐙 GitHub](https://github.com/schen22)** | **[📧 Email](mailto:sarahchen22@gmail.com)**
