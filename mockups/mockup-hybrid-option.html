@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option 5: Hybrid Hero + Dashboard - Sarah Chen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #2d3748; }
+        
+        /* Top Navigation - Minimalist Style */
+        .top-nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 1rem 0; transition: all 0.3s; }
+        .top-nav.scrolled { background: rgba(13, 17, 23, 0.95); }
+        .top-nav.scrolled .nav-container a { color: #c9d1d9; }
+        .top-nav.scrolled .nav-container a:hover { color: #58a6ff; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-weight: 700; font-size: 1.2rem; color: #2d3748; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #2d3748; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #4299e1; }
+        
+        /* Hero Section - Option 1 Style */
+        .hero-section { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; position: relative; overflow: hidden; }
+        .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat; animation: float 20s linear infinite; }
+        @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-100px); } }
+        .hero-content { position: relative; z-index: 2; max-width: 800px; }
+        .hero-title { font-size: clamp(3rem, 8vw, 6rem); font-weight: 800; margin-bottom: 1rem; }
+        .hero-subtitle { font-size: 1.5rem; opacity: 0.9; margin-bottom: 2rem; }
+        .hero-cta { display: inline-block; padding: 1rem 2rem; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 50px; backdrop-filter: blur(10px); transition: all 0.3s; }
+        .hero-cta:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+        
+        /* Dashboard Layout - Option 2 Style */
+        .dashboard-section { background: #0d1117; color: #c9d1d9; min-height: 100vh; display: flex; }
+        
+        /* Sidebar - Dashboard Style */
+        .sidebar { width: 280px; background: #161b22; border-right: 1px solid #30363d; padding: 2rem 0; position: sticky; top: 0; height: 100vh; }
+        .sidebar-content { padding: 0 1.5rem; }
+        .sidebar-logo { margin-bottom: 3rem; }
+        .sidebar-logo h2 { font-size: 1.3rem; color: #58a6ff; margin-bottom: 0.5rem; }
+        .sidebar-logo p { font-size: 0.9rem; color: #8b949e; }
+        
+        .sidebar-nav { list-style: none; margin-bottom: 3rem; }
+        .sidebar-nav li { margin-bottom: 0.5rem; }
+        .sidebar-nav a { display: flex; align-items: center; padding: 0.75rem 1rem; color: #c9d1d9; text-decoration: none; border-radius: 6px; transition: all 0.3s; }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: #21262d; color: #58a6ff; }
+        .nav-icon { margin-right: 0.75rem; width: 20px; }
+        
+        .sidebar-stats { background: #21262d; border-radius: 8px; padding: 1.5rem; }
+        .sidebar-stats h3 { color: #f0f6fc; margin-bottom: 1rem; font-size: 1rem; }
+        .stat-item { margin-bottom: 1rem; }
+        .stat-number { font-size: 1.5rem; font-weight: bold; color: #58a6ff; }
+        .stat-label { font-size: 0.8rem; color: #8b949e; }
+        
+        /* Main Content - Dashboard Style */
+        .main-content { flex: 1; padding: 2rem 3rem; max-width: 1000px; }
+        .content-header { margin-bottom: 3rem; }
+        .content-title { font-size: 2.5rem; color: #f0f6fc; margin-bottom: 1rem; }
+        .content-subtitle { font-size: 1.2rem; color: #8b949e; }
+        
+        /* Section Styling */
+        .content-section { margin-bottom: 4rem; }
+        .section-title { font-size: 2rem; color: #f0f6fc; margin-bottom: 2rem; border-bottom: 2px solid #30363d; padding-bottom: 0.5rem; }
+        
+        /* About Content */
+        .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .about-main { }
+        .about-main p { color: #c9d1d9; margin-bottom: 1.5rem; line-height: 1.7; font-size: 1.1rem; }
+        .about-sidebar { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.5rem; height: fit-content; }
+        .about-sidebar h3 { color: #58a6ff; margin-bottom: 1rem; }
+        .about-sidebar ul { list-style: none; }
+        .about-sidebar li { color: #c9d1d9; margin-bottom: 0.5rem; }
+        .about-sidebar li::before { content: '▸ '; color: #58a6ff; }
+        
+        /* Experience Cards */
+        .experience-grid { display: grid; gap: 1.5rem; }
+        .experience-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 2rem; transition: all 0.3s; }
+        .experience-card:hover { border-color: #58a6ff; transform: translateY(-2px); }
+        .experience-header { display: flex; justify-content: between; align-items: start; margin-bottom: 1rem; }
+        .experience-title { color: #f0f6fc; font-size: 1.3rem; margin-bottom: 0.25rem; }
+        .experience-company { color: #58a6ff; margin-bottom: 0.5rem; }
+        .experience-date { color: #8b949e; font-size: 0.9rem; }
+        .experience-description { color: #c9d1d9; margin-bottom: 1rem; }
+        .experience-achievements { list-style: none; }
+        .experience-achievements li { color: #c9d1d9; margin-bottom: 0.5rem; }
+        .experience-achievements li::before { content: '✓ '; color: #58a6ff; }
+        
+        /* Projects Grid */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; }
+        .project-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; transition: all 0.3s; }
+        .project-card:hover { border-color: #58a6ff; transform: translateY(-2px); }
+        .project-header { padding: 1.5rem; }
+        .project-title { color: #f0f6fc; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .project-description { color: #8b949e; margin-bottom: 1rem; line-height: 1.5; }
+        .project-links { display: flex; gap: 1rem; margin-bottom: 1rem; }
+        .project-link { color: #58a6ff; text-decoration: none; font-size: 0.9rem; }
+        .project-link:hover { text-decoration: underline; }
+        .project-footer { padding: 0 1.5rem 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tech-tag { background: #21262d; color: #58a6ff; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 1024px) {
+            .dashboard-section { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .sidebar-content { display: flex; justify-content: space-between; align-items: center; }
+            .sidebar-nav { display: flex; margin: 0; }
+            .sidebar-nav li { margin: 0 1rem 0 0; }
+            .sidebar-stats { display: none; }
+            .about-grid { grid-template-columns: 1fr; }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .main-content { padding: 1rem; }
+            .hero-title { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav" id="topNav">
+        <div class="nav-container">
+            <div class="logo">Sarah Chen</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#thoughts">Thoughts</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sarah Chen</h1>
+            <p class="hero-subtitle">Product Engineer building user-centered solutions</p>
+            <a href="#about" class="hero-cta">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-logo">
+                    <h2>Product Engineer</h2>
+                    <p>Building bridges between users and technology</p>
+                </div>
+                
+                <nav>
+                    <ul class="sidebar-nav">
+                        <li><a href="#about" class="active">
+                            <span class="nav-icon">👤</span>About
+                        </a></li>
+                        <li><a href="#experience">
+                            <span class="nav-icon">💼</span>Experience
+                        </a></li>
+                        <li><a href="#projects">
+                            <span class="nav-icon">🚀</span>Projects
+                        </a></li>
+                        <li><a href="#thoughts">
+                            <span class="nav-icon">💭</span>Thoughts
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <div class="sidebar-stats">
+                    <h3>Quick Stats</h3>
+                    <div class="stat-item">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">User engagement ↑</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2M+</div>
+                        <div class="stat-label">Users served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Engineers mentored</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <h1 class="content-title">Building Products That Matter</h1>
+                <p class="content-subtitle">Combining technical excellence with user-centered thinking</p>
+            </div>
+
+            <!-- About Section -->
+            <section class="content-section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-main">
+                        <p>
+                            As a product engineer, I thrive at the intersection of user needs and technical implementation. 
+                            I love working with design and product partners to build the best possible experience for end users.
+                        </p>
+                        <p>
+                            My approach is rooted in a people-first mentality - I believe that strong teams build strong products. 
+                            I work best in environments that value positive reinforcement and collaborative problem-solving.
+                        </p>
+                        <p>
+                            Outside of work, you can find me hiking, reading books and manga, or binge-watching the latest 
+                            anime or K-drama. I'm always eager to learn and explore new technologies and approaches.
+                        </p>
+                    </div>
+                    <div class="about-sidebar">
+                        <h3>Working With Me</h3>
+                        <ul>
+                            <li>People-first mentality</li>
+                            <li>Collaborative problem-solving</li>
+                            <li>Positive reinforcement driven</li>
+                            <li>Cross-functional team player</li>
+                            <li>Mentoring focused</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="content-section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Senior iOS Engineer</h3>
+                                <p class="experience-company">Current Company</p>
+                            </div>
+                            <span class="experience-date">2020 - Present</span>
+                        </div>
+                        <p class="experience-description">
+                            Leading product development initiatives across multiple features, focusing on user experience optimization and team mentorship.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Improved user engagement metrics by 40% through UX optimization</li>
+                            <li>Led cross-functional initiatives across 3 major product features</li>
+                            <li>Mentored 5+ junior engineers in iOS development best practices</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Backend Engineer</h3>
+                                <p class="experience-company">Previous Company</p>
+                            </div>
+                            <span class="experience-date">2018 - 2020</span>
+                        </div>
+                        <p class="experience-description">
+                            Built and maintained scalable backend systems serving millions of users daily, focusing on performance and reliability.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Built scalable APIs serving 2M+ daily active users</li>
+                            <li>Reduced API response times by 60% through optimization</li>
+                            <li>Implemented CI/CD pipelines improving deployment frequency by 5x</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="content-section" id="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Pokemon AR Experience</h3>
+                            <p class="project-description">
+                                Educational augmented reality application showcased at SXSW Education Expo, 
+                                designed to inspire students into STEM through interactive Pokemon experiences.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Demo →</a>
+                                <a href="#" class="project-link">Read Case Study →</a>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Vuforia SDK</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">AR</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Ray Tracer in Go</h3>
+                            <p class="project-description">
+                                High-performance 3D rendering engine implementing ray tracing algorithms 
+                                for photorealistic image generation.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">GitHub →</a>
+                                <a href="#" class="project-link">Technical Blog →</a>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Graphics Programming</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('topNav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

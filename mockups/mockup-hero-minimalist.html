@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option 1: Hero-Focused Minimalist - Sarah Chen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Navigation */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 100; padding: 1rem 0; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; }
+        .nav-container a { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+        .nav-container a:hover { color: #0066cc; }
+        
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .hero-content h1 { font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; margin-bottom: 1rem; color: #1a202c; }
+        .hero-content p { font-size: 1.5rem; color: #4a5568; margin-bottom: 2rem; }
+        .cta-button { display: inline-block; padding: 1rem 2rem; background: #0066cc; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.3s; }
+        .cta-button:hover { transform: translateY(-2px); }
+        
+        /* Content Sections */
+        .section { max-width: 1200px; margin: 0 auto; padding: 5rem 2rem; }
+        .section h2 { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+        
+        /* Experience Timeline */
+        .timeline { position: relative; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+        .timeline-item { display: flex; margin-bottom: 4rem; align-items: center; }
+        .timeline-item:nth-child(odd) { flex-direction: row-reverse; }
+        .timeline-content { flex: 1; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin: 0 2rem; }
+        .timeline-date { font-size: 0.9rem; color: #0066cc; font-weight: 600; }
+        
+        /* Projects Grid */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .project-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-image { height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .project-content { padding: 1.5rem; }
+        .tech-stack { display: flex; gap: 0.5rem; margin-top: 1rem; }
+        .tech-tag { background: #e2e8f0; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container { gap: 1.5rem; }
+            .timeline::before { left: 2rem; }
+            .timeline-item { flex-direction: column !important; }
+            .timeline-content { margin: 0 0 0 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#thoughts">Thoughts</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sarah Chen</h1>
+            <p>Product Engineer building user-centered solutions</p>
+            <a href="#about" class="cta-button">Explore My Work</a>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p style="font-size: 1.2rem; text-align: center; max-width: 800px; margin: 0 auto;">
+            As a product engineer, I bridge the gap between user needs and technical implementation. 
+            I love working with design and product partners to build the best possible experience for end users.
+        </p>
+    </section>
+
+    <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2020 - Present</div>
+                    <h3>Senior iOS Engineer</h3>
+                    <p>Led product development initiatives, improved user engagement by 40%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2018 - 2020</div>
+                    <h3>Backend Engineer</h3>
+                    <p>Built scalable APIs serving millions of users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Pokemon AR Experience</h3>
+                    <p>Educational AR app for STEM engagement</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">AR</span>
+                        <span class="tech-tag">C#</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Ray Tracer in Go</h3>
+                    <p>High-performance rendering engine</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Graphics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

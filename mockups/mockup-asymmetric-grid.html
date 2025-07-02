@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option 3: Asymmetric Grid - Sarah Chen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #2d3748; background: #f7fafc; }
+        
+        /* Navigation */
+        .nav-fab { position: fixed; top: 2rem; right: 2rem; z-index: 1000; }
+        .nav-toggle { width: 60px; height: 60px; border-radius: 50%; background: #4299e1; color: white; border: none; font-size: 1.5rem; cursor: pointer; box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3); transition: all 0.3s; }
+        .nav-toggle:hover { transform: scale(1.1); }
+        .nav-menu { position: absolute; top: 70px; right: 0; background: white; border-radius: 12px; padding: 1rem; box-shadow: 0 20px 40px rgba(0,0,0,0.1); transform: scale(0); transform-origin: top right; transition: transform 0.3s; }
+        .nav-menu.active { transform: scale(1); }
+        .nav-menu a { display: block; padding: 0.75rem 1rem; color: #2d3748; text-decoration: none; border-radius: 8px; margin-bottom: 0.5rem; transition: background 0.3s; }
+        .nav-menu a:hover { background: #edf2f7; }
+        
+        /* Grid Container */
+        .grid-container { display: grid; grid-template-columns: repeat(12, 1fr); grid-gap: 2rem; padding: 2rem; max-width: 1400px; margin: 0 auto; min-height: 100vh; }
+        
+        /* Hero Section - Asymmetric */
+        .hero-section { grid-column: 1 / 8; grid-row: 1 / 3; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+        .hero-section::before { content: ''; position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat; animation: float 20s linear infinite; }
+        @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-100px); } }
+        .hero-content { position: relative; z-index: 2; }
+        .hero-section h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1rem; }
+        .hero-section p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem; }
+        .hero-cta { display: inline-block; padding: 1rem 2rem; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 50px; backdrop-filter: blur(10px); transition: all 0.3s; }
+        .hero-cta:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+        
+        /* About Card */
+        .about-card { grid-column: 9 / 13; grid-row: 1 / 2; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .about-card h2 { color: #4299e1; margin-bottom: 1rem; font-size: 1.5rem; }
+        
+        /* Quick Stats */
+        .stats-card { grid-column: 9 / 13; grid-row: 2 / 3; background: #2d3748; color: white; padding: 2rem; border-radius: 16px; display: flex; flex-direction: column; justify-content: center; }
+        .stat-item { margin-bottom: 1rem; }
+        .stat-number { font-size: 2rem; font-weight: bold; color: #4299e1; }
+        .stat-label { font-size: 0.9rem; opacity: 0.8; }
+        
+        /* Featured Project - Large */
+        .featured-project { grid-column: 1 / 9; grid-row: 3 / 5; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .featured-project:hover { transform: translateY(-5px); }
+        .project-image { height: 60%; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); position: relative; }
+        .project-overlay { position: absolute; top: 2rem; left: 2rem; right: 2rem; }
+        .project-tag { background: rgba(255,255,255,0.9); color: #2d3748; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; display: inline-block; margin-right: 0.5rem; }
+        .project-content { padding: 2rem; height: 40%; }
+        .project-title { font-size: 1.8rem; margin-bottom: 1rem; color: #2d3748; }
+        .project-description { color: #718096; margin-bottom: 1.5rem; }
+        .project-links { display: flex; gap: 1rem; }
+        .project-link { color: #4299e1; text-decoration: none; font-weight: 600; }
+        
+        /* Experience Timeline */
+        .experience-section { grid-column: 9 / 13; grid-row: 3 / 6; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .experience-section h2 { color: #2d3748; margin-bottom: 2rem; }
+        .timeline-item { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e2e8f0; }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-date { color: #4299e1; font-size: 0.9rem; font-weight: 600; }
+        .timeline-title { font-weight: 600; margin: 0.5rem 0; }
+        .timeline-company { color: #718096; font-size: 0.9rem; }
+        
+        /* Projects Grid */
+        .projects-grid { grid-column: 1 / 9; grid-row: 5 / 7; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .project-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .project-card:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+        .project-card h3 { color: #2d3748; margin-bottom: 0.5rem; }
+        .project-card p { color: #718096; font-size: 0.9rem; margin-bottom: 1rem; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tech-tag { background: #edf2f7; color: #4a5568; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; }
+        
+        /* Thoughts Section */
+        .thoughts-section { grid-column: 9 / 13; grid-row: 6 / 8; background: #f7fafc; border: 2px dashed #cbd5e0; border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+        .thoughts-section h2 { color: #4a5568; margin-bottom: 1rem; }
+        .thoughts-section p { color: #718096; margin-bottom: 1.5rem; }
+        .thoughts-link { color: #4299e1; text-decoration: none; font-weight: 600; }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .grid-container { grid-template-columns: repeat(8, 1fr); }
+            .hero-section { grid-column: 1 / 6; }
+            .about-card, .stats-card { grid-column: 6 / 9; }
+            .featured-project { grid-column: 1 / 9; }
+            .experience-section, .thoughts-section { grid-column: 1 / 9; }
+            .projects-grid { grid-column: 1 / 9; }
+        }
+        
+        @media (max-width: 768px) {
+            .grid-container { grid-template-columns: 1fr; grid-gap: 1rem; padding: 1rem; }
+            .hero-section, .about-card, .stats-card, .featured-project, .experience-section, .thoughts-section, .projects-grid { grid-column: 1; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-fab">
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <div class="nav-menu" id="navMenu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#thoughts">Thoughts</a>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+        <!-- Hero Section - Large asymmetric -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Sarah Chen</h1>
+                <p>Product Engineer crafting user-centered solutions through code and collaboration</p>
+                <a href="#projects" class="hero-cta">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Card - Top right -->
+        <section class="about-card">
+            <h2>About Me</h2>
+            <p>iOS and backend engineer who loves working with design and product partners to build the best possible user experience.</p>
+        </section>
+
+        <!-- Stats Card - Bottom right of hero -->
+        <section class="stats-card">
+            <div class="stat-item">
+                <div class="stat-number">40%</div>
+                <div class="stat-label">User engagement increase</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2M+</div>
+                <div class="stat-label">Users served</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Engineers mentored</div>
+            </div>
+        </section>
+
+        <!-- Featured Project - Large showcase -->
+        <section class="featured-project">
+            <div class="project-image">
+                <div class="project-overlay">
+                    <span class="project-tag">Featured</span>
+                    <span class="project-tag">SXSW</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Pokemon AR Experience</h3>
+                <p class="project-description">Educational augmented reality application showcased at SXSW Education Expo, inspiring students into STEM through interactive Pokemon experiences.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Demo →</a>
+                    <a href="#" class="project-link">Read Story →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline - Vertical sidebar -->
+        <section class="experience-section">
+            <h2>Experience</h2>
+            <div class="timeline-item">
+                <div class="timeline-date">2020 - Present</div>
+                <h3 class="timeline-title">Senior iOS Engineer</h3>
+                <p class="timeline-company">Current Company</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2018 - 2020</div>
+                <h3 class="timeline-title">Backend Engineer</h3>
+                <p class="timeline-company">Previous Company</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2016 - 2018</div>
+                <h3 class="timeline-title">Software Engineer</h3>
+                <p class="timeline-company">Earlier Company</p>
+            </div>
+        </section>
+
+        <!-- Projects Grid - Small cards -->
+        <section class="projects-grid">
+            <div class="project-card">
+                <h3>Ray Tracer in Go</h3>
+                <p>High-performance 3D rendering engine with photorealistic output</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Go</span>
+                    <span class="tech-tag">Graphics</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Mobile App Platform</h3>
+                <p>Scalable backend serving millions of mobile users</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">iOS</span>
+                    <span class="tech-tag">Swift</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Data Pipeline</h3>
+                <p>Real-time analytics processing at scale</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>API Gateway</h3>
+                <p>Microservices orchestration and routing</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Docker</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thoughts Section -->
+        <section class="thoughts-section">
+            <h2>Latest Thoughts</h2>
+            <p>Sharing insights on product engineering, team collaboration, and building user-centered solutions.</p>
+            <a href="#" class="thoughts-link">Read My Blog →</a>
+        </section>
+    </div>
+
+    <script>
+        function toggleNav() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close nav when clicking outside
+        document.addEventListener('click', function(event) {
+            const navFab = document.querySelector('.nav-fab');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (!navFab.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

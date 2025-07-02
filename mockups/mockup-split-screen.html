@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option 2: Split-Screen Dashboard - Sarah Chen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'JetBrains Mono', 'Fira Code', monospace; background: #0d1117; color: #c9d1d9; overflow-x: hidden; }
+        
+        /* Sidebar Navigation */
+        .sidebar { position: fixed; left: 0; top: 0; width: 280px; height: 100vh; background: #161b22; border-right: 1px solid #30363d; padding: 2rem 0; z-index: 100; }
+        .sidebar-content { padding: 0 1.5rem; }
+        .logo { margin-bottom: 3rem; }
+        .logo h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 0.5rem; }
+        .logo p { font-size: 0.9rem; color: #8b949e; }
+        
+        .nav-menu { list-style: none; }
+        .nav-item { margin-bottom: 1rem; }
+        .nav-link { display: flex; align-items: center; padding: 0.75rem 1rem; color: #c9d1d9; text-decoration: none; border-radius: 6px; transition: all 0.3s; }
+        .nav-link:hover, .nav-link.active { background: #21262d; color: #58a6ff; }
+        .nav-icon { margin-right: 0.75rem; width: 20px; }
+        
+        .social-links { margin-top: 3rem; display: flex; gap: 1rem; }
+        .social-link { color: #8b949e; font-size: 1.2rem; transition: color 0.3s; }
+        .social-link:hover { color: #58a6ff; }
+        
+        /* Main Content */
+        .main-content { margin-left: 280px; min-height: 100vh; }
+        .section { padding: 3rem 4rem; max-width: 1000px; }
+        .section h2 { font-size: 2rem; color: #f0f6fc; margin-bottom: 2rem; border-bottom: 2px solid #30363d; padding-bottom: 0.5rem; }
+        
+        /* Hero Section */
+        .hero { padding: 4rem; text-align: center; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); }
+        .hero h1 { font-size: 3rem; color: #f0f6fc; margin-bottom: 1rem; }
+        .hero .subtitle { font-size: 1.2rem; color: #58a6ff; margin-bottom: 2rem; }
+        .hero .description { font-size: 1rem; color: #8b949e; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+        
+        /* Experience Cards */
+        .experience-grid { display: grid; gap: 1.5rem; }
+        .experience-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.5rem; transition: transform 0.3s; }
+        .experience-card:hover { transform: translateY(-2px); border-color: #58a6ff; }
+        .experience-header { display: flex; justify-content: between; align-items: start; margin-bottom: 1rem; }
+        .experience-title { color: #f0f6fc; font-size: 1.2rem; margin-bottom: 0.25rem; }
+        .experience-company { color: #58a6ff; margin-bottom: 0.5rem; }
+        .experience-date { color: #8b949e; font-size: 0.9rem; }
+        .experience-achievements { list-style: none; }
+        .experience-achievements li { margin-bottom: 0.5rem; color: #c9d1d9; }
+        .experience-achievements li::before { content: '▸ '; color: #58a6ff; }
+        
+        /* Projects Grid */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .project-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; transition: all 0.3s; }
+        .project-card:hover { border-color: #58a6ff; transform: translateY(-2px); }
+        .project-header { padding: 1.5rem; }
+        .project-title { color: #f0f6fc; margin-bottom: 0.5rem; }
+        .project-description { color: #8b949e; margin-bottom: 1rem; line-height: 1.5; }
+        .project-links { display: flex; gap: 1rem; }
+        .project-link { color: #58a6ff; text-decoration: none; font-size: 0.9rem; }
+        .project-link:hover { text-decoration: underline; }
+        .tech-stack { padding: 0 1.5rem 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tech-tag { background: #21262d; color: #58a6ff; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; }
+        
+        /* Code Block Style */
+        .code-block { background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; margin: 1rem 0; font-family: inherit; }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .sidebar { transform: translateX(-100%); }
+            .main-content { margin-left: 0; }
+            .section { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="logo">
+                <h1>Sarah Chen</h1>
+                <p>Product Engineer</p>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span class="nav-icon">🏠</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span class="nav-icon">👤</span>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <span class="nav-icon">💼</span>
+                            Experience
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                            <span class="nav-icon">🚀</span>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#thoughts" class="nav-link">
+                            <span class="nav-icon">💭</span>
+                            Thoughts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">📧</a>
+                <a href="#" class="social-link">🐙</a>
+                <a href="#" class="social-link">💼</a>
+                <a href="#" class="social-link">📄</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="hero" id="home">
+            <h1>Product Engineer</h1>
+            <p class="subtitle">Building user-centered solutions with code</p>
+            <p class="description">
+                I bridge the gap between user needs and technical implementation, 
+                specializing in iOS development and backend systems that scale.
+            </p>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Senior iOS Engineer</h3>
+                            <p class="experience-company">Current Company</p>
+                        </div>
+                        <span class="experience-date">2020 - Present</span>
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Led product development initiatives across 3 major features</li>
+                        <li>Improved user engagement metrics by 40% through UX optimization</li>
+                        <li>Mentored 5 junior engineers in iOS best practices</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Backend Engineer</h3>
+                            <p class="experience-company">Previous Company</p>
+                        </div>
+                        <span class="experience-date">2018 - 2020</span>
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Built scalable APIs serving 2M+ daily active users</li>
+                        <li>Reduced response times by 60% through optimization</li>
+                        <li>Implemented CI/CD pipelines improving deployment frequency by 5x</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Pokemon AR Experience</h3>
+                        <p class="project-description">
+                            Educational augmented reality application for STEM engagement, 
+                            showcased at SXSW Education Expo.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Demo →</a>
+                            <a href="#" class="project-link">Case Study →</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Vuforia SDK</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">AR</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Ray Tracer in Go</h3>
+                        <p class="project-description">
+                            High-performance 3D rendering engine implementing ray tracing algorithms 
+                            for photorealistic image generation.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Blog Post →</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Graphics</span>
+                        <span class="tech-tag">Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
