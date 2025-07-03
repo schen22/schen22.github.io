@@ -56,6 +56,19 @@
     line-height: 1.5;
   }
 
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-list {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+  }
+
+  .section-list + .section-subtitle {
+    margin-top: 0.6rem !important;
+  }
+
   .projects-grid {
     display: flex;
     flex-direction: column;
@@ -130,6 +143,15 @@
 
   .section-description {
     font-size: 0.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-list {
+    font-size: 0.8rem;
+    padding-left: 1.75rem;
   }
 
   .project-card {

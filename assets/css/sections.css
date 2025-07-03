@@ -1,0 +1,89 @@
+/* Section-Specific Styles */
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.9s forwards, bounce 2s infinite 1.5s;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* About Section */
+.about {
+  background: #f7fafc;
+}
+
+.about-visual {
+  background: url("/assets/img/yumi_happy.jpg") center 20% / cover;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.about-visual::before {
+  display: none; /* Remove the emoji */
+}
+
+/* Experience Section */
+.experience {
+  background: white;
+}
+
+/* Projects Section */
+.projects {
+  background: #2d3748;
+  color: white;
+}
+
+.projects .section-title {
+  color: white;
+}
+
+.projects .section-description {
+  color: #a0aec0;
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(135deg, #4299e1 0%, #2b6cb0 100%);
+  color: white;
+  text-align: center;
+}
+
+.contact .section-title {
+  color: white;
+}
+
+.contact .section-description {
+  color: rgba(255, 255, 255, 0.9);
+}
