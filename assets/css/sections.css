@@ -4,7 +4,7 @@
 .hero {
   background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
   color: white;
-  text-align: center;
+  text-align: start;
 }
 
 .hero-content {
