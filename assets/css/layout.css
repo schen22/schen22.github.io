@@ -10,13 +10,6 @@
   padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 4vw, 2rem);
 }
 
-/* Mobile Hero - Substantial but not overwhelming */
-@media (max-width: 768px) {
-  .section {
-    min-height: 75vh;  /* 75% screen height - sweet spot */
-  }
-}
-
 .content {
   max-width: 1200px;
   display: grid;

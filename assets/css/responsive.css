@@ -1,5 +1,9 @@
 /* Mobile Layout Changes (Typography handled by clamp() in base styles) */
 @media (max-width: 768px) {
+  .section {
+    min-height: 75vh; /* Mobile hero - substantial but not overwhelming */
+  }
+
   .content {
     grid-template-columns: 1fr;
     gap: 2rem;
