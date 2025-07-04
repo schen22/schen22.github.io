@@ -1,5 +1,11 @@
 /* Projects Section Styles */
 
+/* Override the two-column grid for projects section */
+.projects .content {
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+}
+
 .projects-container {
   margin-top: 2rem;
   overflow-x: auto;
@@ -34,6 +40,8 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   width: max-content;
+  /* Ensure proper alignment within content boundaries */
+  margin: 0 auto;
 }
 
 .project-card {
