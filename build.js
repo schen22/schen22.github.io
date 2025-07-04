@@ -19,12 +19,11 @@ function buildHTML() {
   const navigation = readComponent('components/partials/navigation.html');
   const hero = readComponent('components/sections/hero.html');
   const about = readComponent('components/sections/about.html');
-  const experience = readComponent('components/sections/experience.html');
   const projects = readComponent('components/sections/projects.html');
   const contact = readComponent('components/sections/contact.html');
   const scripts = readComponent('components/partials/scripts.html');
   
-  // Assemble the complete HTML
+  // Assemble the complete HTML (3-section structure: About, Projects, Contact)
   const html = `<!DOCTYPE html>
 <html lang="en">
 ${head}
@@ -35,8 +34,6 @@ ${head}
   
   ${about}
   
-  ${experience}
-  
   ${projects}
   
   ${contact}
@@ -45,19 +42,16 @@ ${head}
 </body>
 </html>`;
 
-  // Write the assembled HTML as index-new.html for comparison
-  fs.writeFileSync(path.join(__dirname, 'index-new.html'), html, 'utf8');
-  console.log('✅ index-new.html built successfully!');
+  // Write the assembled HTML directly to index.html
+  fs.writeFileSync(path.join(__dirname, 'index.html'), html, 'utf8');
+  console.log('✅ index.html built successfully!');
   console.log('📁 File structure:');
   console.log('   📂 components/');
   console.log('   📂 assets/css/ (6 files)');
   console.log('   📂 assets/js/ (3 files)');
-  console.log('   📄 index.html (original version)');
-  console.log('   📄 index-new.html (modular version)');
+  console.log('   📄 index.html (assembled from components)');
   console.log('');
-  console.log('🌐 Compare versions:');
-  console.log('   Original: http://localhost:8000/');
-  console.log('   Modular:  http://localhost:8000/index-new.html');
+  console.log('🌐 View at: http://localhost:8000/');
 }
 
 // Run the build
