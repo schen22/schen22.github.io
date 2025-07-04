@@ -83,7 +83,7 @@
   margin: 0 0 2rem 0;
   padding-left: clamp(1.5rem, 3vw, 2rem);
   color: #4a5568;
-  font-size: clamp(0.8rem, 2.2vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.2vw, 1.2rem);
   line-height: 1.6;
 }
 

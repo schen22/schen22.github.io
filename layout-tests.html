@@ -1,389 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout Tests - Sarah Chen Portfolio</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .test-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .test-section {
-            margin-bottom: 30px;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            padding: 15px;
-        }
-        .test-section h2 {
-            margin-top: 0;
-            color: #333;
-        }
-        .test-frame {
-            border: 2px solid #ddd;
-            border-radius: 4px;
-            margin: 10px 0;
-            position: relative;
-        }
-        .test-frame iframe {
-            width: 100%;
-            border: none;
-            border-radius: 2px;
-        }
-        .frame-label {
-            position: absolute;
-            top: -20px;
-            left: 0;
-            background: #666;
-            color: white;
-            padding: 2px 8px;
-            font-size: 12px;
-            border-radius: 3px;
-        }
-        .test-controls {
-            margin: 15px 0;
-        }
-        .test-button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        .test-button:hover {
-            background: #0056b3;
-        }
-        .test-results {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 4px;
-            padding: 15px;
-            margin-top: 15px;
-        }
-        .test-pass {
-            color: #28a745;
-            font-weight: bold;
-        }
-        .test-fail {
-            color: #dc3545;
-            font-weight: bold;
-        }
-        .test-warning {
-            color: #ffc107;
-            font-weight: bold;
-        }
-        .viewport-controls {
-            display: flex;
-            gap: 10px;
-            margin: 15px 0;
-            flex-wrap: wrap;
-        }
-        .viewport-button {
-            background: #6c757d;
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 11px;
-        }
-        .viewport-button.active {
-            background: #007bff;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      .test-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .test-section {
+        margin-bottom: 30px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        padding: 15px;
+      }
+      .test-section h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .test-frame {
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        margin: 10px 0;
+        position: relative;
+      }
+      .test-frame iframe {
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+      }
+      .frame-label {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        background: #666;
+        color: white;
+        padding: 2px 8px;
+        font-size: 12px;
+        border-radius: 3px;
+      }
+      .test-controls {
+        margin: 15px 0;
+      }
+      .test-button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      .test-button:hover {
+        background: #0056b3;
+      }
+      .test-results {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 15px;
+        margin-top: 15px;
+      }
+      .test-pass {
+        color: #28a745;
+        font-weight: bold;
+      }
+      .test-fail {
+        color: #dc3545;
+        font-weight: bold;
+      }
+      .test-warning {
+        color: #ffc107;
+        font-weight: bold;
+      }
+      .viewport-controls {
+        display: flex;
+        gap: 10px;
+        margin: 15px 0;
+        flex-wrap: wrap;
+      }
+      .viewport-button {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 11px;
+      }
+      .viewport-button.active {
+        background: #007bff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="test-container">
-        <h1>Portfolio Layout Tests</h1>
-        <p>This test suite validates the responsive layout behavior of the portfolio website across different viewport sizes.</p>
-        
-        <div class="test-section">
-            <h2>Viewport Size Tests</h2>
-            <div class="viewport-controls">
-                <button class="viewport-button" onclick="setViewport(375, 667, 'Mobile (iPhone SE)')">Mobile (375x667)</button>
-                <button class="viewport-button" onclick="setViewport(414, 896, 'Mobile (iPhone 11)')">Mobile (414x896)</button>
-                <button class="viewport-button" onclick="setViewport(768, 1024, 'Tablet (iPad)')">Tablet (768x1024)</button>
-                <button class="viewport-button" onclick="setViewport(1024, 768, 'Tablet Landscape')">Tablet Landscape</button>
-                <button class="viewport-button" onclick="setViewport(1200, 800, 'Desktop Small')">Desktop Small</button>
-                <button class="viewport-button" onclick="setViewport(1440, 900, 'Desktop Large')">Desktop Large</button>
-                <button class="viewport-button active" onclick="setViewport('100%', 600, 'Full Width')">Full Width</button>
-            </div>
-            
-            <div class="test-frame">
-                <div class="frame-label">Portfolio Preview</div>
-                <iframe id="portfolio-frame" src="index-new.html" height="600"></iframe>
-            </div>
-            
-            <div class="test-controls">
-                <button class="test-button" onclick="runLayoutTests()">Run Layout Tests</button>
-                <button class="test-button" onclick="runInteractionTests()">Test Interactions</button>
-                <button class="test-button" onclick="runPerformanceTests()">Performance Check</button>
-                <button class="test-button" onclick="resetViewport()">Reset Viewport</button>
-            </div>
-            
-            <div class="test-results" id="test-results">
-                <p>Click "Run Layout Tests" to start testing...</p>
-            </div>
+      <h1>Portfolio Layout Tests</h1>
+      <p>
+        This test suite validates the responsive layout behavior of the
+        portfolio website across different viewport sizes.
+      </p>
+
+      <div class="test-section">
+        <h2>Viewport Size Tests</h2>
+        <div class="viewport-controls">
+          <button
+            class="viewport-button"
+            onclick="setViewport(375, 667, 'Mobile (iPhone SE)')"
+          >
+            Mobile (375x667)
+          </button>
+          <button
+            class="viewport-button"
+            onclick="setViewport(414, 896, 'Mobile (iPhone 11)')"
+          >
+            Mobile (414x896)
+          </button>
+          <button
+            class="viewport-button"
+            onclick="setViewport(768, 1024, 'Tablet (iPad)')"
+          >
+            Tablet (768x1024)
+          </button>
+          <button
+            class="viewport-button"
+            onclick="setViewport(1024, 768, 'Tablet Landscape')"
+          >
+            Tablet Landscape
+          </button>
+          <button
+            class="viewport-button"
+            onclick="setViewport(1200, 800, 'Desktop Small')"
+          >
+            Desktop Small
+          </button>
+          <button
+            class="viewport-button"
+            onclick="setViewport(1440, 900, 'Desktop Large')"
+          >
+            Desktop Large
+          </button>
+          <button
+            class="viewport-button active"
+            onclick="setViewport('100%', 600, 'Full Width')"
+          >
+            Full Width
+          </button>
         </div>
-        
-        <div class="test-section">
-            <h2>Manual Test Checklist</h2>
-            <div id="manual-checklist">
-                <label><input type="checkbox"> Projects section scrolls horizontally on mobile</label><br>
-                <label><input type="checkbox"> Scroll hint appears only on mobile viewports</label><br>
-                <label><input type="checkbox"> Project cards maintain consistent sizing</label><br>
-                <label><input type="checkbox"> No horizontal overflow on any viewport</label><br>
-                <label><input type="checkbox"> Navigation dots work correctly</label><br>
-                <label><input type="checkbox"> Smooth scrolling between sections</label><br>
-                <label><input type="checkbox"> Contact links stack properly on mobile</label><br>
-                <label><input type="checkbox"> Typography scales appropriately</label><br>
-                <label><input type="checkbox"> Timeline section remains readable</label><br>
-                <label><input type="checkbox"> About section layout adapts correctly</label><br>
-            </div>
+
+        <div class="test-frame">
+          <div class="frame-label">Portfolio Preview</div>
+          <iframe
+            id="portfolio-frame"
+            src="index-new.html"
+            height="600"
+          ></iframe>
         </div>
+
+        <div class="test-controls">
+          <button class="test-button" onclick="runLayoutTests()">
+            Run Layout Tests
+          </button>
+          <button class="test-button" onclick="runInteractionTests()">
+            Test Interactions
+          </button>
+          <button class="test-button" onclick="runPerformanceTests()">
+            Performance Check
+          </button>
+          <button class="test-button" onclick="resetViewport()">
+            Reset Viewport
+          </button>
+        </div>
+
+        <div class="test-results" id="test-results">
+          <p>Click "Run Layout Tests" to start testing...</p>
+        </div>
+      </div>
+
+      <div class="test-section">
+        <h2>Manual Test Checklist</h2>
+        <div id="manual-checklist">
+          <label
+            ><input type="checkbox" /> Projects section scrolls horizontally on
+            mobile</label
+          ><br />
+          <label
+            ><input type="checkbox" /> Scroll hint appears only on mobile
+            viewports</label
+          ><br />
+          <label
+            ><input type="checkbox" /> Project cards maintain consistent
+            sizing</label
+          ><br />
+          <label
+            ><input type="checkbox" /> No horizontal overflow on any
+            viewport</label
+          ><br />
+          <label><input type="checkbox" /> Navigation dots work correctly</label
+          ><br />
+          <label
+            ><input type="checkbox" /> Smooth scrolling between sections</label
+          ><br />
+          <label
+            ><input type="checkbox" /> Contact links stack properly on
+            mobile</label
+          ><br />
+          <label
+            ><input type="checkbox" /> Typography scales appropriately</label
+          ><br />
+          <label
+            ><input type="checkbox" /> Timeline section remains readable</label
+          ><br />
+          <label
+            ><input type="checkbox" /> About section layout adapts
+            correctly</label
+          ><br />
+        </div>
+      </div>
     </div>
 
     <script>
-        let currentViewport = { width: '100%', height: 600, label: 'Full Width' };
-        
-        function setViewport(width, height, label) {
-            const frame = document.getElementById('portfolio-frame');
-            const frameContainer = frame.parentElement;
-            
-            // Update active button
-            document.querySelectorAll('.viewport-button').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            // Set frame dimensions
-            if (width === '100%') {
-                frame.style.width = '100%';
-                frameContainer.style.width = '100%';
-            } else {
-                frame.style.width = width + 'px';
-                frameContainer.style.width = width + 'px';
-                frameContainer.style.margin = '10px auto';
-            }
-            
-            frame.style.height = height + 'px';
-            frameContainer.querySelector('.frame-label').textContent = label;
-            
-            currentViewport = { width, height, label };
-            
-            // Clear previous results
-            document.getElementById('test-results').innerHTML = '<p>Viewport changed to ' + label + '. Run tests to validate layout.</p>';
+      let currentViewport = { width: "100%", height: 600, label: "Full Width" };
+
+      function setViewport(width, height, label) {
+        const frame = document.getElementById("portfolio-frame");
+        const frameContainer = frame.parentElement;
+
+        // Update active button
+        document
+          .querySelectorAll(".viewport-button")
+          .forEach(btn => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Set frame dimensions
+        if (width === "100%") {
+          frame.style.width = "100%";
+          frameContainer.style.width = "100%";
+        } else {
+          frame.style.width = width + "px";
+          frameContainer.style.width = width + "px";
+          frameContainer.style.margin = "10px auto";
         }
-        
-        function resetViewport() {
-            setViewport('100%', 600, 'Full Width');
-            // Trigger click on Full Width button
-            document.querySelector('.viewport-button.active').click();
-        }
-        
-        function runLayoutTests() {
-            const results = document.getElementById('test-results');
-            results.innerHTML = '<h3>Running Layout Tests...</h3>';
-            
-            const frame = document.getElementById('portfolio-frame');
-            
-            // Wait for frame to load
-            setTimeout(() => {
-                try {
-                    const frameDoc = frame.contentDocument || frame.contentWindow.document;
-                    const tests = [];
-                    
-                    // Test 1: Check for horizontal overflow
-                    const body = frameDoc.body;
-                    const hasHorizontalOverflow = body.scrollWidth > body.clientWidth;
-                    tests.push({
-                        name: 'No Horizontal Overflow',
-                        passed: !hasHorizontalOverflow,
-                        message: hasHorizontalOverflow ? 'Body has horizontal overflow' : 'No horizontal overflow detected'
-                    });
-                    
-                    // Test 2: Check projects section exists and is scrollable
-                    const projectsContainer = frameDoc.querySelector('.projects-container');
-                    const projectsScrollable = projectsContainer && projectsContainer.scrollWidth > projectsContainer.clientWidth;
-                    tests.push({
-                        name: 'Projects Horizontal Scroll',
-                        passed: projectsScrollable,
-                        message: projectsScrollable ? 'Projects section is horizontally scrollable' : 'Projects section not scrollable or not found'
-                    });
-                    
-                    // Test 3: Check scroll hint visibility based on viewport
-                    const scrollHint = frameDoc.querySelector('.scroll-hint');
-                    const isMobile = currentViewport.width <= 768;
-                    const scrollHintVisible = scrollHint && window.getComputedStyle(scrollHint).display !== 'none';
-                    const scrollHintTest = isMobile ? scrollHintVisible : !scrollHintVisible;
-                    tests.push({
-                        name: 'Scroll Hint Visibility',
-                        passed: scrollHintTest,
-                        message: isMobile ? 
-                            (scrollHintVisible ? 'Scroll hint correctly shown on mobile' : 'Scroll hint should be visible on mobile') :
-                            (scrollHintVisible ? 'Scroll hint should be hidden on desktop' : 'Scroll hint correctly hidden on desktop')
-                    });
-                    
-                    // Test 4: Check section structure
-                    const sections = frameDoc.querySelectorAll('.section');
-                    tests.push({
-                        name: 'Section Structure',
-                        passed: sections.length >= 4,
-                        message: `Found ${sections.length} sections (expected 4+)`
-                    });
-                    
-                    // Test 5: Check project cards
-                    const projectCards = frameDoc.querySelectorAll('.project-card');
-                    tests.push({
-                        name: 'Project Cards',
-                        passed: projectCards.length >= 6,
-                        message: `Found ${projectCards.length} project cards (expected 6+)`
-                    });
-                    
-                    // Test 6: Check navigation dots (should be hidden on mobile)
-                    const navDots = frameDoc.querySelector('.nav-dots');
-                    const navDotsHidden = isMobile ? (navDots && window.getComputedStyle(navDots).display === 'none') : true;
-                    tests.push({
-                        name: 'Navigation Dots',
-                        passed: navDotsHidden,
-                        message: isMobile ? 'Navigation dots correctly hidden on mobile' : 'Navigation dots visibility OK'
-                    });
-                    
-                    // Display results
-                    displayTestResults(tests);
-                    
-                } catch (error) {
-                    results.innerHTML = '<div class="test-fail">Error accessing frame content: ' + error.message + '</div>';
-                }
-            }, 1000);
-        }
-        
-        function runInteractionTests() {
-            const results = document.getElementById('test-results');
-            results.innerHTML = '<h3>Running Interaction Tests...</h3>';
-            
-            setTimeout(() => {
-                const frame = document.getElementById('portfolio-frame');
-                try {
-                    const frameDoc = frame.contentDocument || frame.contentWindow.document;
-                    const tests = [];
-                    
-                    // Test scroll functionality
-                    const projectsContainer = frameDoc.querySelector('.projects-container');
-                    if (projectsContainer) {
-                        // Test horizontal scroll
-                        const initialScrollLeft = projectsContainer.scrollLeft;
-                        projectsContainer.scrollLeft += 100;
-                        const scrollWorked = projectsContainer.scrollLeft > initialScrollLeft;
-                        projectsContainer.scrollLeft = initialScrollLeft; // Reset
-                        
-                        tests.push({
-                            name: 'Horizontal Scroll Function',
-                            passed: scrollWorked,
-                            message: scrollWorked ? 'Horizontal scrolling works' : 'Horizontal scrolling failed'
-                        });
-                    }
-                    
-                    // Test smooth scroll behavior
-                    const smoothScrollSet = frameDoc.documentElement.style.scrollBehavior === 'smooth' ||
-                                          window.getComputedStyle(frameDoc.documentElement).scrollBehavior === 'smooth';
-                    tests.push({
-                        name: 'Smooth Scroll',
-                        passed: smoothScrollSet,
-                        message: smoothScrollSet ? 'Smooth scroll enabled' : 'Smooth scroll not detected'
-                    });
-                    
-                    displayTestResults(tests);
-                    
-                } catch (error) {
-                    results.innerHTML = '<div class="test-fail">Error testing interactions: ' + error.message + '</div>';
-                }
-            }, 500);
-        }
-        
-        function runPerformanceTests() {
-            const results = document.getElementById('test-results');
-            results.innerHTML = '<h3>Running Performance Tests...</h3>';
-            
-            setTimeout(() => {
-                const frame = document.getElementById('portfolio-frame');
-                try {
-                    const frameDoc = frame.contentDocument || frame.contentWindow.document;
-                    const tests = [];
-                    
-                    // Test CSS animation performance
-                    const animatedElements = frameDoc.querySelectorAll('[style*="animation"], .scroll-hint');
-                    tests.push({
-                        name: 'Animated Elements',
-                        passed: animatedElements.length > 0,
-                        message: `Found ${animatedElements.length} animated elements`
-                    });
-                    
-                    // Test image loading
-                    const images = frameDoc.querySelectorAll('img');
-                    const loadedImages = Array.from(images).filter(img => img.complete);
-                    tests.push({
-                        name: 'Image Loading',
-                        passed: images.length === 0 || loadedImages.length === images.length,
-                        message: `${loadedImages.length}/${images.length} images loaded`
-                    });
-                    
-                    // Test DOM complexity
-                    const totalElements = frameDoc.querySelectorAll('*').length;
-                    tests.push({
-                        name: 'DOM Complexity',
-                        passed: totalElements < 500,
-                        message: `${totalElements} DOM elements (good if < 500)`
-                    });
-                    
-                    displayTestResults(tests);
-                    
-                } catch (error) {
-                    results.innerHTML = '<div class="test-fail">Error testing performance: ' + error.message + '</div>';
-                }
-            }, 500);
-        }
-        
-        function displayTestResults(tests) {
-            const results = document.getElementById('test-results');
-            let html = '<h3>Test Results for ' + currentViewport.label + '</h3>';
-            
-            const passed = tests.filter(t => t.passed).length;
-            const total = tests.length;
-            
-            html += `<p><strong>Summary: ${passed}/${total} tests passed</strong></p>`;
-            
-            tests.forEach(test => {
-                const status = test.passed ? 'test-pass' : 'test-fail';
-                const icon = test.passed ? '✓' : '✗';
-                html += `<div class="${status}">${icon} ${test.name}: ${test.message}</div>`;
+
+        frame.style.height = height + "px";
+        frameContainer.querySelector(".frame-label").textContent = label;
+
+        currentViewport = { width, height, label };
+
+        // Clear previous results
+        document.getElementById("test-results").innerHTML =
+          "<p>Viewport changed to " +
+          label +
+          ". Run tests to validate layout.</p>";
+      }
+
+      function resetViewport() {
+        setViewport("100%", 600, "Full Width");
+        // Trigger click on Full Width button
+        document.querySelector(".viewport-button.active").click();
+      }
+
+      function runLayoutTests() {
+        const results = document.getElementById("test-results");
+        results.innerHTML = "<h3>Running Layout Tests...</h3>";
+
+        const frame = document.getElementById("portfolio-frame");
+
+        // Wait for frame to load
+        setTimeout(() => {
+          try {
+            const frameDoc =
+              frame.contentDocument || frame.contentWindow.document;
+            const tests = [];
+
+            // Test 1: Check for horizontal overflow
+            const body = frameDoc.body;
+            const hasHorizontalOverflow = body.scrollWidth > body.clientWidth;
+            tests.push({
+              name: "No Horizontal Overflow",
+              passed: !hasHorizontalOverflow,
+              message: hasHorizontalOverflow
+                ? "Body has horizontal overflow"
+                : "No horizontal overflow detected"
             });
-            
-            if (passed === total) {
-                html += '<div class="test-pass"><strong>All tests passed! ✨</strong></div>';
-            } else {
-                html += '<div class="test-fail"><strong>Some tests failed. Review layout issues above.</strong></div>';
+
+            // Test 2: Check projects section exists and is scrollable
+            const projectsContainer = frameDoc.querySelector(
+              ".projects-container"
+            );
+            const projectsScrollable =
+              projectsContainer &&
+              projectsContainer.scrollWidth > projectsContainer.clientWidth;
+            tests.push({
+              name: "Projects Horizontal Scroll",
+              passed: projectsScrollable,
+              message: projectsScrollable
+                ? "Projects section is horizontally scrollable"
+                : "Projects section not scrollable or not found"
+            });
+
+            // Test 3: Check scroll hint visibility based on viewport
+            const scrollHint = frameDoc.querySelector(".scroll-hint");
+            const isMobile = currentViewport.width <= 768;
+            const scrollHintVisible =
+              scrollHint &&
+              window.getComputedStyle(scrollHint).display !== "none";
+            const scrollHintTest = isMobile
+              ? scrollHintVisible
+              : !scrollHintVisible;
+            tests.push({
+              name: "Scroll Hint Visibility",
+              passed: scrollHintTest,
+              message: isMobile
+                ? scrollHintVisible
+                  ? "Scroll hint correctly shown on mobile"
+                  : "Scroll hint should be visible on mobile"
+                : scrollHintVisible
+                ? "Scroll hint should be hidden on desktop"
+                : "Scroll hint correctly hidden on desktop"
+            });
+
+            // Test 4: Check section structure
+            const sections = frameDoc.querySelectorAll(".section");
+            tests.push({
+              name: "Section Structure",
+              passed: sections.length >= 4,
+              message: `Found ${sections.length} sections (expected 4+)`
+            });
+
+            // Test 5: Check project cards
+            const projectCards = frameDoc.querySelectorAll(".project-card");
+            tests.push({
+              name: "Project Cards",
+              passed: projectCards.length >= 6,
+              message: `Found ${projectCards.length} project cards (expected 6+)`
+            });
+
+            // Test 6: Check navigation dots (should be hidden on mobile)
+            const navDots = frameDoc.querySelector(".nav-dots");
+            const navDotsHidden = isMobile
+              ? navDots && window.getComputedStyle(navDots).display === "none"
+              : true;
+            tests.push({
+              name: "Navigation Dots",
+              passed: navDotsHidden,
+              message: isMobile
+                ? "Navigation dots correctly hidden on mobile"
+                : "Navigation dots visibility OK"
+            });
+
+            // Display results
+            displayTestResults(tests);
+          } catch (error) {
+            results.innerHTML =
+              '<div class="test-fail">Error accessing frame content: ' +
+              error.message +
+              "</div>";
+          }
+        }, 1000);
+      }
+
+      function runInteractionTests() {
+        const results = document.getElementById("test-results");
+        results.innerHTML = "<h3>Running Interaction Tests...</h3>";
+
+        setTimeout(() => {
+          const frame = document.getElementById("portfolio-frame");
+          try {
+            const frameDoc =
+              frame.contentDocument || frame.contentWindow.document;
+            const tests = [];
+
+            // Test scroll functionality
+            const projectsContainer = frameDoc.querySelector(
+              ".projects-container"
+            );
+            if (projectsContainer) {
+              // Test horizontal scroll
+              const initialScrollLeft = projectsContainer.scrollLeft;
+              projectsContainer.scrollLeft += 100;
+              const scrollWorked =
+                projectsContainer.scrollLeft > initialScrollLeft;
+              projectsContainer.scrollLeft = initialScrollLeft; // Reset
+
+              tests.push({
+                name: "Horizontal Scroll Function",
+                passed: scrollWorked,
+                message: scrollWorked
+                  ? "Horizontal scrolling works"
+                  : "Horizontal scrolling failed"
+              });
             }
-            
-            results.innerHTML = html;
-        }
-        
-        // Auto-run tests on load
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                runLayoutTests();
-            }, 2000);
+
+            // Test smooth scroll behavior
+            const smoothScrollSet =
+              frameDoc.documentElement.style.scrollBehavior === "smooth" ||
+              window.getComputedStyle(frameDoc.documentElement)
+                .scrollBehavior === "smooth";
+            tests.push({
+              name: "Smooth Scroll",
+              passed: smoothScrollSet,
+              message: smoothScrollSet
+                ? "Smooth scroll enabled"
+                : "Smooth scroll not detected"
+            });
+
+            displayTestResults(tests);
+          } catch (error) {
+            results.innerHTML =
+              '<div class="test-fail">Error testing interactions: ' +
+              error.message +
+              "</div>";
+          }
+        }, 500);
+      }
+
+      function runPerformanceTests() {
+        const results = document.getElementById("test-results");
+        results.innerHTML = "<h3>Running Performance Tests...</h3>";
+
+        setTimeout(() => {
+          const frame = document.getElementById("portfolio-frame");
+          try {
+            const frameDoc =
+              frame.contentDocument || frame.contentWindow.document;
+            const tests = [];
+
+            // Test CSS animation performance
+            const animatedElements = frameDoc.querySelectorAll(
+              '[style*="animation"], .scroll-hint'
+            );
+            tests.push({
+              name: "Animated Elements",
+              passed: animatedElements.length > 0,
+              message: `Found ${animatedElements.length} animated elements`
+            });
+
+            // Test image loading
+            const images = frameDoc.querySelectorAll("img");
+            const loadedImages = Array.from(images).filter(img => img.complete);
+            tests.push({
+              name: "Image Loading",
+              passed:
+                images.length === 0 || loadedImages.length === images.length,
+              message: `${loadedImages.length}/${images.length} images loaded`
+            });
+
+            // Test DOM complexity
+            const totalElements = frameDoc.querySelectorAll("*").length;
+            tests.push({
+              name: "DOM Complexity",
+              passed: totalElements < 500,
+              message: `${totalElements} DOM elements (good if < 500)`
+            });
+
+            displayTestResults(tests);
+          } catch (error) {
+            results.innerHTML =
+              '<div class="test-fail">Error testing performance: ' +
+              error.message +
+              "</div>";
+          }
+        }, 500);
+      }
+
+      function displayTestResults(tests) {
+        const results = document.getElementById("test-results");
+        let html = "<h3>Test Results for " + currentViewport.label + "</h3>";
+
+        const passed = tests.filter(t => t.passed).length;
+        const total = tests.length;
+
+        html += `<p><strong>Summary: ${passed}/${total} tests passed</strong></p>`;
+
+        tests.forEach(test => {
+          const status = test.passed ? "test-pass" : "test-fail";
+          const icon = test.passed ? "✓" : "✗";
+          html += `<div class="${status}">${icon} ${test.name}: ${test.message}</div>`;
         });
+
+        if (passed === total) {
+          html +=
+            '<div class="test-pass"><strong>All tests passed! ✨</strong></div>';
+        } else {
+          html +=
+            '<div class="test-fail"><strong>Some tests failed. Review layout issues above.</strong></div>';
+        }
+
+        results.innerHTML = html;
+      }
+
+      // Auto-run tests on load
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          runLayoutTests();
+        }, 2000);
+      });
     </script>
-</body>
+  </body>
 </html>
