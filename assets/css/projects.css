@@ -39,7 +39,7 @@
 .project-card {
   background: #4a5568;
   border-radius: 16px;
-  padding: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
   transition: transform 0.3s, box-shadow 0.3s;
   width: 350px;
 }
@@ -50,7 +50,7 @@
 }
 
 .project-title {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 600;
   margin-bottom: 0.5rem;
   display: flex;
@@ -59,6 +59,7 @@
 }
 
 .project-description {
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
   color: #a0aec0;
   margin-bottom: 1rem;
   line-height: 1.6;
@@ -74,9 +75,9 @@
 .tech-tag {
   background: #2d3748;
   color: #4299e1;
-  padding: 0.25rem 0.75rem;
+  padding: clamp(0.2rem, 0.5vw, 0.25rem) clamp(0.5rem, 1.2vw, 0.75rem);
   border-radius: 12px;
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
 }
 
 .project-links {

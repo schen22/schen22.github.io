@@ -1,10 +1,5 @@
-/* Mobile Responsive */
+/* Mobile Layout Changes (Typography handled by clamp() in base styles) */
 @media (max-width: 768px) {
-  .section {
-    padding: 3rem 2rem;
-    min-height: auto;
-  }
-
   .content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -33,31 +28,6 @@
     justify-content: center;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .section-number {
-    font-size: 2rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  .section-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  /* Responsive typography now handled by clamp() in base styles */
-
   .projects-grid {
     display: flex;
     flex-direction: column;
@@ -74,86 +44,10 @@
     flex-shrink: 0;
   }
 
-  .project-title {
-    font-size: 1.1rem;
-  }
-
-  .project-description {
-    font-size: 0.85rem;
-  }
-
-  .tech-tag {
-    font-size: 0.7rem;
-    padding: 0.25rem 0.6rem;
-  }
-
-  .timeline-item {
-    padding: 1rem;
-  }
-
-  .timeline-title {
-    font-size: 1rem;
-  }
-
-  .timeline-company {
-    font-size: 0.9rem;
-  }
-
-  .timeline-achievement {
-    font-size: 0.8rem;
-  }
-
   .about-visual {
-    height: 300px;
+    height: clamp(250px, 50vw, 300px);
     margin-top: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 0.9rem;
-  }
-
-  .section {
-    padding: 2rem 1.5rem;
-  }
-
-  .section-number {
-    font-size: 1.8rem;
-  }
-
-  .section-title {
-    font-size: 1.3rem;
-  }
-
-  .section-description {
-    font-size: 0.8rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-  }
-
-  /* Responsive typography now handled by clamp() in base styles */
-
-  .project-card {
-    padding: 1rem;
-  }
-
-  .project-title {
-    font-size: 1rem;
-  }
-
-  .project-description {
-    font-size: 0.8rem;
-  }
-
-  .contact-link {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
+/* All typography now handled by clamp() - no extra breakpoints needed */
