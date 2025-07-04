@@ -56,18 +56,7 @@
     line-height: 1.5;
   }
 
-  .section-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .section-list {
-    font-size: 0.9rem;
-    padding-left: 2rem;
-  }
-
-  .section-list + .section-subtitle {
-    margin-top: 0.6rem !important;
-  }
+  /* Responsive typography now handled by clamp() in base styles */
 
   .projects-grid {
     display: flex;
@@ -149,10 +138,7 @@
     font-size: 1rem;
   }
 
-  .section-list {
-    font-size: 0.8rem;
-    padding-left: 1.75rem;
-  }
+  /* Responsive typography now handled by clamp() in base styles */
 
   .project-card {
     padding: 1rem;
