@@ -9,3 +9,7 @@ Personal website to keep track of quibbles and projects using the Jekyll theme, 
 serve:
 
 `$ python3 -m http.server 8000`
+
+## Documentation
+
+- [Design Decisions](DESIGN_DECISIONS.md) - Technical choices and rationale for future reference
