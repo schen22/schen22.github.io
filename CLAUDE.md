@@ -20,10 +20,10 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 ### Required Sections (in priority order):
 1. **Hero/About** - Product Engineer specialization and philosophy
    - Main about content (background, focus, personal interests)
-   - **Working With Me subsection** - People-first mentality, collaboration style, what makes teams successful
-2. **Experience** - Career progression with product impact metrics + PDF resume download + social links (GitHub, LinkedIn)
-3. **Projects** - 4-6 featured projects with business metrics, technical details, previews/screenshots, links to live sites/apps
-4. **Thoughts/Blog** - Migrate existing posts + space for future product insights
+   - Core beliefs and work philosophy
+   - Personal interests and activities
+2. **Projects** - 6 featured projects with business metrics, technical details, links to live sites/repos
+3. **Contact** - Resume download + social links (GitHub, LinkedIn) + collaboration interest
 
 ### Existing Content to Preserve:
 - **3 blog posts** in `_posts/` directory:
@@ -71,23 +71,21 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 
 ### File Structure:
 ```
-├── _config.yml (Jekyll config)
-├── _layouts/ (page templates)
-├── _includes/ (reusable components)
+├── index.html (main portfolio - single file approach)
 ├── _posts/ (blog posts - preserve existing)
-├── _data/ (structured data for projects/experience)
 ├── assets/
-│   ├── css/ (custom styles)
-│   ├── js/ (minimal JavaScript)
+│   ├── css/ (modular CSS files)
+│   ├── js/ (minimal JavaScript modules)
 │   └── img/ (images - preserve existing)
 └── resume.pdf (downloadable resume)
 ```
 
 ### Content Management Strategy:
-- **Projects**: Store in `_data/projects.yml` for easy updates
-- **Experience**: Store in `_data/experience.yml` for easy updates
-- **Blog Posts**: Continue using `_posts/` with front matter
+- **Projects**: Directly in index.html for easy updates
+- **Content**: All in index.html - simple, maintainable approach
+- **Blog Posts**: Continue using `_posts/` with front matter (linked from projects)
 - **Images**: Organized in `assets/img/` with consistent naming
+- **Version Control**: Use git for all versioning - no need for backup files
 
 ## 📊 Success Metrics
 - Fast load times (< 3 seconds)
@@ -115,33 +113,26 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 - **Tone**: Professional but approachable, technical but human-centered
 
 ## 📝 Content Priorities
-1. **Experience**: Quantified impact (40% user engagement improvement, 2M+ users served, etc.)
-2. **Projects**: Focus on user/business outcomes, not just technical specs
-3. **Collaboration**: Highlight work with design/product partners and mentoring
-4. **Process**: Show product thinking, not just engineering execution
-5. **Growth**: Career progression and increasing responsibility
+1. **About**: Core beliefs, work philosophy, personal interests
+2. **Projects**: Focus on user/business outcomes, technical details, real examples
+3. **Contact**: Professional connection points and collaboration interest
 
-## 🤝 "Working With Me" Content Ideas (About Page Subsection):
-- People-first mentality in action
-- Examples of successful cross-functional collaboration
-- Mentoring philosophy and approach
-- What energizes you in team environments
-- How positive reinforcement drives better outcomes
-- Examples of building strong team dynamics
-
-**Implementation Notes**: 
-- Can be styled as a distinct subsection within About page with visual separator
-- Easy to extract as standalone page later if desired
-- Consider using accordions, tabs, or visual cards to organize this content
+## 🎯 Career Theme: "Strategic Translator & Team Unifier"
+- **Core Value**: Thrives in ambiguous problems where others are lost
+- **Unique Skill**: Diagnosing issues and setting direction through stakeholder alignment  
+- **Bridge Role**: Technical depth + cross-functional influence
+- **Key Strength**: Mediating between eng/non-eng, preventing scope creep
+- **Rapid Growth**: 2 years to Senior (2017-2019), 6 years to Staff (2017-2023)
+- **Recognition**: Solving complex problems "no one knew how to solve" through technical skills + influence + cross-org collaboration
 
 ---
 
 ## 🔧 Development Notes
-- Current Jekyll theme appears custom-built
-- Existing CSS uses SCSS with modular approach
-- Site currently has basic structure but needs complete redesign
-- Preserving Google Analytics (UA-89413148-1) and existing Jekyll setup
-- GitHub username: schen22, Twitter: srchen22
+- **Current Structure**: Single `index.html` file with modular CSS/JS
+- **CSS Architecture**: Modular approach (base.css, layout.css, sections.css, components.css, projects.css, responsive.css)
+- **Simplified Workflow**: Direct edits to index.html, git for version control
+- **Analytics**: Preserving Google Analytics (UA-89413148-1)
+- **Social**: GitHub username: schen22, Twitter: srchen22
 
 ## ⚠️ Remember
 - Keep design SIMPLE to avoid maintenance complexity
