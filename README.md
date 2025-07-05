@@ -15,6 +15,10 @@ serve:
 
 `python3 -m http.server 8000`
 
+## Test
+
+Navigate to `http://localhost:8000/layout-tests.html` post-serving
+
 ## Documentation
 
 - [Design Decisions](DESIGN_DECISIONS.md) - Technical choices and rationale for future reference
