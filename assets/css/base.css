@@ -5,11 +5,19 @@
   box-sizing: border-box;
 }
 
+html {
+  /* Prevent zoom-related scroll behavior */
+  touch-action: manipulation;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   color: #2d3748;
   overflow-x: hidden;
+  /* Prevent zoom scroll jumps */
+  position: relative;
 }
 
 /* Progress Bar */
