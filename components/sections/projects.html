@@ -2,35 +2,14 @@
 <section class="section projects" id="{{SECTION_ID}}">
   <div class="content">
     <div class="text">
-      <h2 class="section-title">Fun Side Projects</h2>
+      <h2 class="section-title">Ridiculous Apps</h2>
       <p class="section-description">
-        AI has been a game changer for the amount (and quality) of personal
-        projects I ship. Here are some favorites:
+        AI has been a game changer for the amount of personal projects shipped.
+        Some of my favorites:
       </p>
       <div class="projects-container">
         <div class="projects-grid">
           <div class="project-card clickable" data-slide="0">
-            <h3 class="project-title">🎭 Feelings Wheel Journal</h3>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <p class="project-description">
-              [in progress] Web-based emotional awareness tool for
-              identifying and processing feelings through interactive
-              journaling. My attempt to curb anxiety and focus more on the
-              present.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/schen22/wins-tracker"
-                class="project-link"
-                >Source</a
-              >
-            </div>
-          </div>
-          <div class="project-card clickable" data-slide="1">
             <h3 class="project-title">🐕 Yumi Tracker</h3>
             <div class="project-tech">
               <span class="tech-tag">React</span>
@@ -39,16 +18,31 @@
               <span class="tech-tag">JSON</span>
             </div>
             <p class="project-description">
-              Track all puppy events to identify bathroom routines. Pretty
-              sweet, though I stopped tracking data because every accident
-              stressed me out.
+              Track puppy bathroom routines with data-driven insights. Turns out
+              I would rather build apps than stay calm about accidents.
             </p>
             <div class="project-links">
-              <a href="https://broccoli.mom/" class="project-link"
-                >Live Site</a
+              <a href="https://broccoli.mom/" class="project-link">Live Site</a>
+              <a href="https://github.com/schen22/tracker" class="project-link"
+                >Source</a
               >
+            </div>
+          </div>
+          <div class="project-card clickable" data-slide="1">
+            <h3 class="project-title">🎭 Feelings Wheel Journal</h3>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <p class="project-description">
+              Web-based emotional awareness tool for identifying and processing
+              feelings through interactive journaling. My attempt to curb
+              anxiety and focus more on the present.
+            </p>
+            <div class="project-links">
               <a
-                href="https://github.com/schen22/tracker"
+                href="https://github.com/schen22/wins-tracker"
                 class="project-link"
                 >Source</a
               >
@@ -62,9 +56,9 @@
               <span class="tech-tag">ChatGPT API</span>
             </div>
             <p class="project-description">
-              An inside joke with friends - helps me check in with friends
-              in higher-value ways than random texts. Was funnier in the
-              moment... I just call my friends now lol.
+              An inside joke with friends - helps me check in with friends by
+              giving prompts to answer via audio messages. Honestly I just call
+              them instead now.
             </p>
             <div class="project-links">
               <a
@@ -75,7 +69,7 @@
             </div>
           </div>
           <div class="project-card clickable" data-slide="3">
-            <h3 class="project-title">⚡ Bulbasaur Pedometer</h3>
+            <h3 class="project-title">⚡ Pokéstrides</h3>
             <div class="project-tech">
               <span class="tech-tag">Flutter</span>
               <span class="tech-tag">Dart</span>
@@ -83,9 +77,9 @@
               <span class="tech-tag">Android</span>
             </div>
             <p class="project-description">
-              Encouraging people to run by animating a Bulbasaur that moves
-              when you walk. Fun feature: the pedometer resets on any
-              Android software update.
+              Encourage people to run with a Bulbasaur that moves when you move.
+              All bugs are features: the pedometer resets on any Android
+              software update, the Bulbasaur trips at times.
             </p>
             <div class="project-links">
               <a
@@ -104,9 +98,8 @@
               <span class="tech-tag">AR</span>
             </div>
             <p class="project-description">
-              Educational augmented reality app showcased at SXSW Education
-              Expo to inspire STEM learning through interactive Pokemon
-              experiences.
+              Demo to inspire STEM learning via interactive Pokemon experiences
+              at the 2017 SXSW Education Expo.
             </p>
             <div class="project-links">
               <a
@@ -121,13 +114,35 @@
     </div>
     <div class="visual projects-visual">
       <div class="project-slideshow">
-        <div class="slide active" data-project="feelings-wheel">
+        <div class="slide active" data-project="yumi-tracker">
+          <div class="image-gallery">
+            <img
+              src="assets/img/yumi-tracker-dashboard.png"
+              alt="Yumi Tracker Dashboard"
+              class="project-image"
+            />
+            <img
+              src="assets/img/yumi-tracker-analytics.png"
+              alt="Yumi Tracker Analytics"
+              class="project-image"
+            />
+          </div>
+          <div class="image-caption">
+            <h4>🐕 Yumi Tracker</h4>
+            <p>
+              Dashboard & analytics for tracking puppy potty training progress
+            </p>
+          </div>
+        </div>
+        <div class="slide" data-project="feelings-wheel">
           <div class="image-gallery">
             <div class="placeholder-image">
               <div class="placeholder-content">
-                <h3>🎭</h3>
-                <p>Feelings Wheel Journal</p>
-                <span>Screenshots coming soon</span>
+                <img
+                  src="assets/img/its-okay-to-not-be-okay.png"
+                  alt="Feelings Wheel Journal"
+                  class="project-image"
+                />
               </div>
             </div>
           </div>
@@ -136,23 +151,15 @@
             <p>Interactive emotional awareness tool for journaling</p>
           </div>
         </div>
-        <div class="slide" data-project="yumi-tracker">
-          <div class="image-gallery">
-            <img src="assets/img/yumi-tracker-dashboard.png" alt="Yumi Tracker Dashboard" class="project-image">
-            <img src="assets/img/yumi-tracker-analytics.png" alt="Yumi Tracker Analytics" class="project-image">
-          </div>
-          <div class="image-caption">
-            <h4>🐕 Yumi Tracker</h4>
-            <p>Dashboard & analytics for tracking puppy potty training progress</p>
-          </div>
-        </div>
         <div class="slide" data-project="antighosting">
           <div class="image-gallery">
             <div class="placeholder-image">
               <div class="placeholder-content">
-                <h3>🤖</h3>
-                <p>Antighosting</p>
-                <span>iOS app screenshots coming soon</span>
+                <img
+                  src="assets/img/antighosting.gif"
+                  alt="Antighosting"
+                  class="project-image"
+                />
               </div>
             </div>
           </div>
@@ -163,20 +170,35 @@
         </div>
         <div class="slide" data-project="bulbasaur">
           <div class="image-gallery">
-            <img src="assets/img/pokestrides.png" alt="Bulbasaur Pedometer App" class="project-image single">
+            <img
+              src="assets/img/pokestrides.png"
+              alt="Bulbasaur Pedometer App"
+              class="project-image single"
+            />
           </div>
           <div class="image-caption">
-            <h4>⚡ Bulbasaur Pedometer</h4>
-            <p>Flutter app with animated Bulbasaur that moves when you walk</p>
+            <h4>⚡ Pokéstrides</h4>
+            <p>
+              Flutter pedometer app with Bulbasaur that moves with you
+            </p>
           </div>
         </div>
         <div class="slide" data-project="pokemon-ar">
           <div class="image-gallery">
             <div class="placeholder-image">
               <div class="placeholder-content">
-                <h3>🎮</h3>
-                <p>Pokemon AR Experience</p>
-                <span>SXSW demo photos coming soon</span>
+                <div class="image-gallery">
+                  <img
+                    src="assets/img/ar_demo_pikachu.png"
+                    alt="Pikachu"
+                    class="project-image"
+                  />
+                  <img
+                    src="assets/img/ar_demo.gif"
+                    alt="Demo"
+                    class="project-image"
+                  />
+                </div>
               </div>
             </div>
           </div>

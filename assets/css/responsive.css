@@ -62,23 +62,45 @@
   .projects-visual {
     position: static;
     height: auto;
-    min-height: 200px;
+    min-height: 300px;
     order: 2;
     margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .project-slideshow {
+    position: static;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .slide {
+    position: static;
+    opacity: 1;
+    transform: none;
+    height: auto;
+  }
+
+  .slide:not(.active) {
+    display: none;
   }
 
   .image-gallery {
     flex-direction: column;
     gap: 0.75rem;
+    height: auto;
   }
 
   .project-image {
     height: 160px;
+    width: auto;
+    max-width: 100%;
   }
 
   .project-image.single {
     max-width: 150px;
     height: 180px;
+    margin: 0 auto;
   }
 
   .placeholder-image {
