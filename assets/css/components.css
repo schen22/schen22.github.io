@@ -1,52 +1,5 @@
 /* Component Styles */
 
-/* Timeline Component */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.timeline-item {
-  padding: clamp(1rem, 2.5vw, 1.5rem);
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #4299e1;
-  transition: all 0.5s ease;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.timeline-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline-date {
-  color: #4299e1;
-  font-weight: 600;
-  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
-}
-
-.timeline-title {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
-  font-weight: 600;
-  margin: 0.5rem 0;
-}
-
-.timeline-company {
-  color: #718096;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  margin-bottom: 0.5rem;
-}
-
-.timeline-achievement {
-  color: #4a5568;
-  font-size: clamp(0.8rem, 2vw, 0.95rem);
-  margin-bottom: 0.5rem;
-}
-
 /* Contact Links */
 .contact-links {
   display: flex;

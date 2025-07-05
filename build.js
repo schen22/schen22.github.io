@@ -14,16 +14,40 @@ function readComponent(componentPath) {
 function buildHTML() {
   console.log('Building index.html from components...');
   
-  // Read all components
+  // Define sections in order (hero is section 0, but not numbered)
+  const sections = [
+    { name: 'about', file: 'components/sections/about.html' },
+    { name: 'projects', file: 'components/sections/projects.html' },
+    { name: 'contact', file: 'components/sections/contact.html' }
+  ];
+  
+  // Read static components
   const head = readComponent('components/partials/head.html');
-  const navigation = readComponent('components/partials/navigation.html');
   const hero = readComponent('components/sections/hero.html');
-  const about = readComponent('components/sections/about.html');
-  const projects = readComponent('components/sections/projects.html');
-  const contact = readComponent('components/sections/contact.html');
   const scripts = readComponent('components/partials/scripts.html');
   
-  // Assemble the complete HTML (3-section structure: About, Projects, Contact)
+  // Generate navigation dots dynamically (hero + sections)
+  const totalSections = sections.length + 1; // +1 for hero
+  const navDots = Array.from({ length: totalSections }, (_, i) => 
+    `  <div class="nav-dot${i === 0 ? ' active' : ''}" data-section="${i}"></div>`
+  ).join('\n');
+  
+  // Process navigation component with dynamic nav dots
+  const navigation = readComponent('components/partials/navigation.html')
+    .replace('{{NAV_DOTS}}', navDots);
+  
+  // Process sections with auto-generated IDs
+  const processedSections = sections.map((section, index) => {
+    let content = readComponent(section.file);
+    const sectionId = index + 1; // hero is 0, so sections start at 1
+    
+    // Replace section ID placeholder
+    content = content.replace('{{SECTION_ID}}', `section-${sectionId}`);
+    
+    return content;
+  }).join('\n  \n  ');
+  
+  // Assemble the complete HTML
   const html = `<!DOCTYPE html>
 <html lang="en">
 ${head}
@@ -32,11 +56,7 @@ ${head}
   
   ${hero}
   
-  ${about}
-  
-  ${projects}
-  
-  ${contact}
+  ${processedSections}
   
   ${scripts}
 </body>

@@ -11,15 +11,6 @@ const observer = new IntersectionObserver(
         if (textElement) textElement.classList.add("visible");
         if (visualElement) visualElement.classList.add("visible");
 
-        // Animate timeline items
-        if (entry.target.id === "section-2") {
-          const timelineItems = entry.target.querySelectorAll(".timeline-item");
-          timelineItems.forEach((item, index) => {
-            setTimeout(() => {
-              item.classList.add("visible");
-            }, index * 200);
-          });
-        }
 
         // Update navigation dots
         const sectionIndex = Array.from(

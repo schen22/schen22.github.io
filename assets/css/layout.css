@@ -41,12 +41,21 @@
 }
 
 /* Section Numbers & Typography */
+body {
+  counter-reset: section;
+}
+
 .section-number {
   font-size: clamp(2rem, 8vw, 5rem);
   font-weight: 900;
   color: #e2e8f0;
   line-height: 1;
   margin-bottom: 1rem;
+}
+
+.section-number:before {
+  counter-increment: section;
+  content: "0" counter(section);
 }
 
 .section-title {
