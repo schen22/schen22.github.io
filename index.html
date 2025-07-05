@@ -109,7 +109,7 @@
       </p>
       <div class="projects-container">
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card clickable" data-slide="0">
             <h3 class="project-title">🎭 Feelings Wheel Journal</h3>
             <div class="project-tech">
               <span class="tech-tag">React</span>
@@ -130,7 +130,7 @@
               >
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card clickable" data-slide="1">
             <h3 class="project-title">🐕 Yumi Tracker</h3>
             <div class="project-tech">
               <span class="tech-tag">React</span>
@@ -154,7 +154,7 @@
               >
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card clickable" data-slide="2">
             <h3 class="project-title">🤖 Antighosting</h3>
             <div class="project-tech">
               <span class="tech-tag">iOS</span>
@@ -174,7 +174,7 @@
               >
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card clickable" data-slide="3">
             <h3 class="project-title">⚡ Bulbasaur Pedometer</h3>
             <div class="project-tech">
               <span class="tech-tag">Flutter</span>
@@ -195,7 +195,7 @@
               >
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card clickable" data-slide="4">
             <h3 class="project-title">🎮 Pokemon AR Experience</h3>
             <div class="project-tech">
               <span class="tech-tag">Unity</span>
@@ -220,11 +220,70 @@
       </div>
     </div>
     <div class="visual projects-visual">
-      <div class="project-showcase">
-        <img src="assets/img/pokestrides.png" alt="Bulbasaur Pedometer App Screenshot" class="project-image">
-        <div class="image-caption">
-          <h4>⚡ Bulbasaur Pedometer</h4>
-          <p>Flutter app with animated Bulbasaur that moves when you walk</p>
+      <div class="project-slideshow">
+        <div class="slide active" data-project="feelings-wheel">
+          <div class="image-gallery">
+            <div class="placeholder-image">
+              <div class="placeholder-content">
+                <h3>🎭</h3>
+                <p>Feelings Wheel Journal</p>
+                <span>Screenshots coming soon</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-caption">
+            <h4>🎭 Feelings Wheel Journal</h4>
+            <p>Interactive emotional awareness tool for journaling</p>
+          </div>
+        </div>
+        <div class="slide" data-project="yumi-tracker">
+          <div class="image-gallery">
+            <img src="assets/img/yumi-tracker-dashboard.png" alt="Yumi Tracker Dashboard" class="project-image">
+            <img src="assets/img/yumi-tracker-analytics.png" alt="Yumi Tracker Analytics" class="project-image">
+          </div>
+          <div class="image-caption">
+            <h4>🐕 Yumi Tracker</h4>
+            <p>Dashboard & analytics for tracking puppy potty training progress</p>
+          </div>
+        </div>
+        <div class="slide" data-project="antighosting">
+          <div class="image-gallery">
+            <div class="placeholder-image">
+              <div class="placeholder-content">
+                <h3>🤖</h3>
+                <p>Antighosting</p>
+                <span>iOS app screenshots coming soon</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-caption">
+            <h4>🤖 Antighosting</h4>
+            <p>iOS app for meaningful friend check-ins</p>
+          </div>
+        </div>
+        <div class="slide" data-project="bulbasaur">
+          <div class="image-gallery">
+            <img src="assets/img/pokestrides.png" alt="Bulbasaur Pedometer App" class="project-image single">
+          </div>
+          <div class="image-caption">
+            <h4>⚡ Bulbasaur Pedometer</h4>
+            <p>Flutter app with animated Bulbasaur that moves when you walk</p>
+          </div>
+        </div>
+        <div class="slide" data-project="pokemon-ar">
+          <div class="image-gallery">
+            <div class="placeholder-image">
+              <div class="placeholder-content">
+                <h3>🎮</h3>
+                <p>Pokemon AR Experience</p>
+                <span>SXSW demo photos coming soon</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-caption">
+            <h4>🎮 Pokemon AR Experience</h4>
+            <p>Educational AR app showcased at SXSW Education Expo</p>
+          </div>
         </div>
       </div>
     </div>
