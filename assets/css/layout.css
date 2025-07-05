@@ -46,13 +46,13 @@
   font-weight: 700;
   color: #4a5568;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
 }
 
 .section-description {
   font-size: clamp(1rem, 1.8vw, 1rem);
   color: #4a5568;
-  margin-bottom: 1.5rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
   line-height: 1.6;
 }
 
@@ -60,20 +60,15 @@
   font-size: clamp(1rem, 1.8vw, 1.125rem);
   font-weight: 600;
   color: #4a5568;
-  margin: clamp(0.3rem, 1vw, 0.5rem) 0 clamp(0.2rem, 0.5vw, 0.3rem) 0;
+  margin: clamp(1.5rem, 3vw, 2rem) 0 clamp(0.75rem, 1.5vw, 1rem) 0;
 }
 
 .section-subtitle:first-of-type {
-  margin-top: 0;
-}
-
-.section-list + .section-subtitle {
-  margin-top: clamp(0.6rem, 1.5vw, 0.8rem) !important;
-  border-top: 1px solid transparent; /* Force browser to recognize element */
+  margin-top: clamp(1rem, 2vw, 1.5rem);
 }
 
 .section-list {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem) 0;
   padding-left: clamp(1.5rem, 3vw, 2rem);
   color: #4a5568;
   font-size: clamp(1rem, 1.8vw, 1rem);
@@ -81,7 +76,7 @@
 }
 
 .section-list li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Animations */
