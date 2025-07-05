@@ -40,29 +40,13 @@
   transform: translateX(0);
 }
 
-/* Section Numbers & Typography */
-body {
-  counter-reset: section;
-}
-
-.section-number {
-  font-size: clamp(2rem, 8vw, 5rem);
-  font-weight: 900;
-  color: #e2e8f0;
+/* Section Typography */
+.section-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  color: #2d3748;
   line-height: 1;
   margin-bottom: 1rem;
-}
-
-.section-number:before {
-  counter-increment: section;
-  content: "0" counter(section);
-}
-
-.section-title {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #2d3748;
 }
 
 .section-description {
