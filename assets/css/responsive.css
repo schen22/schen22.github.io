@@ -104,7 +104,24 @@
   }
 
   .placeholder-image {
-    height: 160px;
+    height: auto;
+    min-height: 160px;
+    padding: 1rem;
+  }
+
+  /* Special handling for Pokemon AR slide with multiple images */
+  .placeholder-content .image-gallery {
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+    flex: none;
+  }
+
+  .placeholder-content .project-image {
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
   }
 
   .image-caption {
