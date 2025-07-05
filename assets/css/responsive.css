@@ -52,6 +52,36 @@
     height: clamp(250px, 50vw, 300px);
     margin-top: 1rem;
   }
+
+  /* Projects section mobile layout */
+  .projects .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects-visual {
+    position: static;
+    height: auto;
+    min-height: 200px;
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .image-caption {
+    padding: 0.5rem;
+  }
+
+  .image-caption h4 {
+    font-size: 1rem;
+  }
+
+  .image-caption p {
+    font-size: 0.8rem;
+  }
 }
 
 /* All typography now handled by clamp() - no extra breakpoints needed */
