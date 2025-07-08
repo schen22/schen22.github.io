@@ -12,30 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Prevent scroll jumping on zoom
-let lastScrollY = 0;
-let isZooming = false;
-
-window.addEventListener('resize', () => {
-  // Detect zoom by checking if viewport changed without orientation change
-  if (window.innerWidth !== screen.width && !isZooming) {
-    isZooming = true;
-    lastScrollY = window.scrollY;
-    
-    // Restore scroll position after zoom
-    setTimeout(() => {
-      window.scrollTo(0, lastScrollY);
-      isZooming = false;
-    }, 100);
-  }
-});
-
-// Track scroll position before potential zoom
-window.addEventListener('scroll', () => {
-  if (!isZooming) {
-    lastScrollY = window.scrollY;
-  }
-});
 
 // Touch support for mobile section navigation
 let touchStartY = 0;
