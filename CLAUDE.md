@@ -69,6 +69,13 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 - Fast loading times
 - SEO optimized
 
+### Accessibility & Device Support:
+- **Multi-device compatibility**: Mobile, tablet, desktop across all major screen sizes
+- **Zoom accessibility**: Support up to 500% zoom without breaking functionality
+- **WCAG 2.1 AA compliance**: Meet accessibility standards for vision impairments
+- **Performance**: Fast loading on low-end devices and slow connections
+- **Cross-browser testing**: Chrome, Firefox, Safari, Edge compatibility
+
 ### File Structure:
 ```
 ├── index.html (GENERATED - DO NOT EDIT DIRECTLY)
@@ -165,6 +172,17 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
   - Contact section → `components/sections/contact.html`
   - Scripts → `components/partials/scripts.html`
 - **After editing components**: Run `node build.js` to rebuild index.html
+
+## 🛠️ BUG FIX & CHANGE PROCESS
+**CRITICAL**: Before implementing any fix, bug resolution, or feature change, follow the process outlined in [`BUG_FIX_PROCESS.md`](./BUG_FIX_PROCESS.md).
+
+**Key requirements:**
+1. **Always discuss before implementing** - Explain problem, solutions, tradeoffs
+2. **Get explicit approval** - Wait for user decision before proceeding
+3. **Evaluate against criteria** - Preserve behavior, avoid new bugs, maintain simplicity
+4. **Document the approach** - Clear reasoning for future reference
+
+This ensures sustainable, maintainable solutions that serve users well.
 
 ## ⚠️ Remember
 - Keep design SIMPLE to avoid maintenance complexity
