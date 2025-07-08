@@ -71,7 +71,18 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 
 ### File Structure:
 ```
-├── index.html (main portfolio - single file approach)
+├── index.html (GENERATED - DO NOT EDIT DIRECTLY)
+├── build.js (builds index.html from components)
+├── components/
+│   ├── partials/
+│   │   ├── head.html (viewport, meta tags, stylesheets)
+│   │   ├── navigation.html (nav dots, progress bar)
+│   │   └── scripts.html (JavaScript imports)
+│   └── sections/
+│       ├── hero.html (main hero section)
+│       ├── about.html (about section)
+│       ├── projects.html (projects section)
+│       └── contact.html (contact section)
 ├── _posts/ (blog posts - preserve existing)
 ├── assets/
 │   ├── css/ (modular CSS files)
@@ -81,8 +92,12 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 ```
 
 ### Content Management Strategy:
-- **Projects**: Directly in index.html for easy updates
-- **Content**: All in index.html - simple, maintainable approach
+- **⚠️ CRITICAL**: NEVER edit index.html directly - it gets overwritten by build.js
+- **HTML Structure**: Edit component files in `components/` directory
+- **Head/Meta Tags**: Edit `components/partials/head.html` 
+- **Navigation**: Edit `components/partials/navigation.html`
+- **Sections**: Edit individual files in `components/sections/`
+- **Build Process**: Run `node build.js` to regenerate index.html from components
 - **Blog Posts**: Continue using `_posts/` with front matter (linked from projects)
 - **Images**: Organized in `assets/img/` with consistent naming
 - **Version Control**: Use git for all versioning - no need for backup files
@@ -95,6 +110,7 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 - SEO optimized for "Sarah Chen product engineer" searches
 
 ## 🔄 Maintenance Commands
+- **Build HTML**: `node build.js` (regenerates index.html from components)
 - **Local development**: `bundle exec jekyll serve`
 - **Build**: `bundle exec jekyll build`
 - **Deploy**: Push to `master` branch (auto-deploys via GitHub Pages)
@@ -128,11 +144,27 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 ---
 
 ## 🔧 Development Notes
-- **Current Structure**: Single `index.html` file with modular CSS/JS
+- **Current Structure**: Component-based system with build.js generating index.html
 - **CSS Architecture**: Modular approach (base.css, layout.css, sections.css, components.css, projects.css, responsive.css)
-- **Simplified Workflow**: Direct edits to index.html, git for version control
+- **Build Workflow**: 
+  1. Edit components in `components/` directory
+  2. Run `node build.js` to regenerate index.html
+  3. Use git for version control
 - **Analytics**: Preserving Google Analytics (UA-89413148-1)
 - **Social**: GitHub username: schen22, Twitter: srchen22
+
+## 🚨 IMPORTANT EDITING RULES
+- **NEVER edit index.html directly** - it gets overwritten by build.js
+- **Always edit component files** in `components/` directory instead
+- **Common file mappings**:
+  - Viewport/meta tags → `components/partials/head.html`
+  - Navigation → `components/partials/navigation.html`
+  - Hero section → `components/sections/hero.html`
+  - About section → `components/sections/about.html`
+  - Projects section → `components/sections/projects.html`
+  - Contact section → `components/sections/contact.html`
+  - Scripts → `components/partials/scripts.html`
+- **After editing components**: Run `node build.js` to rebuild index.html
 
 ## ⚠️ Remember
 - Keep design SIMPLE to avoid maintenance complexity
