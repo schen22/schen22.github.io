@@ -12,19 +12,25 @@ Before implementing any fix, prioritize understanding over speed. A well-analyze
 - When does it occur? (edge cases, specific conditions)
 - How often does this problem affect users?
 
-### 2. **Propose Solution(s)**
+### 2. **Current State Analysis**
+- **What currently happens**: Document existing behavior step-by-step
+- **Expected behavior**: What should happen instead?
+- **Context**: Why was it built this way originally?
+- **Impact**: Who is affected and how severely?
+
+### 3. **Propose Solution(s)**
 - Present multiple approaches when possible
 - Include both simple and robust options
 - Consider temporary vs permanent fixes
 - Explain the technical approach clearly
 
-### 3. **Analyze Tradeoffs**
+### 4. **Analyze Tradeoffs**
 - **Pros**: Benefits and advantages
 - **Cons**: Drawbacks and limitations
 - **Side effects**: What else might be affected?
 - **Risk assessment**: What could go wrong?
 
-### 4. **Data-Driven Analysis**
+### 5. **Data-Driven Analysis**
 **Before choosing parameters/values, systematically gather available data:**
 
 #### **Identify Key Variables**
@@ -62,13 +68,13 @@ Data points:
 - **Document assumptions**: What data is missing? What are we assuming?
 - **Plan validation**: How will we verify the chosen solution works?
 
-### 5. **Discuss Implementation**
+### 6. **Discuss Implementation**
 - **Complexity**: How difficult to implement and maintain?
 - **Testing needs**: What needs to be verified?
 - **Rollback plan**: How to revert if needed?
 - **Future implications**: Will this affect future changes?
 
-### 6. **Get Approval**
+### 7. **Get Approval**
 - Wait for explicit user decision before proceeding
 - Don't assume the "obvious" solution is desired
 - Be prepared to explain technical details further
@@ -91,6 +97,12 @@ Every proposed change must be evaluated against:
 - **Symptoms**: [What user experiences]
 - **Scope**: [When/where it occurs]
 - **Impact**: [How many users affected]
+
+## Current State Documentation
+- **What currently happens**: [Step-by-step existing behavior]
+- **Expected behavior**: [What should happen instead]
+- **Original context**: [Why was it built this way]
+- **Who is affected**: [User groups and severity]
 
 ## Proposed Solutions
 ### Option A: [Simple Fix]
