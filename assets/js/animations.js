@@ -11,7 +11,6 @@ const observer = new IntersectionObserver(
         if (textElement) textElement.classList.add("visible");
         if (visualElement) visualElement.classList.add("visible");
 
-
         // Update navigation dots
         const sectionIndex = Array.from(
           document.querySelectorAll(".section")
@@ -22,11 +21,11 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.3 }
+  { threshold: 0.05 }
 );
 
 // Initialize animations when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Observe all sections
   document.querySelectorAll(".section").forEach(section => {
     observer.observe(section);
@@ -35,7 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Progress bar functionality
 function updateProgress() {
-  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  const scrolled =
+    (window.scrollY /
+      (document.documentElement.scrollHeight - window.innerHeight)) *
+    100;
   document.getElementById("progressFill").style.width = scrolled + "%";
 }
 
