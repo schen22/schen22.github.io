@@ -63,7 +63,8 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 ## 🛠 Technical Requirements
 
 ### Hosting & Maintenance:
-- **GitHub Pages** compatible (Jekyll-based)
+- **GitHub Pages** compatible (static HTML)
+- **Custom Node.js build system** using build.js
 - Easy to add new projects and blog posts
 - Minimal dependencies to reduce maintenance burden
 - Fast loading times
@@ -105,7 +106,7 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 - **Navigation**: Edit `components/partials/navigation.html`
 - **Sections**: Edit individual files in `components/sections/`
 - **Build Process**: Run `node build.js` to regenerate index.html from components
-- **Blog Posts**: Continue using `_posts/` with front matter (linked from projects)
+- **Blog Posts**: Legacy `_posts/` preserved but not processed; consider external platforms or static HTML pages
 - **Images**: Organized in `assets/img/` with consistent naming
 - **Version Control**: Use git for all versioning - no need for backup files
 
@@ -118,9 +119,9 @@ Create a **minimal, aesthetic website** to showcase Sarah's experience as a **Pr
 
 ## 🔄 Maintenance Commands
 - **Build HTML**: `node build.js` (regenerates index.html from components)
-- **Local development**: `bundle exec jekyll serve`
-- **Build**: `bundle exec jekyll build`
+- **Local development**: `python -m http.server 8000` or any static server
 - **Deploy**: Push to `master` branch (auto-deploys via GitHub Pages)
+- **Blog posts**: Add to `/blog/` directory (if implemented) or link externally
 
 ## 💡 Future Enhancements (Post-MVP)
 - Contact form integration
