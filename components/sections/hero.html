@@ -1,12 +1,36 @@
 <!-- Hero Section -->
 <section class="section hero" id="section-0">
+  <canvas id="cloudCanvas"></canvas>
+
+  <button class="mode-toggle" onclick="toggleMode()">
+    <span id="mode-text">🌙 Dark Mode</span>
+  </button>
+
+  <div class="cloud-character">
+    <div class="cloud-body">
+      <div class="cloud-puff-1"></div>
+      <div class="cloud-puff-2"></div>
+      <div class="cloud-puff-3"></div>
+
+      <div class="eye eye-left">
+        <div class="pupil"></div>
+      </div>
+      <div class="eye eye-right">
+        <div class="pupil"></div>
+      </div>
+
+      <div class="cheek cheek-left"></div>
+      <div class="cheek cheek-right"></div>
+    </div>
+  </div>
+
   <div class="hero-content">
     <h1 class="hero-title">Sarah Chen</h1>
-    <p class="hero-subtitle">
-      Staff Product Engineer • Fun Optimizer
-    </p>
-    <div class="scroll-indicator">
-      <span>↓ Scroll to explore ↓</span>
-    </div>
+    <p class="hero-subtitle">Product Engineer • Fun Optimizer</p>
+    <p class="hero-description">Move your cursor to interact with the clouds</p>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>↓ Explore my work ↓</span>
   </div>
 </section>
